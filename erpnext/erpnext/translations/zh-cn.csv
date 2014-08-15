@@ -15,7 +15,7 @@
 % of materials ordered against this Material Request,物料申请中已下单物料(%)
 % of materials received against this Purchase Order,采购订单中已收到的物料(%)
 'Actual Start Date' can not be greater than 'Actual End Date','实际开始日期'不能大于'实际结束日期'
-'Based On' and 'Group By' can not be same,"基于"和"分组"的字段不能相同
+'Based On' and 'Group By' can not be same,'基于'和'分组'的字段不能相同
 'Days Since Last Order' must be greater than or equal to zero,"上次最后订购日到今天"的天数必须大于或等于零
 'Entries' cannot be empty,'数据项'不能为空
 'Expected Start Date' can not be greater than 'Expected End Date','预计开始日期'不能大于'预计结束日期'
