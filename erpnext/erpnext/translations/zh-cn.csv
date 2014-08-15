@@ -932,7 +932,7 @@ Email Notifications,电子邮件通知
 Email Sent?,邮件发送成功?
 "Email id must be unique, already exists for {0}",已经存在{0};电子邮件ID必须是唯一的
 Email ids separated by commas.,电子邮件ID用逗号分隔
-"Email settings to extract Leads from sales email id e.g. ""sales@example.com""",从销售邮件中提取中销售引子的设置;例如从"sales@example.com"提取信息
+"Email settings to extract Leads from sales email id e.g. ""sales@example.com""",从销售邮件中提取中销售引子的设置;例如从sales@example.com提取信息
 Emergency Contact,紧急联络人
 Emergency Contact Details,紧急联系方式
 Emergency Phone,紧急电话
