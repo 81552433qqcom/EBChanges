@@ -1843,7 +1843,7 @@ Note User,用户注意
 Note: Due Date exceeds the allowed credit days by {0} day(s),注:截止日期超过了允许的信用度{0}天
 Note: Email will not be sent to disabled users,注:电子邮件将不会被发送到被禁用的用户
 Note: Item {0} entered multiple times,注:商品{0}被多次输入
-Note: Payment Entry will not be created since 'Cash or Bank Account' was not specified,注:因为"现金或银行帐户"未指定因此付款项将不会被创建
+Note: Payment Entry will not be created since 'Cash or Bank Account' was not specified,注:因为'现金或银行帐户'未指定因此付款项将不会被创建
 Note: System will not check over-delivery and over-booking for Item {0} as quantity or amount is 0,注:因为商品{0}的数量或金额为0因此系统将不会检查交付过多和超额预订的情况
 Note: There is not enough leave balance for Leave Type {0},注:请假类型{0}没有足够的休假余量
 Note: This Cost Center is a Group. Cannot make accounting entries against groups.,注:该成本中心是组类型而系统不允许为组建立会计分录
