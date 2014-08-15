@@ -887,8 +887,7 @@ Download Template,下载模板
 Download a report containing all raw materials with their latest inventory status,下载一个包含所有原料信息以及他们最新的库存状态的报告
 "Download the Template, fill appropriate data and attach the modified file.",下载模板，填写相应的数据，并上传修改后的文件
 "Download the Template, fill appropriate data and attach the modified file.
-All dates and employee combination in the selected period will come in the template, with existing attendance records","下载模板，填写相应的数据，并上传修改后的文件
-在所选日期范围所有的员工的考勤记录都会出现在模板里面"
+All dates and employee combination in the selected period will come in the template, with existing attendance records",下载模板，填写相应的数据，并上传修改后的文件在所选日期范围所有的员工的考勤记录都会出现在模板里面
 Draft,草稿
 Dropbox,Dropbox的
 Dropbox Access Allowed,Dropbox允许访问
