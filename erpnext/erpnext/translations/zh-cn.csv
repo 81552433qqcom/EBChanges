@@ -1220,7 +1220,7 @@ Health Concerns,健康问题
 Health Details,健康细节
 Held On,举行
 Help HTML,HTML帮助
-"Help: To link to another record in the system, use ""#Form/Note/[Note Name]"" as the Link URL. (don't use ""http://"")",说明:要链接到另一个记录在系统中;使用#Form/Note/[Note Name]的链接网址.(不要使用"http://")
+"Help: To link to another record in the system, use ""#Form/Note/[Note Name]"" as the Link URL. (don't use ""http://"")",说明:要链接到另一个记录在系统中;使用#Form/Note/[Note Name]的链接网址.(不要使用http://)
 "Here you can maintain family details like name and occupation of parent, spouse and children",在这里你可以维系家庭的详细信息，如姓名;父母配偶子女及其职业
 "Here you can maintain height, weight, allergies, medical concerns etc",在这里你可以保持身高，体重，过敏，医疗问题等
 Hide Currency Symbol,隐藏货币符号
@@ -1841,7 +1841,7 @@ Note User,用户注意
 Note: Due Date exceeds the allowed credit days by {0} day(s),注:截止日期超过了允许的信用度{0}天
 Note: Email will not be sent to disabled users,注:电子邮件将不会被发送到被禁用的用户
 Note: Item {0} entered multiple times,注:商品{0}被多次输入
-Note: Payment Entry will not be created since 'Cash or Bank Account' was not specified,注:因为"现金或银行帐户"未指定因此付款项将不会被创建
+Note: Payment Entry will not be created since 'Cash or Bank Account' was not specified,注:因为'现金或银行帐户'未指定因此付款项将不会被创建
 Note: System will not check over-delivery and over-booking for Item {0} as quantity or amount is 0,注:因为商品{0}的数量或金额为0因此系统将不会检查交付过多和超额预订的情况
 Note: There is not enough leave balance for Leave Type {0},注:请假类型{0}没有足够的休假余量
 Note: This Cost Center is a Group. Cannot make accounting entries against groups.,注:该成本中心是组类型而系统不允许为组建立会计分录
@@ -1864,7 +1864,7 @@ On Net Total,在总净值
 On Previous Row Amount,在前一行金额
 On Previous Row Total,在前一行总和
 Online Auctions,网上拍卖
-Only Leave Applications with status 'Approved' can be submitted,仅仅是状态为"已批准"的休假申请才可以提交
+Only Leave Applications with status 'Approved' can be submitted,仅仅是状态为'已批准'的休假申请才可以提交
 "Only Serial Nos with status ""Available"" can be delivered.",只有序列号的状态为'可用的'的状态才能被交付
 Only leaf nodes are allowed in transaction,只有叶节点才允许出现在交易中
 Only the selected Leave Approver can submit this Leave Application,只有选定的休假申请审批人才能提交这个休假申请
@@ -2102,7 +2102,7 @@ Please select Fiscal Year,请选择会计年度(财年)
 Please select Group or Ledger value,请选择组或分类账
 Please select Incharge Person's name,请选择Incharge人的名字
 Please select Invoice Type and Invoice Number in atleast one row,请至少在其中一行选择发票类型和发票号码
-"Please select Item where ""Is Stock Item"" is ""No"" and ""Is Sales Item"" is ""Yes"" and there is no other Sales BOM",请将商品"是库存中商品"选择为否并将"是可销售商品"选择为是;并且没有其它销售的物料清单
+"Please select Item where ""Is Stock Item"" is ""No"" and ""Is Sales Item"" is ""Yes"" and there is no other Sales BOM",请将商品'是库存中商品'选择为否并将'是可销售商品'选择为是;并且没有其它销售的物料清单
 Please select Price List,请选择价格表
 Please select Start Date and End Date for Item {0},请选择商品{0}开始日期和结束日期
 Please select Time Logs.,请选择时间记录。
@@ -2608,12 +2608,12 @@ Secretary,秘书
 Secured Loans,抵押贷款
 Securities & Commodity Exchanges,证券及商品交易市场
 Securities and Deposits,证券及存款
-"See ""Rate Of Materials Based On"" in Costing Section","See ""Rate Of Materials Based On"" in Costing Section"
-"Select ""Yes"" for sub - contracting items","Select ""Yes"" for sub - contracting items"
-"Select ""Yes"" if this item is used for some internal purpose in your company.",选择“Yes”如果该产品被用于一些公司内部用途。
-"Select ""Yes"" if this item represents some work like training, designing, consulting etc.","Select ""Yes"" if this item represents some work like training, designing, consulting etc."
-"Select ""Yes"" if you are maintaining stock of this item in your Inventory.",选择“是”，如果您维护该产品的存货在你的库存。
-"Select ""Yes"" if you supply raw materials to your supplier to manufacture this item.",选择“是”，如果您提供原料给供应商来制造该产品。
+"See ""Rate Of Materials Based On"" in Costing Section","See 'Rate Of Materials Based On' in Costing Section"
+"Select ""Yes"" for sub - contracting items","Select 'Yes' for sub - contracting items"
+"Select ""Yes"" if this item is used for some internal purpose in your company.",选择'Yes'如果该产品被用于一些公司内部用途。
+"Select ""Yes"" if this item represents some work like training, designing, consulting etc.","Select 'Yes' if this item represents some work like training, designing, consulting etc."
+"Select ""Yes"" if you are maintaining stock of this item in your Inventory.",选择'是'，如果您维护该产品的存货在你的库存。
+"Select ""Yes"" if you supply raw materials to your supplier to manufacture this item.",选择'是'，如果您提供原料给供应商来制造该产品。
 Select Brand...,请选择品牌...
 Select Budget Distribution to unevenly distribute targets across months.,Select Budget Distribution to unevenly distribute targets across months.
 "Select Budget Distribution, if you want to track based on seasonality.",选择预算分配，如果你想要基于季度来跟踪。
