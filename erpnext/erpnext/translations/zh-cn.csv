@@ -104,8 +104,7 @@ Account {0}: Parent account {1} does not belong to company: {2},帐户{0}:其父
 Account {0}: Parent account {1} does not exist,帐户{0}:父帐户{1}不存在
 Account {0}: You can not assign itself as parent account,帐户{0}：不能将自身设置为父帐户
 "Account: {0} can only be updated via \
-					Stock Transactions","帐号：\
-{0}只能通过库存交易更新"
+					Stock Transactions",帐号：{0}只能通过库存交易更新
 Accountant,会计人员
 Accounting,会计账目
 "Accounting Entries can be made against leaf nodes, called",会计分录可以对叶节点进行操作，称为
