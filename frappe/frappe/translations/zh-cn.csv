@@ -3,6 +3,8 @@
 """Company History""",“公司历史”
 """Team Members"" or ""Management""",“团队成员”或“管理团队”
 'In List View' not allowed for type {0} in row {1},“在列表视图中”在{1}行不允许类型{0}
+0 - Draft; 1 - Submitted; 2 - Cancelled,0 - 草稿; 1 - 已提交; 2 - 已取消
+0 is highest,0是最高的
 "000 is black, fff is white",000是黑色的，FFF是白色的
 2 days ago,2天前
 "<a href=""https://en.wikipedia.org/wiki/Transport_Layer_Security"" target=""_blank"">[?]</a>",<a href='https://en.wikipedia.org/wiki/Transport_Layer_Security' target='_blank'>[?]</a>
@@ -17,6 +19,11 @@
 <li><b>Prompt</b> - Prompt user for a name\
 <li><b>[series]</b> - Series by prefix (separated by a dot); for example PRE.#####\
 </ol>')"">Naming Options</a>"
+<b>new</b> <i>type of document</i>,<b>新建</b> <i>文档类型</i>
+"<i>document type...</i>, e.g. <b>customer</b>",<i>文档类型...</i> 例如 <b>客户</b>
+<i>e.g. <strong>(55 + 434) / 4</strong> or <strong>=Math.sin(Math.PI/2)</strong>...</i>,<i>例如 <strong>(55 + 434) / 4</strong> 或者 <strong>=Math.sin(Math.PI/2)</strong>...</i>
+<i>module name...</i>,<i>模块名称...</i>
+<i>text</i> <b>in</b> <i>document type</i>, <i>文档类型</i><b>中的</b><i>文本</i>
 A user can be permitted to multiple records of the same DocType.,用户可以被允许访问同一的DocType的多个记录。
 About,关于
 About Us Settings,关于我们设置
@@ -43,10 +50,12 @@ Add attachment,添加附件
 Add code as &lt;script&gt;,添加代码为&lt;script&gt;
 Add custom javascript to forms.,添加自定义的javascript到表单。
 Add fields to forms.,将字段添加到表单。
+Add multiple rows,添加多行
 Add new row,添加新行
 "Add the name of <a href=""http://google.com/webfonts"" target=""_blank"">Google Web Font</a> e.g. ""Open Sans""",新增名称<a href='http://google.com/webfonts' target='_blank'>谷歌网页字体</a> 例如'开放三世'
 Add to To Do,添加到待办事项
 Add to To Do List Of,添加到待办事项列表
+Added {0} ({1}),{0}({1})已添加
 Adding System Manager to this User as there must be atleast one System Manager,将用户设置为系统管理员，因为必须至少有一个系统管理员
 Additional Info,额外的信息
 Additional Permissions,额外的权限
@@ -58,6 +67,7 @@ Address and other legal information you may want to put in the footer.,要放在
 Admin,管理员
 All Applications,所有应用
 All Day,全天
+All customizations will be removed. Please confirm.,所有自定义选项都会被移除;请确认您的操作
 "All possible Workflow States and roles of the workflow. <br>Docstatus Options: 0 is""Saved"", 1 is ""Submitted"" and 2 is ""Cancelled""",所有可能的工作流程状态和工作流的角色。 <br> Docstatus选项：0是“保存”，1“已提交”和2“取消”
 Allow Attach,允许附加
 Allow Import,允许导入
@@ -76,11 +86,11 @@ Always use above Login Id as sender,请务必使用上述登录人作为发件�
 Amend,修改
 "An icon file with .ico extension. Should be 16 x 16 px. Generated using a favicon generator. [<a href=""http://favicon-generator.org/"" target=""_blank"">favicon-generator.org</a>]","一个图标文件，扩展名为.ico.应该是16×16像素.使用的favicon生成器生成. [ <a href=""http://favicon-generator.org/"" target=""_blank"">favicon-generator.org</a> ]"
 "Another {0} with name {1} exists, select another name",另一个{0}姓名为{1}的已经存在，请选择另一个名字
+Any existing permission will be deleted / overwritten.,现有的权限将被删除/覆盖。
 Anyone Can Read,任何人都可以查看
 Anyone Can Write,任何人都可以写入
 "Apart from Role based Permission Rules, you can apply User Permissions based on DocTypes.",除了基于角色的权限规则，您可以根据文档类型应用用户权限。
 "Apart from System Manager, roles with 'Set User Permissions' right can set permissions for other users for that Document Type.",除了系统管理员之外，有设置用户权限权利的角色同样可以为其他用户的文件类型设置相应的权限。
-App Already Installed,应用程序已安装
 App Name,应用程序名称
 App not found,应用程序未找到
 Application Installer,应用程序安装器
@@ -112,12 +122,13 @@ Avatar,头像
 Back to Login,返回登录
 Background Color,背景颜色
 Background Image,背景图片
+Background Style,背景样式
 Banner,横幅
 Banner HTML,横幅的HTML
 Banner Image,横幅图片
 Banner is above the Top Menu Bar.,顶部菜单栏上面的横幅
-Base Template Path,模板路径
 Begin this page with a slideshow of images,给页面添加图片幻灯片
+Beginning with,以某某开头
 Belongs to,属于
 Bio,生物
 Birth Date,出生日期
@@ -129,11 +140,13 @@ Blog Settings,博客设置
 Blog Title,博客标题
 Blogger,博客
 Bookmarks,书签
+Both login and password required,需要登录名和密码
 Brand HTML,品牌的HTML
 Bulk Email,大批量的电子邮件
 Bulk email limit {0} crossed,已超过群发电子邮件的限制{0}
 Button,按钮
 By,通过
+Calculate,计算
 Calendar,日历
 Cancel,取消
 Cancelled,已取消
@@ -147,7 +160,6 @@ Cannot change state of Cancelled Document. Transition row {0},不能改变已被
 Cannot change {0},不能改变{0}
 Cannot delete or cancel because {0} {1} is linked with {2} {3},不能删除或取消，因为{0} {1}与{2} {3}有关联
 Cannot delete {0} as it has child nodes,无法删除{0} ，因为它有子节点
-Cannot delete {0} {1} is it is referenced in another record,无法删除{0} {1}在另一个记录中已被引用
 Cannot edit standard fields,不能编辑标准字段
 Cannot map because following condition fails: ,无法对应，因为以下条件失败：
 Cannot open instance when its {0} is open,无法打开实例时当它的{0}是打开状态
@@ -155,6 +167,7 @@ Cannot open {0} when its instance is open,无法打开{0}当它的实例是打�
 Cannot print cancelled documents,无法打印已被注销的文档
 Cannot remove permission for DocType: {0} and Name: {1},DocType为:{0}应用的权限名:{1}无法被移除
 Cannot reply to a reply,无法针对某个回复做回复
+Cannot set Email Alert on Document Type {0},无法对文件类型{0}设置电子邮件警报通知
 Cannot set permission for DocType: {0} and Name: {1},无法为DocType名称为:{0}设置权限:{1}
 Categorize blog posts.,分类博客文章
 Category,类别
@@ -167,21 +180,22 @@ Check,检查
 Check / Uncheck roles assigned to the User. Click on the Role to find out what permissions that Role has.,选中/取消选中分配给个人的角色。点击角色就能查看角色被赋予了哪些权限。
 Check this if you want to send emails as this id only (in case of restriction by your email provider).,如果您要以这个Email ID作为标识发送邮件，请勾选这个选项。
 Check this to make this the default letter head in all prints,勾选这个来让这个信头默认出现在所有打印中
+Check which Documents are readable by a User,查看哪些文件是用户可读的
 Checked items shown on desktop,在桌面上显示检查的项目
 Child Tables are shown as a Grid in other DocTypes.,子表中会显示在一个表格中。
 City,城市
+Classic,经典
 Clear Cache,清除缓存
 Clear all roles,清除所有角色
-Click on a link to get options to expand get options ,点击链接得到可选项并展开可选项
+Click on a link to get options,点击一个链接以获取选项
 Click on row to view / edit.,点击一行来查看/编辑。
-Click to Expand / Collapse,点击展开/折叠
 Client,客户
+Client-side formats are now deprecated,客户端的格式现在已经过期
 Close,关闭
 Close: {0},关闭:{0}
 Closed,已关闭
 Code,编码
 Collapse,折叠
-Color,颜色
 Column Break,列分栏符
 Comment,评论
 Comment By,评论人
@@ -197,7 +211,7 @@ Company History,公司历史
 Company Introduction,公司简介
 Complaint,投诉
 Complete By,完成者
-Condition Field,条件字段
+Condition,条件
 Contact Us Settings,联系我们的设置
 "Contact options, like ""Sales Query, Support Query"" etc each on a new line or separated by commas.",联系人选项，如“销售查询，客户支持查询”等每一个新行或以逗号分隔。
 Content,内容
@@ -213,6 +227,7 @@ Could not find {0},找不到{0}
 Count,计算
 Country,国家
 Create,创建
+Create a new {0},创建一个新的{0}
 Created Custom Field {0} in {1},在{1}里面创建自定义字段{0}
 Created Customer Issue,已创建的客户反馈的问题
 Created Opportunity,已创造的机会
@@ -238,14 +253,18 @@ Data Import / Export Tool,数据导入/导出工具
 Data Import Tool,数据导入工具
 Data missing in table,表中的数据丢失
 Date,日期
+Date Change,日期变更
+Date Changed,日期已更改
 Date Format,日期格式
 Date and Number Format,日期和数字格式
 Date must be in format: {0},日期格式必须是:{0}
 Datetime,日期时间
+Days in Advance,提前天数
 Dear,亲爱的
 Default,默认
 Default Print Format,默认打印格式
 Default Value,默认值
+Default is system timezone,默认为系统时区
 "Default: ""Contact Us""",默认：“联系我们”
 DefaultValue,默认值
 Defaults,默认
@@ -292,7 +311,6 @@ Document Type,文件类型
 Document is only editable by users of role,文档只有被赋予了权限的用户才能编辑
 Documentation,文档
 Documents,文档列表
-Down,向下
 Download,下载
 Download Backup,下载备份
 Download link for your backup will be emailed on the following email address:,您的备份的下载链接将通过电子邮件发送以下电子邮件地址：
@@ -300,10 +318,17 @@ Drafts,草稿箱
 Drag to sort columns,拖动列进行排序
 Due Date,到期日
 Duplicate name {0} {1},重复的名称{0} {1}
+Dynamic Link,动态链接
+ERPNext Demo,ERP Boost演示
 Edit,编辑
 Edit Permissions,编辑权限
 Editable,可编辑
 Email,电子邮件
+Email Alert,邮件警报
+Email Alert Recipient,邮件警报收件人
+Email Alert Recipients,邮件警报收件人
+Email By Document Field,Email By Document Field
+Email Footer,电子邮件页脚
 Email Host,电子邮件主机
 Email Id,电子邮件Id
 Email Login,邮箱登录
@@ -321,6 +346,7 @@ Emails are muted,电子邮件已停用
 Embed image slideshows in website pages.,网页中的图像的幻灯片
 Enable,启用
 Enable Comments,启用评论
+Enable Scheduled Jobs,启用定时任务
 Enabled,已启用
 Ends on,结束于
 Enter Form Type,输入表单类型
@@ -330,6 +356,7 @@ Enter at least one permission row,输入至少一个的权限
 "Enter keys to enable login via Facebook, Google, GitHub.",输入Keys用以通过Facebook 谷歌或者GitHub上登录
 Equals,等于
 Error,错误
+"Error generating PDF, attachment sent as HTML",生成PDF错误，附件以HTML发送
 Error: Document has been modified after you have opened it,错误：你已经打开了它之后，文件已被其它的人修改
 Event,事件
 Event Datetime,事件发生时间
@@ -345,11 +372,13 @@ Every Day,每天
 Every Month,每月
 Every Week,每一周
 Every Year,每年
+Everyone,每个人
 Example:,例如：
 Expand,展开/扩展
 Export,导出
 Export not allowed. You need {0} role to export.,没有权限进行导出。您需要{0}的角色来进行导出。
 Exported,已导出
+"Expression, Optional",表达式(可选)
 Facebook,Facebook的
 Facebook Client ID,Facebook的客户端ID
 Facebook Client Secret,Facebook的客户端密钥
@@ -368,11 +397,12 @@ Field {0} of type {1} cannot be mandatory,类型{1}的字段{0}不是必须的
 Fieldname,字段名
 Fieldname is required in row {0},{0}行的字段名是必需
 Fieldname not set for Custom Field,字段名不为自定义字段设置
+Fieldname which will be the DocType for this link field.,这个链接字段字段名应是DOCTYPE。
 Fieldname {0} appears multiple times in rows {1},字段名{0}中多次出现列{1}
 "Fieldname {0} cannot contain letters, numbers or spaces",字段名{0}不能包含字母，数字或空格
 Fields,字段列表
 "Fields separated by comma (,) will be included in the<br /><b>Search By</b> list of Search dialog box",字段用逗号（，）分隔将被纳入<br /> <b>搜索</b>的搜索对话框列表
-Fieldtype must be one of {0} in row {1},行{1}中的字段类型必须是{0}之一
+Fieldtype cannot be changed from {0} to {1} in row {2},第{2}行的字段类型不能从{0}改变为{1}
 File,文件
 File Data,文件数据
 File Name,文件名
@@ -380,20 +410,27 @@ File Size,文件大小
 File URL,文件的URL
 File not attached,文件未被附加
 File size exceeded the maximum allowed size of {0} MB,文件大小超过{0} MB的最大允许大小
+Fill Screen,填充屏幕
 Filter,过滤器
 Filter records based on User Permissions defined for a user,基于用户权限筛选出来的记录
+Filters,过滤器
+Find {0} in {1},在{1}中寻找{0}
 First Name,姓
 Float,浮点数
 Float Precision,浮点数的精度
 Font (Heading),字体（标题）
 Font (Text),字体（文字）
+Font Size,字体大小
 Font Size (Text),字体大小（文本）
 Fonts,字体列表
 Footer,页脚
+Footer Background,页脚背景
 Footer Items,页脚元素
+Footer Text,页脚文本
 For DocType,对于DocType而言
 "For Links, enter the DocType as range
-For Select, enter list of Options separated by comma",对于链接项，输入文档类型为范围\ n对于选择项，以逗号分隔输入可选列表
+For Select, enter list of Options separated by comma","对于链接，键入DocType为范围;
+对于选择，以逗号分隔键入选择列表"
 "For comparative filters, start with",对于比较过滤器，请以说明的开始
 For example if you cancel and amend 'INV004' it will become a new document 'INV004-1'. This helps you to keep track of each amendment.,例如，如果你取消并修订“INV004”它将成为一个新的文档INV004-1;。这样的话可以帮助您追踪每个改变以及版本。
 For ranges,对于范围而言
@@ -405,6 +442,7 @@ Form,表单
 Forum,论坛
 Forums,论坛列表
 Forward To Email Address,转发到邮件地址
+Frappe Framework,框架
 Friday,星期五
 From Date must be before To Date,开始日期必须在结束日期之前
 Full Name,全名
@@ -414,6 +452,7 @@ Generator,产生器
 Georgia,Georgia
 Get,得到
 Get From ,从指明初获取
+"Get your globally recognized avatar from <a href=""https://gravatar.com/"">Gravatar.com</a>",从<a href='https://gravatar.com/'> Gravatar.com </a>得到一个头像
 GitHub,GitHub
 GitHub Client ID,GitHub的客户ID
 GitHub Client Secret,GitHub的客户端密钥
@@ -441,15 +480,14 @@ Header,标头
 Heading,标题
 Heading Text As,标题文字
 Help,帮助
+Help on Search,搜索帮助
 Helvetica Neue,Helvetica Neue字体
-Hey! There should remain at least one System Manager,请应该保持至少一个系统管理员
 Hidden,隐藏
 Hide Actions,隐藏操作
 Hide Copy,隐藏复制操作
-Hide Email,隐藏电子邮件
 Hide Heading,隐藏标题
-Hide Print,隐藏打印
 Hide Toolbar,隐藏工具栏
+Hide the sidebar,隐藏侧边栏
 High,高
 Highlight,突出
 History,历史
@@ -459,7 +497,6 @@ ID (name) of the entity whose property is to be set,实体的属性需要被设�
 Icon,图标
 Icon will appear on the button,图标将显示在按钮上
 "If a Role does not have access at Level 0, then higher levels are meaningless.",如果角色没有对0级的访问权限，那么更高的级别的权限是没有意义的。
-"If checked, all other workflows become inactive.",如果选中，所有其他的工作流程都变得无效。
 "If checked, an email with an attached HTML format will be added to part of the EMail body as well as attachment. To only send as attachment, uncheck this.",如果选中，则带有附加的HTML格式的电子邮件会被添加到电子邮件正文的一部分，以及作为附件。如果只作为附件发送，请取消勾选此。
 "If checked, the Home page will be the default Item Group for the website.",如果选中，网站的主页将显示默认的产品或服务。
 "If image is selected, color will be ignored (attach first)",如果图像被选中，颜色将被忽略
@@ -478,9 +515,10 @@ In Dialog,在对话框中
 In Filter,在过滤器中
 In List View,在列表视图中
 In Report Filter,在报表筛选中
+In points. Default is 9.,以点为单位;默认值是9
 In response to,响应
 Incorrect value in row {0}: {1} must be {2} {3},不正确的值在第{0}行: {1}必须是{2} {3}
-Incorrect value: {1} must be {2} {3},不正确的值:{1}必须是{2} {3}
+Incorrect value: {0} must be {1} {2},不正确的值：{0}必须是{1} {2}
 Index,索引
 Individuals,个人
 Info,信息
@@ -501,6 +539,7 @@ Introductory information for the Contact Us Page,联系我们页面的介绍信�
 Invalid Email: {0},无效的电子邮件:{0}
 Invalid Filter: {0},无效的过滤器:{0}
 Invalid Home Page,无效的主页
+Invalid Login,无效登录
 Invalid Outgoing Mail Server or Port,无效的发送邮件服务器或端口
 Invalid login or password,无效的登录名或密码
 Invalid recipient address,无效的收件人地址
@@ -538,19 +577,20 @@ Left,左边
 Less or equals,小于或等于
 Less than,小于
 Letter Head,信头
+Letter,信
 Letter Head Name,信头名
 Letter Head in HTML,信头中的HTML
 Level,级别
 "Level 0 is for document level permissions, higher levels for field level permissions.",0级是文档级权限，更高层次为字段级权限。
 Like,喜欢
 Link,链接
-Link Name,链接名称
 "Link that is the website home page. Standard Links (index, login, products, blog, about, contact)",网站的主页链接。标准链接（索引，登录，产品，博客，关于，联系）
 Link to other pages in the side bar and next section,通过侧边栏和章节链接到其它的页面
 Link to the page you want to open,链接到你想打开的网页
 Linked In Share,Linked In 分享
 Linked With,与网站链接
 List,列表
+List a document type,列出一个文件类型
 List of Web Site Forum's Posts.,网站论坛的帖子列表。
 Loading,载入中
 Loading Report,加载报表
@@ -570,6 +610,7 @@ Lucida Grande,Lucida Grande
 Mail Password,邮件密码
 Main Section,主章节
 Make a new,创建一个新的
+Make a new record,创建一条新纪录
 Male,男性
 Manage cloud backups on Dropbox,管理Dropbox云备份
 Manage uploaded files.,管理上传的文件
@@ -584,12 +625,14 @@ Medium,中等
 "Menu items in the Top Bar. For setting the color of the Top Bar, go to <a href=""#Form/Style Settings"">Style Settings</a>","顶栏菜单项。设置最上面一栏的颜色，<a href=""#Form/Style Settings"">样式设置</a>"
 Merging is only possible between Group-to-Group or Leaf Node-to-Leaf Node,合并只能发生在组到组或叶节点到叶节点
 Message,消息
+Message Examples,消息示例
 Messages,消息列表
 Method,方法
 Middle Name (Optional),中间名（可选）
 Misc,杂项
 Miscellaneous,杂项
 Missing Values Required,未填的必填项
+Modern,现代
 Modified by,由谁修改
 Module,模块
 Module Def,模块定义
@@ -599,7 +642,6 @@ Modules Setup,模块架设
 Monday,星期一
 More,更多
 More content for the bottom of the page.,页面的底部添加更多的内容。
-Move,移动
 Move Down: {0},下移:{0}
 Move Up: {0},上移:{0}
 Multiple root nodes not allowed.,不允许多个根节点。
@@ -612,6 +654,8 @@ Name and Description,名称和说明
 Name is required,名称是必需的
 Name not permitted,名称不允许
 Name not set via Prompt,名称未通过设置提示
+Name of the Document Type (DocType) you want this field to be linked to. e.g. Customer,字段需要链接到的文档类型（DOCTYPE）下的名称。如客户
+Name of {0} cannot be {1},{0}的名称不能为{1}
 Naming,命名
 Naming Series mandatory,命名序列必须设置
 Nested set error. Please contact the Administrator.,嵌套设置的错误。请联系管理员。
@@ -621,30 +665,30 @@ New Record,新记录
 New comment on {0} {1},新评论{0} {1}
 New password emailed,新的密码已通过电子邮件发送
 New value to be set,新的值已被设置
+New {0},新建{0}
 Next Communcation On,下次沟通在
 Next Record,下一记录
 Next State,下一状态
 Next actions,下一步操作
 No,没有
 No Action,没有操作
-No Cache,没有缓存
 No Communication tagged with this ,没有找到此标签相关的沟通记录
 No Copy,没有复制
 No Permissions set for this criteria.,没有权限设置此条件。
 No Report Loaded. Please use query-report/[Report Name] to run a report.,无报告被加载。请使用报告查询器/ [报告名称]运行报告。
 No Results,没有结果
 No Sidebar,没有侧边栏
-No Sitemap,没有网站地图
-No User Permissions found.,没有发现用户权限。
+No User Permissions found.,用户权限没有找到
 No data found,没有找到数据
-No document selected,没有选择文档
 No file attached,没有附加的文件
 No further records,没有进一步的记录
 No one,没有人
 No permission to '{0}' {1},没有权限“{0}” {1}
 No permission to edit,无权限进行编辑
 No permission to write / remove.,没有权限写入/删除。
-No records tagged.,没有记录被打上标签。
+No records tagged.,没有记录被打上标签
+No template found at path: {0},路径{0}中没有找到模板
+No {0} permission,没有{0}的权限
 None,无
 None: End of Workflow,无:结束的工作流程
 Not Found,未找到
@@ -668,7 +712,6 @@ Not permitted,不被允许
 "Note: For best results, images must be of the same size and width must be greater than height.",注意：为达到最佳效果，图象必须具有相同的尺寸并且宽度必须大于高度。
 Note: Other permission rules may also apply,注：其它权限规则也可应用
 Note: maximum attachment size = 1mb,注：附件大小上限= 1MB
-Nothing to delete,没有可删除的记录
 Nothing to show,没有可显示的记录
 Nothing to show for this selection,此选项没有记录可显示
 Notification Count,通知次数
@@ -681,11 +724,20 @@ Only Administrator allowed to create Query / Script Reports,只有管​​理�
 Only Administrator can save a standard report. Please rename and save.,只有管​​理员可以保存标准的报告。请重新命名并保存。
 Only Allow Edit For,只允许编辑
 Only allowed {0} rows in one import,一次导入只允许导入{0}行
+Oops! Something went wrong,糟糕！发生了个小问题
 Open,打开
 Open Count,打开次数
 Open Sans,Open Sans
+Open Source Web Applications for the Web,Web应用程序
+Open a module or tool,打开一个模块或工具
+Open {0},打开{0}
+Optional: Alert will only be sent if value is a valid email id.,可选：当一个有效的电子邮件ID会发送警报通知
+Optional: Always send to these ids. Each email id on a new row,可选：总是发送给这些ID的人。每一行一个电子邮件ID
+Optional: The alert will be sent if this expression is true,可选：表达式为真的话警报会被发送
 Options,选项
+Options 'Dynamic Link' type of field must point to another Link Field with options as 'DocType','动态链接'类型的字段都必须指向另一个链接字段并且选项为'DocType'
 Options Help,选项​​帮助
+Options for select. Each option on a new line. e.g.: <br>Option 1<br>Option 2<br>Option 3<br>,选择框的选项请设置每一行作为一个选项。例如：<br>选项1<br>选项2 <br>选项3
 Options must be a valid DocType for field {0} in row {1},底{1}行的选项​​必须是有效的DocType字段 {0}
 Options not set for link field {0},对于链接字段{0}没有设置选项
 Options requried for Link or Table type field {0} in row {1},链接的选项必填或第{1}行的表类型字段{0}
@@ -696,15 +748,19 @@ Other,其他
 Outgoing Email Settings,发送电子邮件设置
 Outgoing Mail Server,发送邮件服务器
 Outgoing Mail Server not specified,未指定发送邮件服务器
+Owner,拥有者
+PDF Page Size,PDF页面大小
+PDF Settings,PDF设置
 POP3 Mail Server (e.g. pop.gmail.com),POP3邮件服务器（如：pop.gmail.com）
 Page,页面
+Page #{0} of {1},{1}页中的第{0}页
 Page Background,页面背景
-Page Border,页面边框
 Page HTML,页面的HTML
-Page Headings,页面标题
+Page Header,页眉
+Page Header Background,网页标题背景
+Page Header Text,页眉文本
 Page Links,网页链接
 Page Name,网页名称
-Page Name Field,页面名称字段
 Page Role,页面角色
 Page Text,页面文字
 Page Title,页面标题
@@ -712,7 +768,6 @@ Page content,页面内容
 Page not found,找不到网页
 Page or Generator,页面或生成器
 Page url name (auto-generated),页面的URL名称（自动生成）
-Page with name {0} already exists,页面名称{0}已存在
 Parent Label,父标签
 Parent Post,父级文章
 Parent Website Page,父网站页面
@@ -732,6 +787,7 @@ Permanently delete {0}?,永久删除{0}?
 Permission Level,权限级别
 Permission Levels,权限级别列表
 Permission Rules,权限规则列表
+Permission already set,权限已经设置
 Permissions,权限
 Permissions Settings,权限设置
 Permissions are automatically translated to Standard Reports and Searches.,权限设置会自动应用到标准报表和搜索中。
@@ -739,6 +795,7 @@ Permissions are automatically translated to Standard Reports and Searches.,权�
 Permissions at higher levels are 'Field Level' permissions. All Fields have a 'Permission Level' set against them and the rules defined at that permissions apply to the field. This is useful in case you want to hide or make certain field read-only for certain Roles.,字段权限是更高级别的权限;所有的字段都可以应用权限以及权限规则;这样你可以针对特定的角色隐藏或设置为只读
 "Permissions at level 0 are 'Document Level' permissions, i.e. they are primary for access to the document.",0级权限是“文档级”的权限，也就是说，它们是主要用于访问文档。
 Permissions get applied on Users based on what Roles they are assigned.,用户的权限是由他所在的角色的权限集合决定的。
+Permitted Documents For User,用户授权访问的文件
 Person,人
 Personal Info,个人信息
 Phone,电话
@@ -751,16 +808,26 @@ Please attach a file or set a URL,请上传一个文件或设置一个URL
 Please do not change the rows above {0},请不要更改{0}上面的行
 Please enable pop-ups,请启用弹出窗口
 Please enter Event's Date and Time!,请输入事件的日期和时间!
+"Please enter both your email and message so that we \
+				can get back to you. Thanks!","请输入您的电子邮件和消息，以便我们能尽快给您回复。\
+此致"
 Please enter some text!,请输入一些文字!
 Please enter title!,请输入标题!
 Please login to Upvote!,请登录后进行投票
 Please make sure that there are no empty columns in the file.,请确保文件中没有空列。
 Please refresh to get the latest document.,请刷新以获得最新的文档。
+Please reply above this line or remove it if you are replying below it,请这条线以上进行回复，如果你它下面回复则请删除它
 Please select a file or url,请选择一个文件或URL
 Please select atleast 1 column from {0} to sort,请从{0}至少选择一列进行排序
+Please set {0} first,请先设置{0}
 Please specify,请填写
 Please specify 'Auto Email Id' in Setup > Outgoing Email Settings,在设置>传出电子邮件设置请填写"自动电子邮件Id"
 Please specify Event date and time,请填写事件的日期和时间
+Please specify doctype,请指定文档类型
+Please specify user,请指定用户
+Please specify which date field must be checked,请指定必须检查的日期字段
+Please specify which value field must be checked,请指定必须检查的值
+Please upload using the same template as download.,请用下载的模板进行上传
 Plugin,插件
 Port,端口
 Post,发布
@@ -774,9 +841,16 @@ Previous Record,上一记录
 Primary,主要的
 Print,打印
 Print Format,打印格式
+Print Format Help,打印格式帮助
 Print Format Type,打印格式类型
+Print Format {0} does not exist,打印格式{0}不存在
+Print Format {0} is disabled,打印格式{0}被禁用
 Print Hide,打印隐藏
+Print Settings,打印设置
+Print Style,打印样式
+Print Style Preview,打印样式预览
 Print Width,打印宽度
+"Print with Letterhead, unless unchecked in a particular Document",除非在文件中指明不打印信头否则将默认打印
 Print...,打印...
 Printing and Branding,打印及品牌形象
 Priority,优先级别
@@ -788,6 +862,7 @@ Property Type,物业类型
 Public,公共的
 Published,已发布
 Published On,发表于
+Published on website at: {0},发表于网站：{0}
 Pull Emails from the Inbox and attach them as Communication records (for known contacts).,从收件箱取出电子邮件，并将它们附加为沟通记录（称为已知的联系记录）。
 Query,查询
 Query Options,查询选项
@@ -815,7 +890,6 @@ Refreshing...,刷新中...
 Registered but disabled.,注册了但已被禁用
 Registration Details Emailed.,注册资料通过电子邮件发送。
 Reload Page,加载页面
-Remove,移除
 Remove Bookmark,移除书签
 Remove all customizations?,移除所有自定义?
 Rename many items by uploading a .csv file.,通过上传.csv文件重命名多个项目(产品)。
@@ -832,10 +906,12 @@ Report Name,报告名称
 Report Type,报告类型
 Report an Issue,上报一个问题
 Report cannot be set for Single types,单一的类型不能设置报告
+Report this issue,报告此问题
 Report was not saved (there were errors),有错误发生因此报告没有被保存
 Reqd,REQD
 Reset Password Key,重设密码密钥
 Reset Permissions for {0}?,为{0}重置权限?
+Response,响应
 Restrict IP,限制IP
 Restrict user from this IP address only. Multiple IP addresses can be added by separating with commas. Also accepts partial IP addresses like (111.111.111),限制用户仅能通过此IP地址访问。多个IP地址，可以通过用逗号分隔。也接受像（111.111.111）部分的IP地址
 Right,右边
@@ -851,11 +927,15 @@ Roles HTML,角色的HTML
 Roles can be set for users from their User page.,可以在用户界面对其进行角色分配。
 Root {0} cannot be deleted,根{0}无法删除
 Row,行
+Row #{0}:,第{0}行:
 Rules defining transition of state in the workflow.,工作流状态的过渡的规则制定。
 "Rules for how states are transitions, like next state and which role is allowed to change state etc.",规则是用于指定状态怎么流转以及什么角色能够改变状态。
+Run scheduled jobs only if checked,只有勾选后才会运行定时任务
+Run the report first,首先运行报表
 SMTP Server (e.g. smtp.gmail.com),SMTP服务器（如smtp.gmail.com）
 Sales,销售
 Same file has already been attached to the record,相同的文件已经被附加到记录中
+Sample,样品/例子
 Saturday,星期六
 Save,保存
 Scheduler Log,定时计划器日志
@@ -864,6 +944,8 @@ Script Report,脚本报告
 Script Type,脚本类型
 Search,搜索
 Search Fields,搜索字段
+Search in a document type,在文档类型中搜索
+Search or type a command,搜索或输入命令
 Section Break,分节符
 Security,安全性
 Security Settings,安全设置
@@ -886,10 +968,15 @@ Select or drag across time slots to create a new event.,选择或拖动到时间
 "Select target = ""_blank"" to open in a new page.",选择target=_blank 在新页面中打开。
 Select the label after which you want to insert new field.,插入新字段后选择标签。
 Send,发送
+Send Alert On,在某时发送警报:
 Send As Email,由电​​子邮件发送
+Send Email,发送电​​子邮件
+Send Email Print Attachments as PDF (Recommended),邮件中附件以PDF格式（推荐）发送
 Send Me A Copy,给我发一份
 Send Password,发送密码
-Send Print in Body and Attachment,发送打印的正文和附件
+Send Print as PDF,以PDF发送打印命令
+Send alert if date matches this field's value,如果日期匹配该字段的值则发送警报
+Send alert if this field's value changes,如果这个字段的值改变发送警报
 Send an email reminder in the morning,在早上发送电​​子邮件提醒
 Send download link of a recent backup to System Managers,发送最近的备份的下载链接给系统管理员
 Send enquiries to this email address,发送咨询信息到这个邮箱地址
@@ -901,6 +988,7 @@ Sent or Received,已发送或已接收
 Series,系列
 Series {0} already used in {1},系列{0}已经被应用在{1}
 Server,服务器
+Server & Credentials,服务器和证书
 Server Error: Please check your server logs or contact tech support.,服务器错误：请检查您的服务器日志或联系技术支持。
 Session Expired. Logging you out,会话过期退出登录
 Session Expiry,会话过期
@@ -915,6 +1003,7 @@ Set Permissions on Document Types and Roles,为文件类型和角色设置权限
 Set Permissions per User,为用户设置权限
 Set User Permissions,设置用户权限
 Set Value,设定值
+"Set default format, page size, print style etc.",设置默认格式，页面大小，打印样式等
 Set numbering series for transactions.,为交易设置编号系列。
 Set outgoing mail server.,设置发送邮件服务器
 Settings,设置
@@ -923,17 +1012,18 @@ Settings for Contact Us Page.,联系我们页面的设置。
 Setup,架设
 Setup > User,架设>用户
 Setup > User Permissions Manager,架设>用户权限管理
+Setup Email Alert based on various criteria.,设置电子邮件警报根据不同的标准
 Setup of fonts and background.,设置字体和背景
 "Setup of top navigation bar, footer and logo.",设置顶部导航栏，页脚和徽标。
 Short Bio,个人简介
 Short Name,简称
 Shortcut,捷径方式
 Show / Hide Modules,显示/隐藏模块
-Show Details,显示详细信息
 Show Print First,首先显示打印
 Show Tags,显示标签
 Show or hide modules globally.,显示或隐藏全局模块。
 Show rows with zero values,显示值为零的行
+Show tags,显示标签
 Show this field as title,此字段的值作为标题显示
 Showing only for (if not empty),仅显示为（如果不为空）
 Sidebar,边栏
@@ -958,7 +1048,9 @@ Sort Field,排序字段
 Sort Order,排序(升或降序)
 Standard,标准
 Standard Print Format cannot be updated,标准打印格式不能被更新
+Standard Reply,标准回复
 Standard Reports,标准报告列表
+Standard replies to common queries.,常见问题的回复
 Start Report For,启动报告
 Starts on,开始于
 State,状态
@@ -978,7 +1070,6 @@ Submit,提交
 Submit an Issue,提交问题
 Submitted,已提交
 Submitted Document cannot be converted back to draft. Transition row {0},提交的文件的状态不能被转换回草稿状态
-Submitted Record cannot be deleted,提交记录不能被删除
 Success,成功
 Suggestion,建议
 Sunday,星期天
@@ -999,18 +1090,21 @@ Target,目标
 Tasks,任务列表
 Team Members,团队成员
 Team Members Heading,团队成员标题
+Template,模板
 Template Pages cannot be moved,模板页面不能被移动
-Template Path,模板路径
 Test,测试
 Test Runner,测试运行
 Text,文本
 Text Align,文本对齐
 Text Editor,文本编辑器
+Thank you for your message,谢谢您的留言
 The name of your company / website as you want to appear on browser title bar. All pages will have this as the prefix to the title.,您的公司/网站的名称: 会显示在浏览器标题栏中的名称并且所有页面都会有这样的前缀称号。
 The system provides many pre-defined roles. You can add new roles to set finer permissions.,该系统提供了许多预先定义的角色。您可以添加新的角色设定更精细的权限。
 Then By (optional),再由（可选）
+There should remain at least one System Manager,至少有一个系统管理员
 There were errors,有错误发生
 There were errors while sending email. Please try again.,在发送电子邮件时出现错误。请再试一次。
+"There were some errors setting the name, please contact the administrator",设置名称的时候发生错误，请与管理员联系
 "These permissions will apply for all transactions where the permitted record is linked. For example, if Company C is added to User Permissions of user X, user X will only be able to see transactions that has company C as a linked value.",这些权限也会被应用到被连接到的记录;例如用户X能够有访问公司C的权限;那么用户X将仅能看到所有交易中链接到公司C的交易记录。
 These values will be automatically updated in transactions and also will be useful to restrict permissions for this user on transactions containing these values.,交易中的会自动更新并且基于这些更新的值的用户权限会被应用以检查用户是否有权限进行访问。
 "These will also be set as default values for those links, if only one such permission record is defined.",如果只有一个权限记录被定义那么这个权限记录会被设置成默认的权限(针对链接记录的权限)。
@@ -1018,15 +1112,21 @@ Third Party Authentication,第三方认证
 "This field will appear only if the fieldname defined here has value OR the rules are true (examples): <br>
 myfield
 eval:doc.myfield=='My Value'<br>
-eval:doc.age>18",仅当条件表达式满足的时候此字段才会显示（例子）:查看 doc.myfield ==我的价值
+eval:doc.age>18","此字段将显示仅当定义的字段名有值或规则是真的时候;例如:查看
+ MyField的
+ EVAL：doc.myfield =='我的价值'<br> 
+ EVAL： doc.age> 18"
 This goes above the slideshow.,放置在幻灯片上面。
 This is PERMANENT action and you cannot undo. Continue?,这是永久性的操作并且你不能撤消;要继续吗?
+"This is a standard format. To make changes, please copy it make make a new format.",这是一个标准的格式。要进行更改，请复制出来一份并做出的新格式。
 This is permanent action and you cannot undo. Continue?,这是永久性的操作并且你不能撤消;要继续吗?
 This must be checked if Style Settings are applicable,如果样式设置适用这个必须被勾选
 This role update User Permissions for a user,为某个用户的角色更新权限
 Thursday,星期四
+Tile,Tile
 Time,时间
 Time Zone,时区
+Timezone,时区
 Title,标题
 Title / headline of your page,页面标题
 Title Case,标题案例
@@ -1059,22 +1159,21 @@ Unable to load: {0},无法加载:{0}
 Unable to open attached file. Please try again.,无法打开附加的文件。请再试一次。
 Unable to send emails at this time,无法在这个时候发送电子邮件
 Unknown Column: {0},未知列:{0}
-Unknown Print Format: {0},未知的打印格式;{0}
 "Unknown file encoding. Tried utf-8, windows-1250, windows-1252.",未知文件编码。尝试UTF-8，windows-1250访问，windows-1252访问。
 Unread Messages,未读消息
 Unsubscribe,退订
 Unsubscribed,已退订
-Up,向上
 Upcoming Events for Today,今日近期活动
 Update,更新
 Update Field,更新字段
-Update Parent,更新父级
 Update Value,更新值
 Updated,已更新
 Upload,上传
 Upload Attachment,上传附件
+Upload CSV file containing all user permissions in the same format as Download.,根据下载的格式把用户的权限写进文件并上传
 Upload a file,上传文件
 Upload and Import,上传和导入
+Upload and Sync,上传并同步
 Uploading...,上传中...
 Upvotes,投票
 Use TLS,使用TLS
@@ -1092,7 +1191,7 @@ User Tags,用户标签列表
 User Type,用户类型
 "User Type ""System User"" can access Desktop. ""Website User"" can only be logged into the website and portal pages. ",System user类型的用户能够访问应用桌面;Website user 仅能访问网站以及portal页面
 User Vote,用户投票
-User not allowed to delete.,用户不允许被删除。
+User not allowed to delete {0}: {1},用户不得删除{0}：{1}
 User permissions should not apply for this Link,这个链接不能应用用户权限
 User {0} cannot be deleted,用户{0}无法被删除
 User {0} cannot be disabled,用户{0}不能被禁用
@@ -1100,8 +1199,12 @@ User {0} cannot be renamed,用户{0}无法重命名
 User {0} does not exist,用户{0}不存在
 UserRole,用户角色
 Users and Permissions,用户与权限
+Valid Login id required.,需要有效的登录ID
+Valid email and name required,需要有效的电子邮件和姓名
 Users with role {0}:,有{0}角色的用户:
 Value,值
+Value Change,值变动
+Value Changed,更改的值
 Value cannot be changed for {0},值不能被改变为{0}
 Value for a check field can be either 0 or 1, 可勾选的字段值可以为0或1
 Value missing for,缺少值
@@ -1111,6 +1214,7 @@ Version restored,版本恢复
 View or manage Website Route tree.,查看或管理的网站路径树。
 Visit,访问
 Warning,警告
+Warning: This Print Format is in old style and cannot be generated via the API.,警告：此打印格式是旧式的，不能通过API生成
 Web Page,网页
 Web Site Forum Page.,网站论坛页
 Website,网站
@@ -1121,7 +1225,6 @@ Website Script,网站脚本
 Website Settings,网站设置
 Website Slideshow,网站幻灯片
 Website Slideshow Item,网站幻灯片元素
-Website Template,网站模板
 Website User,网站用户
 Wednesday,星期三
 Welcome email sent,欢迎电子邮件已发送
@@ -1130,6 +1233,7 @@ Width,宽度
 Will be used in url (usually first name).,在URL（通常是姓）将被使用。
 With Groups,与组
 With Ledgers,与分类账
+With Letterhead,与信头
 Workflow,工作流程
 Workflow Action,工作流操作
 Workflow Action Name,工作流操作名称
@@ -1156,12 +1260,17 @@ You are not allowed to print this document,你不允许打印此文档
 You are not allowed to send emails related to this document,你没有权限发送与此文档相关的电子邮件
 "You can change Submitted documents by cancelling them and then, amending them.",您可以通过取消已提交的文件然后对其进行修正更改
 You can use Customize Form to set levels on fields.,您可以使用自定义表单来设置字段的级别。
+You can use wildcard %,可以使用通配符%
 You cannot install this app,您无法安装这个应用
 You have unsaved changes in this form. Please save before you continue.,你在本表单有未保存的更改;在继续之前请保存
 You need to be logged in and have System Manager Role to be able to access backups.,您需要先登录，并具有系统管理员角色才能够访问备份。
 You need write permission to rename,你需要写权限来重新命名
+"You seem to have written your name instead of your email. \
+					Please enter a valid email address so that we can get back.","似乎已经姓名已经填写\
+请输入一个有效的电子邮件地址"
 "Your download is being built, this may take a few moments...",您的下载正在建立，这可能需要一些时间......
 [Label]:[Field Type]/[Options]:[Width],[标签]:[字段类型] / [选项列表]:[宽度]
+[Optional] Send the email X days in advance of the specified date. 0 equals same day.,[可选]指定日期X天前发送电子邮件;0意味着同一天
 add your own CSS (careful!),添加您自己的CSS（请小心!）
 adjust,调整
 align-center,对准中心
@@ -1200,6 +1309,7 @@ cog,cog
 comment,评论
 comments,评论列表
 dd-mm-yyyy,dd-mm-yyyy
+dd.mm.yyyy,dd.mm.yyyy
 dd/mm/yyyy,dd/mm/yyyy
 download,下载
 download-alt,下载的Alt
@@ -1314,9 +1424,11 @@ tint,色彩
 to,至
 trash,垃圾
 upload,上传
+use % as wildcard,使用%作为通配符
 user,用户
 user_image_show,user_image_show
 values and dates,值和日期
+values separated by commas,值用逗号分隔
 volume-down,容积下降
 volume-off,体积关
 volume-up,容积上升
@@ -1325,6 +1437,8 @@ wrench,扳手
 yyyy-mm-dd,yyyy-mm-dd
 zoom-in,放大
 zoom-out,拉远
+{0} List,{0}的列表
+{0} added,{0}已添加
 {0} by {1},{0} by {1}
 {0} cannot be set for Single types,单类型不能设置{0}
 {0} does not exist in row {1},第{1}行中不存在{0}
@@ -1333,14 +1447,18 @@ zoom-out,拉远
 {0} is required,{0}是必需的
 {0} is saved,{0}保存成功
 {0} must be one of {1},{0}必须是{1}中的一个
+{0} must be set first,{0}必须首先设置
 {0} not a valid State,{0}不是有效的状态
 {0} not allowed in fieldname {1},{0}不允许出现在字段名{1}中
 {0} not allowed in name,名称中不能包含{0}
 {0} not allowed to be renamed,{0}不能够被重命名
 {0} updated,{0}已被更新
 {0} {1} already exists,{0} {1}已经存在
+"{0} {1} cannot be ""{2}"". It should be one of ""{3}""",{0} {1}不能为'{2}'。它应该是'{3}'中的一个
 {0} {1} cannot be a leaf node as it has children,{0} {1}不能是一个叶节点，因为它有子节点
 "{0} {1} does not exist, select a new target to merge",{0} {1}不存在，选择一个新的目标合并
+{0} {1} not found,{0} {1}未找到
+{0} {1}: Submitted Record cannot be deleted.,{0} {1}：记录状态为已提交的不能被删除。
 {0}: Cannot set Amend without Cancel,{0}没有取消的权限的话是不能更改操作的
 {0}: Cannot set Assign Amend if not Submittable,{0}状态不是可提交权限的话是不能指派修改权限的
 {0}: Cannot set Assign Submit if not Submittable,{0}状态不是可提交权限的话是不能指派提交权限的
