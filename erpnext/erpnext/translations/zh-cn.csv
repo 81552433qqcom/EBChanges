@@ -2485,22 +2485,18 @@ Row # {0}: , 行 # {0}
 Row #{0}: Ordered qty can not less than item's minimum order qty (defined in item master).,行#{0}：订购数量不能少于商品的最低订单数量(在商品主数据中定义)
 Row #{0}: Please specify Serial No for Item {1},行#{0}：请注明商品序号{1}
 "Row {0}: Account does not match with \
-						Purchase Invoice Credit To account","行{0}：\
-Account does not match with Purchase Invoice Credit To account"
+						Purchase Invoice Credit To account",行{0}：Account does not match with Purchase Invoice Credit To account
 “Row {0}: Account does not match with \
-						Sales Invoice Debit To account","行{0}：\
-Account does not match with Sales Invoice Debit To account"
+						Sales Invoice Debit To account",行{0}：Account does not match with Sales Invoice Debit To account
 Row {0}: Conversion Factor is mandatory,行{0}：转换系数是强制性的
 Row {0}: Credit entry can not be linked with a Purchase Invoice,Row {0}: Credit entry can not be linked with a Purchase Invoice
 Row {0}: Debit entry can not be linked with a Sales Invoice,Row {0}: Debit entry can not be linked with a Sales Invoice
 Row {0}: Payment amount must be less than or equals to invoice outstanding amount. Please refer Note below.,行{0}：付款金额必须小于或等于发票未付金额。请参考下面的说明。
 Row {0}: Qty is mandatory,行{0}：数量是强制性的
 "Row {0}: Qty not avalable in warehouse {1} on {2} {3}.
-					Available Qty: {4}, Transfer Qty: {5}","行{0}：仓库{1}数量中在{2} {3}中不可用
-有货数量：{4}，转移数量：{5}"
+					Available Qty: {4}, Transfer Qty: {5}",行{0}：仓库{1}数量中在{2} {3}中不可用;有货数量:{4}，转移数量:{5}
 "Row {0}: To set {1} periodicity, difference between from and to date \
-						must be greater than or equal to {2}","行{0}：设置{1}的周期性，\
-开始日期和结束日期之间的天数必须大于或等于{2}"
+						must be greater than or equal to {2}",行{0}：设置{1}的周期性，开始日期和结束日期之间的天数必须大于或等于{2}
 Row {0}:Start Date must be before End Date,行{0} ：开始日期必须在结束日期之前
 Rules for adding shipping costs.,增加运输成本的规则。
 Rules for applying pricing and discount.,定价和折扣的规则。
