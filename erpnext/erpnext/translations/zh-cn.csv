@@ -1475,7 +1475,7 @@ Item: {0} not found in the system,商品:{0}没有在系统中找到
 Items,商品
 Items To Be Requested,所需商品
 Items required,所需商品
-"Items to be requested which are ""Out of Stock"" considering all warehouses based on projected qty and minimum order qty",有需要而又"缺货"的商品得根据预计数量和最小起订量为所有仓库优化
+"Items to be requested which are ""Out of Stock"" considering all warehouses based on projected qty and minimum order qty",有需要而又'缺货'的商品得根据预计数量和最小起订量为所有仓库优化
 Items which do not exist in Item master can also be entered on customer's request,在商品主数据不存在的商品页可以基于用户的需求进行输入
 Itemwise Discount,商品折扣
 Itemwise Recommended Reorder Level,商品推荐的记录层次
