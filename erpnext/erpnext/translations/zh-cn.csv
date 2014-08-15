@@ -927,7 +927,7 @@ Email Digest,电子邮件摘要
 Email Digest Settings,电子邮件摘要设置
 Email Digest: ,电子邮件摘要:
 Email Id,电子邮件Id
-"Email Id where a job applicant will email e.g. ""jobs@example.com""",应聘者将要发邮件进行应聘的邮箱例如"jobs@example.com"
+"Email Id where a job applicant will email e.g. ""jobs@example.com""",应聘者将要发邮件进行应聘的邮箱例如jobs@example.com
 Email Notifications,电子邮件通知
 Email Sent?,邮件发送成功?
 "Email id must be unique, already exists for {0}",已经存在{0};电子邮件ID必须是唯一的
