@@ -14,7 +14,6 @@
 % of materials delivered against this Sales Order,销售订单物料交付(%)
 % of materials ordered against this Material Request,物料申请中已下单物料(%)
 % of materials received against this Purchase Order,采购订单中已收到的物料(%)
-%(conversion_rate_label)s is mandatory. Maybe Currency Exchange record is not created for %(from_currency)s to %(to_currency)s,%(conversion_rate_label)s 是必填的. 可能是汇率关系在系统中没有建立起来: %(from_currency)s to %(to_currency)s
 'Actual Start Date' can not be greater than 'Actual End Date','实际开始日期'不能大于'实际结束日期'
 'Based On' and 'Group By' can not be same,"基于"和"分组"的字段不能相同
 'Days Since Last Order' must be greater than or equal to zero,"上次最后订购日到今天"的天数必须大于或等于零
@@ -30,11 +29,35 @@
 'Update Stock' for Sales Invoice {0} must be set,销售发票{0}必须设置'更新库存'
 * Will be calculated in the transaction.,*将被计算在该交易中.
 "1 Currency = [?] Fraction
-For e.g. 1 USD = 100 Cent",1货币单位= [?]另一货币单位 例如1角=10分
+For e.g. 1 USD = 100 Cent","1美元= [?]美分
+如1美元= 100美分"
 1. To maintain the customer wise item code and to make them searchable based on their code use this option,1. 使用这个选项可让其是可被搜索的并且可以维护针对客户智能项目代码
 "<a href=""#Sales Browser/Customer Group"">Add / Edit</a>","<a href=""#Sales Browser/Customer Group"">添加/编辑</a>"
 "<a href=""#Sales Browser/Item Group"">Add / Edit</a>","<a href=""#Sales Browser/Item Group"">添加/编辑</a>"
 "<a href=""#Sales Browser/Territory"">Add / Edit</a>","<a href=""#Sales Browser/Territory"">添加/编辑</a>"
+"<h4>Default Template</h4>
+<p>Uses <a href=""http://jinja.pocoo.org/docs/templates/"">Jinja Templating</a> and all the fields of Address (including Custom Fields if any) will be available</p>
+<pre><code>{{ address_line1 }}&lt;br&gt;
+{% if address_line2 %}{{ address_line2 }}&lt;br&gt;{% endif -%}
+{{ city }}&lt;br&gt;
+{% if state %}{{ state }}&lt;br&gt;{% endif -%}
+{% if pincode %} PIN:  {{ pincode }}&lt;br&gt;{% endif -%}
+{{ country }}&lt;br&gt;
+{% if phone %}Phone: {{ phone }}&lt;br&gt;{% endif -%}
+{% if fax %}Fax: {{ fax }}&lt;br&gt;{% endif -%}
+{% if email_id %}Email: {{ email_id }}&lt;br&gt;{% endif -%}
+</code></pre>","<h4>默认模板</h4>
+<p>使用 <a href=""http://jinja.pocoo.org/docs/templates/"">Jinja 模板引擎</a> 地址的所有字段(包括自定义字段)都可用</p>
+<pre><code>{{ address_line1 }}&lt;br&gt;
+{% if address_line2 %}{{ address_line2 }}&lt;br&gt;{% endif -%}
+{{ city }}&lt;br&gt;
+{% if state %}{{ state }}&lt;br&gt;{% endif -%}
+{% if pincode %} 邮编:  {{ pincode }}&lt;br&gt;{% endif -%}
+{{ country }}&lt;br&gt;
+{% if phone %}电话: {{ phone }}&lt;br&gt;{% endif -%}
+{% if fax %}传真: {{ fax }}&lt;br&gt;{% endif -%}
+{% if email_id %}邮件: {{ email_id }}&lt;br&gt;{% endif -%}
+</code></pre>"
 A Customer Group exists with same name please change the Customer name or rename the Customer Group,客户群组存在具有相同名称;请更改客户姓名或重命名客户群组
 A Customer exists with same name,存在具有相同的顾客姓名
 A Lead with this email id should exist,一个销售引子使用此邮件地址的应该已存在
@@ -44,7 +67,6 @@ A symbol for this currency. For e.g. $,货币符号.例如美元是$
 AMC Expiry Date,AMC到期时间
 Abbr,缩写
 Abbreviation cannot have more than 5 characters,缩写不能超过5个字符
-About,关于
 Above Value,上述值
 Absent,缺席(不存在)
 Acceptance Criteria,验收标准
@@ -59,6 +81,8 @@ Account Details,帐户明细
 Account Head,户头
 Account Name,帐户名称
 Account Type,账户类型
+"Account balance already in Credit, you are not allowed to set 'Balance Must Be' as 'Debit'",帐户余额已在贷方，不允许设置'余额必须是'为'贷方'
+"Account balance already in Debit, you are not allowed to set 'Balance Must Be' as 'Credit'",帐户余额已在借方，不允许设置'余额必须是'为'借方'
 Account for the warehouse (Perpetual Inventory) will be created under this Account.,在此账户下将创建库存账户(账面盘存制)
 Account head {0} created,户头{0}已创建
 Account must be a balance sheet account,帐户必须是资产负债表类账户
@@ -68,13 +92,20 @@ Account with existing transaction can not be deleted,帐户与现有的交易不
 Account with existing transaction cannot be converted to ledger,帐户与现有的事务不能被转换为总分类账
 Account {0} cannot be a Group,帐户{0}不能为一个组
 Account {0} does not belong to Company {1},帐户{0}不属于公司{1}
+Account {0} does not belong to company: {1},帐户{0}不属于公司:{1}
 Account {0} does not exist,帐户{0}不存在
 Account {0} has been entered more than once for fiscal year {1},帐户{0}已被多次输入年度会计{1}
 Account {0} is frozen,帐户{0}被冻结
-Account {0} is inactive,帐户{0}是无效的
+Account {0} is inactive,帐户{0}是未激活的
+Account {0} is not valid,帐户{0}是无效的
 Account {0} must be of type 'Fixed Asset' as Item {1} is an Asset Item,帐户{0}的类型必须为'固定资产'因为{1}是一个资产类项
+Account {0}: Parent account {1} can not be a ledger,帐户{0}：父帐户{1}不能是分类账
+Account {0}: Parent account {1} does not belong to company: {2},帐户{0}:其父帐户{1}不属于公司:{2}
+Account {0}: Parent account {1} does not exist,帐户{0}:父帐户{1}不存在
+Account {0}: You can not assign itself as parent account,帐户{0}：不能将自身设置为父帐户
 "Account: {0} can only be updated via \
-					Stock Transactions",帐户: {0}只能通过库存更新
+					Stock Transactions","帐号：\
+{0}只能通过库存交易更新"
 Accountant,会计人员
 Accounting,会计账目
 "Accounting Entries can be made against leaf nodes, called",会计分录可以对叶节点进行操作，称为
@@ -124,6 +155,7 @@ Address Details,详细地址
 Address HTML,地址HTML
 Address Line 1,地址行1
 Address Line 2,地址行2
+Address Template,地址模板
 Address Title,地址名称
 Address Title is mandatory.,地址标题是必填的
 Address Type,地址类型
@@ -144,7 +176,6 @@ Against Docname,对于DocName
 Against Doctype,对于文档类型
 Against Document Detail No,对于文档详情编号
 Against Document No,对于文件编号
-Against Entries,对于分录
 Against Expense Account,对于费用帐户
 Against Income Account,对于收入账户
 Against Journal Voucher,对于记帐凭证
@@ -180,10 +211,8 @@ All Territories,所有的区域(分管区域)
 "All export related fields like currency, conversion rate, export total, export grand total etc are available in Delivery Note, POS, Quotation, Sales Invoice, Sales Order etc.",像货币，转换率，进出口总额，出口总计等所有可以导出的项均在在送货单， POS机，报价单，销售发票，销售订单可体现出来
 "All import related fields like currency, conversion rate, import total, import grand total etc are available in Purchase Receipt, Supplier Quotation, Purchase Invoice, Purchase Order etc.",像货币，转换率，总进口，进口总计等均可在入库单，供应商报价单，采购发票，采购订单等体现出来
 All items have already been invoiced,所有项均已开具发票
-All items have already been transferred for this Production Order.,所有的物品均已经被转移至该生产订单。
 All these items have already been invoiced,所有这些项均已开具发票
 Allocate,分配
-Allocate Amount Automatically,自动分配数量
 Allocate leaves for a period.,分配离开一段时间
 Allocate leaves for the year.,分配离开一年
 Allocated Amount,分配的金额
@@ -204,13 +233,13 @@ Allow Users,允许用户
 Allow the following users to approve Leave Applications for block days.,允许以下用户批准离开申请的天数
 Allow user to edit Price List Rate in transactions,在交易中允许用户编辑价目表
 Allowance Percent,默许的百分比
-Allowance for over-delivery / over-billing crossed for Item {0},项{0}的多发货/多付款的容忍度
+Allowance for over-{0} crossed for Item {1},商品{1}的{0}的过界允许范围
+Allowance for over-{0} crossed for Item {1}.,商品{1}的{0}的过界允许范围.
 Allowed Role to Edit Entries Before Frozen Date,在冻结日期前允许角色编辑
 Amended From,从修订
 Amount,总额
 Amount (Company Currency),金额（公司货币）
-Amount <=,总额<=
-Amount >=,总额>=
+Amount Paid,已支付的款项
 Amount to Bill,帐单总额
 An Customer exists with same name,一个客户存在具有相同名称
 "An Item Group exists with same name, please change the item name or rename the item group",物品组存在具有相同名称，请更改物品名称或重命名的物品组
@@ -260,6 +289,7 @@ As per Stock UOM,按库存计量单位
 Asset,资产
 Assistant,助理
 Associate,关联
+Atleast one of the Selling or Buying must be selected,必须选择至少一个销售或采购
 Atleast one warehouse is mandatory,至少得有一个仓库
 Attach Image,上传图片
 Attach Letterhead,上传信头
@@ -319,6 +349,7 @@ Balance for Account {0} must always be {1},帐户{0}的余额必须等于{1}
 Balance must be,余额必须是
 "Balances of Accounts of type ""Bank"" or ""Cash""",银行或者现金类型的账户余额
 Bank,银行
+Bank / Cash Account,银行/现金账户
 Bank A/C No.,银行账户
 Bank Account,银行帐户
 Bank Account No.,银行账号
@@ -397,18 +428,24 @@ Budget Distribution Details,预算分配明细
 Budget Variance Report,预算差异报告
 Budget cannot be set for Group Cost Centers,预算不能设置在组成本中心
 Build Report,创建报表
-Built on,创建于
 Bundle items at time of sale.,捆绑销售
 Business Development Manager,业务开拓经理
 Buying,采购
 Buying & Selling,采购与销售
 Buying Amount,采购金额
 Buying Settings,采购设置
+"Buying must be checked, if Applicable For is selected as {0}",如果适用于选择为{0}则采购必须被勾选
 C-Form,C-Form
 C-Form Applicable,C-Form适用
 C-Form Invoice Detail,C-Form发票明细
 C-Form No,C-Form编号
 C-Form records,C-Form记录
+CENVAT Capital Goods,CENVAT资本
+CENVAT Edu Cess,CENVAT教育税
+CENVAT SHE Cess,CENVAT SHE Cess
+CENVAT Service Tax,CENVAT服务税
+CENVAT Service Tax Cess 1,CENVAT服务税附加税1
+CENVAT Service Tax Cess 2,CENVAT服务税附加税2
 Calculate Based On,基于下值计算:
 Calculate Total Score,计算总分
 Calendar Events,日历事件
@@ -432,7 +469,7 @@ Cannot approve leave as you are not authorized to approve leaves on Block Dates,
 Cannot cancel because Employee {0} is already approved for {1},不能取消，因为针对{1}而言员工{0}已经被批准
 Cannot cancel because submitted Stock Entry {0} exists,不能取消，因为提交状态的库存项{0}已存在
 Cannot carry forward {0},不能转发{0}
-Cannot change Year Start Date and Year End Date once the Fiscal Year is saved.,当财年已经被设置好后不能改变财年的开始以及结束日期
+Cannot change Fiscal Year Start Date and Fiscal Year End Date once the Fiscal Year is saved.,当财年已经被设置好后不能改变财年的开始以及结束日期
 "Cannot change company's default currency, because there are existing transactions. Transactions must be cancelled to change the default currency.",由于存在现有交易因此不能更改公司的默认货币;如果要更改请先取消掉所有的交易
 Cannot convert Cost Center to ledger as it has child nodes,不能成本中心转换为总账;因为它有子节点
 Cannot covert to Group because Master Type or Account Type is selected.,不能转换成组因为主类型或帐户类型已被选择
@@ -441,7 +478,7 @@ Cannot deactive or cancle BOM as it is linked with other BOMs,不能取消或禁
 Cannot deduct when category is for 'Valuation' or 'Valuation and Total',当类别为'估值'或'估值及总和'时不能进行抵扣
 "Cannot delete Serial No {0} in stock. First remove from stock, then delete.",不能将编号{0}删除;请首先从库存中移除然后再删除
 "Cannot directly set amount. For 'Actual' charge type, use the rate field",不能直接设置金额;对于'实际'缴费类型请用比率字段
-"Cannot overbill for Item {0} in row {0} more than {1}. To allow overbilling, please set in 'Setup' > 'Global Defaults'",第{0}行中的项{0}不能比{1}更多而超支;要允许超收;请在'设置> 全球默认值'中进行设置
+"Cannot overbill for Item {0} in row {0} more than {1}. To allow overbilling, please set in Stock Settings",第{0}行中的项{0}不能比{1}更多而超支;要允许超支请在库存设置中进行设置
 Cannot produce more Item {0} than Sales Order quantity {1},不能比销售订单数量{1}生产出更多的{0}
 Cannot refer row number greater than or equal to current row number for this Charge type,对于这种Charge type可以参考比当前行号大或者等于的行
 Cannot return more than {0} for Item {1},项{1}而言不能返回超过{0}
@@ -504,6 +541,8 @@ Click on a link to get options to expand get options ,点击链接来得到选�
 Client,客户
 Close Balance Sheet and book Profit or Loss.,关闭资产负债表和账面利润或亏损
 Closed,已关闭
+Closing (Cr),关闭（Cr）
+Closing (Dr),关闭（Dr）
 Closing Account Head,Closing Account Head
 Closing Account {0} must be of type 'Liability',决算账户{0}类型必须是'债务'
 Closing Date,截止日期
@@ -514,7 +553,9 @@ CoA Help,COA帮助
 Code,编码
 Cold Calling,Cold Calling
 Color,颜色
+Column Break,分栏符
 Comma separated list of email addresses,逗号分隔的电子邮件地址列表
+Comment,评论
 Comments,评论
 Commercial,广告
 Commission,佣金
@@ -599,7 +640,6 @@ Cosmetics,化妆品
 Cost Center,成本中心
 Cost Center Details,成本中心明细
 Cost Center Name,成本中心名称
-Cost Center is mandatory for Item {0},项{0}的成本中心是强制性的
 Cost Center is required for 'Profit and Loss' account {0},'损益'账户{0}的成本中心是必需的
 Cost Center is required in row {0} in Taxes table for type {1},类型{1}在税率表的行{0}的成本中心必须的
 Cost Center with existing transactions can not be converted to group,现有交易的成本中心不能转化为组
@@ -609,6 +649,7 @@ Cost of Goods Sold,销货成本
 Costing,成本核算
 Country,国家
 Country Name,国家名称
+Country wise default Address Templates,国家默认地址模板
 "Country, Timezone and Currency",国家时区和货币
 Create Bank Voucher for the total salary paid for the above selected criteria, 基于所选条件为已付薪金创建银行凭证
 Create Customer,创建客户
@@ -662,10 +703,12 @@ Customer (Receivable) Account,客户(应收)帐
 Customer / Item Name,客户/项目名称
 Customer / Lead Address,客户/机会地址
 Customer / Lead Name,客户/机会名称
+Customer > Customer Group > Territory,客户>客户组>区域
 Customer Account Head,客户户头
 Customer Acquisition and Loyalty,客户获得以及忠诚度
 Customer Address,客户地址
-Customer Addresses And Contacts,客户的地址和联系方式
+Customer Addresses And Contacts,客户地址和联系方式
+Customer Addresses and Contacts,客户地址和联系方式
 Customer Code,客户代码
 Customer Codes,客户代码
 Customer Details,客户详细信息
@@ -727,6 +770,8 @@ Deduction1,Deduction1
 Deductions,扣除
 Default,默认
 Default Account,默认帐户
+Default Address Template cannot be deleted,默认地址模板不能被删除
+Default Amount,默认金额或数量
 Default BOM,默认的物料清单
 Default Bank / Cash account will be automatically updated in POS Invoice when this mode is selected.,当选择此模式后;默认银行/现金帐户将自动在POS机发票时更新
 Default Bank Account,默认银行账户
@@ -734,7 +779,6 @@ Default Buying Cost Center,默认购买成本中心
 Default Buying Price List,默认采购价格表
 Default Cash Account,默认的现金账户
 Default Company,默认公司
-Default Cost Center for tracking expense for this item.,这个商品默认的成本中心来跟踪支出
 Default Currency,默认货币
 Default Customer Group,默认客户组
 Default Expense Account,默认费用帐户
@@ -761,6 +805,7 @@ Default settings for selling transactions.,卖出交易的默认设置
 Default settings for stock transactions.,库存事务的默认设置
 Defense,Defense
 "Define Budget for this Cost Center. To set budget action, see <a href=""#!List/Company"">Company Master</a>","为成本中心设置预算<a href=""#!List/Company"">公司主数据</a>"
+Del,删除
 Delete,删除
 Delete {0} {1}?,删除{0} {1}?
 Delivered,已交付
@@ -809,6 +854,7 @@ Discount (%),折扣(%)
 Discount Amount,折扣金额
 "Discount Fields will be available in Purchase Order, Purchase Receipt, Purchase Invoice",采购订单，采购入库单，采购发票中折扣字段均可用
 Discount Percentage,折扣百分比
+Discount Percentage can be applied either against a Price List or for all Price List.,折扣百分比可以应用于对一个价目表或所有价目表。
 Discount must be less than 100,折扣必须小于100
 Discount(%),折扣(%)
 Dispatch,调度
@@ -840,8 +886,9 @@ Download Reconcilation Data,下载汇总数据
 Download Template,下载模板
 Download a report containing all raw materials with their latest inventory status,下载一个包含所有原料信息以及他们最新的库存状态的报告
 "Download the Template, fill appropriate data and attach the modified file.",下载模板，填写相应的数据，并上传修改后的文件
-"Download the Template, fill appropriate data and attach the modified file.", 下载模板，填写相应的数据，并上传修改后的文件
-"All dates and employee combination in the selected period will come in the template, with existing attendance records",在所选日期范围所有的员工的考勤记录都会出现在模板里面
+"Download the Template, fill appropriate data and attach the modified file.
+All dates and employee combination in the selected period will come in the template, with existing attendance records","下载模板，填写相应的数据，并上传修改后的文件
+在所选日期范围所有的员工的考勤记录都会出现在模板里面"
 Draft,草稿
 Dropbox,Dropbox的
 Dropbox Access Allowed,Dropbox允许访问
@@ -863,6 +910,9 @@ Earning & Deduction,收入及扣除
 Earning Type,收入类型
 Earning1,Earning1
 Edit,编辑
+Edu. Cess on Excise,Edu. Cess on Excise
+Edu. Cess on Service Tax,Edu. Cess on Service Tax
+Edu. Cess on TDS,Edu. Cess on TDS
 Education,教育
 Educational Qualification,学历
 Educational Qualification Details,学历详情
@@ -937,16 +987,27 @@ Enter url parameter for receiver nos,输入接收方URL参数
 Entertainment & Leisure,娱乐休闲
 Entertainment Expenses,娱乐费用
 Entries,录入
-Entries against,为以下录入:
+Entries against ,为以下录入:
 Entries are not allowed against this Fiscal Year if the year is closed.,如果财年结束则不允许为此财年录入
-Entries before {0} are frozen,{0}被冻结前的录入
 Equity,公平
 Error: {0} > {1},错误:{0} > {1}
 Estimated Material Cost,估算的物料成本
+"Even if there are multiple Pricing Rules with highest priority, then following internal priorities are applied:",即使有更高优先级的多个定价规则，其为按照内部优先级应用：
 Everyone can read,每个人都可以查看
 "Example: ABCD.#####
-If series is set and Serial No is not mentioned in transactions, then automatic serial number will be created based on this series. If you always want to explicitly mention Serial Nos for this item. leave this blank.",如果序列号已设置并且交易编号没有指定;则基于序列号的编号会自动创建出来(主动留空)
+If series is set and Serial No is not mentioned in transactions, then automatic serial number will be created based on this series. If you always want to explicitly mention Serial Nos for this item. leave this blank.","如果序列号已设置并且交易编号没有指定;
+则基于序列号的编号会自动创建出来(主动留空)"
 Exchange Rate,汇率
+Excise Duty 10,消费税10
+Excise Duty 14,消费税14
+Excise Duty 4,消费税4
+Excise Duty 8,消费税8
+Excise Duty @ 10,消费税@ 10
+Excise Duty @ 14,消费税@ 14
+Excise Duty @ 4,消费税@ 4
+Excise Duty @ 8,消费税@ 8
+Excise Duty Edu Cess 2,Excise Duty Edu Cess 2
+Excise Duty SHE Cess 1,Excise Duty SHE Cess 1
 Excise Page Number,消费页码
 Excise Voucher,消费凭证
 Execution,执行
@@ -965,6 +1026,7 @@ Expected Delivery Date cannot be before Sales Order Date,预计交货日期不�
 Expected End Date,预计结束日期
 Expected Start Date,预计开始日期
 Expense,费用
+Expense / Difference account ({0}) must be a 'Profit or Loss' account,费用/差异帐户({0})必须是一个'利润或亏损'的账户
 Expense Account,开支帐户
 Expense Account is mandatory,开支帐户是必需的
 Expense Claim,报销
@@ -1015,12 +1077,16 @@ Finished Goods,成品
 First Name,姓
 First Responded On,首先回应于
 Fiscal Year,财政年度
+Fiscal Year Start Date and Fiscal Year End Date are already set in Fiscal Year {0},会计年度开始日期和会计年度结束日期已经在财年中进行设置{0}
+Fiscal Year Start Date and Fiscal Year End Date cannot be more than a year apart.,会计年度开始日期和会计年度结束日期不能超过相隔一年
+Fiscal Year Start Date should not be greater than Fiscal Year End Date,会计年度开始日期应不大于会计年度结束日期
 Fixed Asset,固定资产
 Fixed Assets,固定资产
 Follow via Email,通过电子邮件跟进
 "Following table will show values if items are sub - contracted. These values will be fetched from the master of ""Bill of Materials"" of sub - contracted items.",下表将显示总值;如果一些商品在子合同中;那么这些值也将会从这些自合同的物料请求的主数据中提取出来
 Food,食物
 "Food, Beverage & Tobacco",食品，饮料与烟草
+"For 'Sales BOM' items, Warehouse, Serial No and Batch No will be considered from the 'Packing List' table. If Warehouse and Batch No are same for all packing items for any 'Sales BOM' item, those values can be entered in the main Item table, values will be copied to 'Packing List' table.",对于销售物料清单而言: 仓库，序列号和批次号被认为从“装箱单”表中而来。如果任何销售物料清单的仓库和批号都是相同的，那么这些值可以在商品主表中进行输入，然后值将被复制到”装箱单“的表。
 For Company,对于公司
 For Employee,对于员工
 For Employee Name,对于员工姓名
@@ -1049,8 +1115,10 @@ From Currency,从货币
 From Currency and To Currency cannot be same,货币不能相同
 From Customer,从客户
 From Customer Issue,从客户问题
-From Date,从日期
+From Date,开始日期
+From Date cannot be greater than To Date,开始日期不能大于结束日期
 From Date must be before To Date,开始日期必须早于结束日期
+From Date should be within the Fiscal Year. Assuming From Date = {0},开始日期应该是在会计年度内。假设开始日期  ={0}
 From Delivery Note,从送货单
 From Employee,从员工
 From Lead,从销售引子
@@ -1072,7 +1140,9 @@ Frozen Accounts Modifier,冻结帐户修改
 Fulfilled,适合
 Full Name,全名
 Full-time,全日制
+Fully Billed,全额支付
 Fully Completed,全面完成
+Fully Delivered,完全交付
 Furniture and Fixture,家具及固定装置
 Further accounts can be made under Groups but entries can be made against Ledger,可以在组下继续创建账号但录入必须在分类账上
 "Further accounts can be made under Groups, but entries can be made against Ledger",可以在组下继续创建账号但录入必须在分类账上
@@ -1090,7 +1160,6 @@ Generate Schedule,生成时间表
 Generates HTML to include selected image in the description,生成HTML包括所选图像的描述
 Get Advances Paid,查看预付款
 Get Advances Received,查看已收预付款
-Get Against Entries,查看录入的数据
 Get Current Stock,查看那当前库存
 Get Items,查看商品
 Get Items From Sales Orders,查看销售订单的商品
@@ -1103,6 +1172,7 @@ Get Specification Details,查看详细规格
 Get Stock and Rate,查看库存和比率
 Get Template,查看模板
 Get Terms and Conditions,查看条款和条件
+Get Unreconciled Entries,获取未调整条目
 Get Weekly Off Dates,查看每周休息日期
 "Get valuation rate and available stock at source/target warehouse on mentioned posting date-time. If serialized item, please press this button after entering serial nos.",查看过账日期源/目标仓库估值率和可用库存;如果是序列化的商品请输入序列号后按下此按钮
 Global Defaults,全局默认值
@@ -1171,6 +1241,7 @@ Hour,小时
 Hour Rate,计时工资
 Hour Rate Labour,工时率
 Hours,小时
+How Pricing Rule is applied?,定价规则如何被应用？
 How frequently?,多久？
 "How should this currency be formatted? If not set, will use system defaults",货币进行格式化？如果没有设置，将使用系统默认
 Human Resources,人力资源
@@ -1187,12 +1258,15 @@ If different than customer address,如果和客户的地址不同
 "If disable, 'Rounded Total' field will not be visible in any transaction",如果禁用，'Rounded Total'字段将在任何交易中不可见
 "If enabled, the system will post accounting entries for inventory automatically.",如果启用，系统将自动为库存创建会计分录
 If more than one package of the same type (for print),如果同一类型不止一个相同的包(用于打印）
+"If multiple Pricing Rules continue to prevail, users are asked to set Priority manually to resolve conflict.",如果有多个定价规则冲突，用户则会被要求手动设置优先级来解决冲突。
 "If no change in either Quantity or Valuation Rate, leave the cell blank.",如果数量或估价率没有变化，则这一列留空
 If not applicable please enter: NA,如果不适用，请输入: NA
 "If not checked, the list will have to be added to each Department where it has to be applied.",如果未选中，则列表将被添加到每个被应用到的部门
+"If selected Pricing Rule is made for 'Price', it will overwrite Price List. Pricing Rule price is the final price, so no further discount should be applied. Hence, in transactions like Sales Order, Purchase Order etc, it will be fetched in 'Rate' field, rather than 'Price List Rate' field.",如果是'价格'的定价规则，它会将规则应用到价目表并且定价规则价格是最终价格，所以没有进一步的折扣会被适用。因此，在像销售订单，采购订单等交易中，将使用“比率”字段，而不是使用'价格表比率“字段。
 "If specified, send the newsletter using this email address",如果指定了，使用这个电子邮件地址发送电子报
 "If the account is frozen, entries are allowed to restricted users.",如果帐户被冻结，那么只有少数被授权的用户能够操作
 "If this Account represents a Customer, Supplier or Employee, set it here.",如果该帐户代表一个客户，供应商或员工，请在这里设置
+"If two or more Pricing Rules are found based on the above conditions, Priority is applied. Priority is a number between 0 to 20 while default value is zero (blank). Higher number means it will take precedence if there are multiple Pricing Rules with same conditions.",如果根据上述条件发现两个或更多个定价规则，则根据优先级进行应用。优先级是一个介于0到20的数值，而默认值为零（留空）。数字越大，意味着它优先级别越高。
 If you follow Quality Inspection. Enables Item QA Required and QA No in Purchase Receipt,如果你遵循质量检验。采购入库单中启用要求质量保证以及质量保证编号
 If you have Sales Team and Sale Partners (Channel Partners)  they can be tagged and maintain their contribution in the sales activity,如果你有销售团队和销售合作伙伴（渠道合作伙伴），他们可以被标记并维持其在销售的贡献
 "If you have created a standard template in Purchase Taxes and Charges Master, select one and click on the button below.",如果您为购置税和费用主数据创建一个标准的模板，请选择一个然后点击下面的按钮
@@ -1200,6 +1274,7 @@ If you have Sales Team and Sale Partners (Channel Partners)  they can be tagged 
 "If you have long print formats, this feature can be used to split the page to be printed on multiple pages with all headers and footers on each page",如果你有很长的需要打印，这个功能可以被用来分割要打印多个页面，每个页面上的都有页眉和页脚
 If you involve in manufacturing activity. Enables Item 'Is Manufactured',如果涉及到生产制造请启用'是被生产的'选型
 Ignore,忽略
+Ignore Pricing Rule,忽略定价规则
 Ignored: ,已忽略:
 Image,图像
 Image View,查看图像
@@ -1236,8 +1311,9 @@ Income booked for the digest period,消化期的收益入账
 Incoming,收益
 Incoming Rate,收益率
 Incoming quality inspection.,来料质量检验
+Incorrect number of General Ledger Entries found. You might have selected a wrong Account in the transaction.,总帐条目中找到不正确的数目。你可能在交易中选择了错误的帐户。
 Incorrect or Inactive BOM {0} for Item {1} at row {2},第{2}行产品{1}的物料清单(BOM){0}不正确或未激活
-Indicates that the package is a part of this delivery,指明该包是交付的一部分
+Indicates that the package is a part of this delivery (Only Draft),指明该包是交付的一部分(仅是草稿状态)
 Indirect Expenses,间接费用
 Indirect Income,间接收入
 Individual,个人
@@ -1263,6 +1339,7 @@ Intern,实习生
 Internal,内部
 Internet Publishing,互联网出版
 Introduction,介绍
+Invalid Barcode,无效的条码
 Invalid Barcode or Serial No,无效的条码或序列号
 Invalid Mail Server. Please rectify and try again.,无效的邮件服务器。请纠正然后再试一次。
 Invalid Master Name,无效的数据名称
@@ -1275,9 +1352,12 @@ Investments,投资
 Invoice Date,发票日期
 Invoice Details,发票明细
 Invoice No,发票号码
-Invoice Period From Date,发票周期开始日期
+Invoice Number,发票号码
+Invoice Period From,发票日期时间段
 Invoice Period From and Invoice Period To dates mandatory for recurring invoice,经常性发票的开始日期和结束日期都是必须的
-Invoice Period To Date,发票周期结束日期
+Invoice Period To,发票的结束日期
+Invoice Type,发票类型
+Invoice/Journal Voucher Details,发票/记帐凭证详细信息
 Invoiced Amount (Exculsive Tax),发票金额(不包括税金)
 Is Active,是有效的
 Is Advance,是提前的
@@ -1308,6 +1388,7 @@ Item Advanced,商品高级选项
 Item Barcode,商品条码
 Item Batch Nos,商品批号
 Item Code,商品编码
+Item Code > Item Group > Brand,商品编号>商品组>品牌
 Item Code and Warehouse should already exist.,商品编码和仓库应该已经存在
 Item Code cannot be changed for Serial No.,商品编码不能改变为序列号
 Item Code is mandatory because Item is not automatically numbered,商品编号是强制性的，因为商品没有自动编号
@@ -1319,6 +1400,7 @@ Item Details,商品详细信息
 Item Group,商品组
 Item Group Name,商品组名称
 Item Group Tree,商品组树形结构
+Item Group not mentioned in item master for item {0},商品{0}在商品的主数据中的商品组没有配置
 Item Groups in Details,商品组详情
 Item Image (if not slideshow),商品图片(如果不是幻灯片)
 Item Name,商品名称
@@ -1389,7 +1471,8 @@ Item-wise Purchase Register,商品购买登记
 Item-wise Sales History,商品销售历史
 Item-wise Sales Register,商品销售登记
 "Item: {0} managed batch-wise, can not be reconciled using \
-					Stock Reconciliation, instead use Stock Entry",商品: {0}是基于批次的因此不能使用盘库工具而应该用库存录入功能
+					Stock Reconciliation, instead use Stock Entry","商品: {0}是基于批次的
+因此不能使用盘库工具而应该用库存录入功能"
 Item: {0} not found in the system,商品:{0}没有在系统中找到
 Items,商品
 Items To Be Requested,所需商品
@@ -1492,6 +1575,7 @@ Loading...,载入中...
 Loans (Liabilities),借款(负债)
 Loans and Advances (Assets),贷款及垫款(资产)
 Local,本地
+Login,登录
 Login with your new User ID,用你的新的用户ID登录
 Logo,Logo
 Logo and Letter Heads,和信头
@@ -1536,6 +1620,7 @@ Make Maint. Schedule,创建维保计划
 Make Maint. Visit,创建维保访问
 Make Maintenance Visit,创建维保访问
 Make Packing Slip,创建装箱单
+Make Payment,进行付款
 Make Payment Entry,付款项
 Make Purchase Invoice,创建采购发票
 Make Purchase Order,创建采购订单
@@ -1545,8 +1630,10 @@ Make Salary Structure,创建薪酬结构
 Make Sales Invoice,创建销售发票
 Make Sales Order,创建销售订单
 Make Supplier Quotation,供应商报价
+Make Time Log Batch,批量创建时间记录
 Male,男性
 Manage Customer Group Tree.,管理客户组树形结构
+Manage Sales Partners.,管理销售合作伙伴。
 Manage Sales Person Tree.,管理销售人员树形结构
 Manage Territory Tree.,管理区域树形结构
 Manage cost of operations,管理运营成本
@@ -1597,6 +1684,8 @@ Max 5 characters,最多5个字符
 Max Days Leave Allowed,最多允许假期
 Max Discount (%),最大折扣(%)
 Max Qty,最大数量
+Max discount allowed for item: {0} is {1}%,商品允许的最大折扣：{0}为{1}%
+Maximum Amount,最高金额
 Maximum allowed credit is {0} days after posting date,最大允许的信用天数是{0}天从提交日算
 Maximum {0} rows allowed,最多允许{0}行
 Maxiumm discount for Item {0} is {1}%,商品{0}允许最大的折扣为 {1}%
@@ -1617,6 +1706,7 @@ Milestones will be added as Events in the Calendar,里程碑将被添加为日�
 Min Order Qty,最小订货量
 Min Qty,最小数量
 Min Qty can not be greater than Max Qty,最小数量不能大于最大数量
+Minimum Amount,最低金额
 Minimum Order Qty,最低起订量
 Minute,分钟
 Misc Details,其它详细信息
@@ -1626,7 +1716,6 @@ Mobile No,手机号码
 Mobile No.,手机号码
 Mode of Payment,付款方式
 Modern,现代
-Modified Amount,修改的金额
 Monday,星期一
 Month,月
 Monthly,每月
@@ -1643,7 +1732,8 @@ Mr,先生
 Ms,女士
 Multiple Item prices.,多个商品的价格
 "Multiple Price Rule exists with same criteria, please resolve \
-			conflict by assigning priority. Price Rules: {0}",相同条件下存在多个价格规则表;请给其赋予价格规则优先级别;价格规则:{0}
+			conflict by assigning priority. Price Rules: {0}","相同条件下存在多个价格规则表;\
+请给其赋予价格规则优先级别;价格规则:{0}"
 Music,音乐
 Must be Whole Number,必须是整数
 Name,名称
@@ -1659,6 +1749,7 @@ Negative Valuation Rate is not allowed,估值率为负是不允许的
 Negative balance in Batch {0} for Item {1} at Warehouse {2} on {3} {4},Negative balance in Batch {0} for Item {1} at Warehouse {2} on {3} {4}
 Net Pay,净支出
 Net Pay (in words) will be visible once you save the Salary Slip.,保存工资单后净支出将可见
+Net Profit / Loss,净利润/损失
 Net Total,总净值
 Net Total (Company Currency),总净值(公司货币)
 Net Weight,净重
@@ -1699,7 +1790,6 @@ Newsletter,简讯
 Newsletter Content,简讯内容
 Newsletter Status,简讯状态
 Newsletter has already been sent,简讯已发送
-Newsletters is not allowed for Trial users,试用用户不允许使用简讯功能
 "Newsletters to contacts, leads.",给联系人以及销售引子的简讯
 Newspaper Publishers,报纸出版商
 Next,下一个
@@ -1721,6 +1811,7 @@ No Supplier Accounts found. Supplier Accounts are identified based on 'Master Ty
 No accounting entries for the following warehouses,以下仓库没有账户记录
 No addresses created,没有创建任何地址信息
 No contacts created,没有创建任何联系人信息
+No default Address Template found. Please create a new one from Setup > Printing and Branding > Address Template.,没有找到默认的地址模板。请从设置>打印和品牌>地址模板中创建一个新的。
 No default BOM exists for Item {0},商品{0}不存在默认的物料清单
 No description given,未提供描述
 No employee found,未发现员工
@@ -1730,6 +1821,8 @@ No of Sent SMS,发送的短信数
 No of Visits,访问次数
 No permission,没有权限
 No record found,没有找到相关记录
+No records found in the Invoice table,在发票表中没有找到记录
+No records found in the Payment table,在支付表中没有找到记录
 No salary slip found for month: ,没有发现的指定月的工资单:
 Non Profit,非营利
 Nos,Nos
@@ -1739,7 +1832,7 @@ Not Available,不可用
 Not Billed,未付款
 Not Delivered,未交付
 Not Set,没有设置
-Not allowed to update entries older than {0},不允许更新比{0}更旧的条目
+Not allowed to update stock transactions older than {0},不允许更新比{0}更旧的条目
 Not authorized to edit frozen Account {0},无权修改冻结帐户{0}
 Not authroized since {0} exceeds limits,因为{0}超出范围因此未被授权
 Not permitted,不允许
@@ -1780,7 +1873,6 @@ Only the selected Leave Approver can submit this Leave Application,只有选定�
 Open,开放的
 Open Production Orders,未完成的生产订单
 Open Tickets,未关闭的客户支持单
-Open source ERP built for the web,基于Web的ERP
 Opening (Cr),开放(CR)
 Opening (Dr),开放(Dr)
 Opening Date,开放日期
@@ -1805,7 +1897,7 @@ Opportunity Lost,失去的机会
 Opportunity Type,机会类型
 Optional. This setting will be used to filter in various transactions.,可选的;此设置将被应用于各种交易的过滤
 Order Type,订单类型
-Order Type must be one of {1},订单类型必须是{1}中的一个
+Order Type must be one of {0},订单类型必须是{0}中的一个
 Ordered,已订购
 Ordered Items To Be Billed,需要付款的订购商品
 Ordered Items To Be Delivered,需要交付的订购商品
@@ -1817,7 +1909,6 @@ Organization Name,组织名称
 Organization Profile,组织简介
 Organization branch master.,组织分支主数据
 Organization unit (department) master.,组织单位(部门)的主数据
-Original Amount,原来的金额
 Other,其他
 Other Details,其他详细信息
 Others,他人
@@ -1834,6 +1925,7 @@ Overlapping conditions found between:,条件之间存在重叠的;
 Overview,概览
 Owned,被拥有
 Owner,所有者
+P L A - Cess Portion,P L A - Cess Portion
 PL or BS,PL或BS
 PO Date,生产订单(PO)日期
 PO No,生产订单(PO)编号
@@ -1846,7 +1938,6 @@ POS Setting required to make POS Entry,在使用POS机输入前需设置POS机
 POS Setting {0} already created for user: {1} and company {2},用户:{1}和公司{2}的POS机设置{0}已创建
 POS View,POS试图
 PR Detail,PR明细
-PR Posting Date,PR寄发日期
 Package Item Details,包装商品明细
 Package Items,包装商品
 Package Weight Details,包装重量明细
@@ -1876,8 +1967,6 @@ Parent Sales Person,母公司销售人员
 Parent Territory,母公司区域
 Parent Website Page,父网站页面
 Parent Website Route,Parent Website Route
-Parent account can not be a ledger,父帐户不能是一个分类账目录
-Parent account does not exist,父帐户不存在
 Parenttype,Parenttype
 Part-time,兼任
 Partially Completed,部分完成
@@ -1886,6 +1975,8 @@ Partly Delivered,部分交付
 Partner Target Detail,合作伙伴目标
 Partner Type,合作伙伴类型
 Partner's Website,合作伙伴的网站
+Party,Party
+Party Account,被记帐人
 Party Type,Party Type
 Party Type Name,Party Type Name
 Passive,被动的
@@ -1898,10 +1989,14 @@ Payables Group,应付账款组
 Payment Days,付款日
 Payment Due Date,付款到期日
 Payment Period Based On Invoice Date,基于发票日期的付款日
+Payment Reconciliation,付款对账
+Payment Reconciliation Invoice,付款发票对账
+Payment Reconciliation Invoices,付款发票对账
+Payment Reconciliation Payment,Payment Reconciliation Payment
+Payment Reconciliation Payments,Payment Reconciliation Payments
 Payment Type,付款类型
+Payment cannot be made for empty cart,请选购商品再进行支付
 Payment of salary for the month {0} and year {1},{1}年{0}月和工资支付
-Payment to Invoice Matching Tool,付款发票匹配工具
-Payment to Invoice Matching Tool Detail,付款发票匹配工具详细
 Payments,付款
 Payments Made,支付的款项
 Payments Received,收到的付款
@@ -1944,7 +2039,9 @@ Planning,计划
 Plant,厂
 Plant and Machinery,厂房及机器
 Please Enter Abbreviation or Short Name properly as it will be added as Suffix to all Account Heads.,请输入恰当的缩写或简称，因为它会被添加为所有帐户的后缀。
+Please Update SMS Settings,请更新短信设置
 Please add expense voucher details,请新增支出凭单明细
+Please add to Modes of Payment from Setup.,请在设置中添加付款方式
 Please check 'Is Advance' against Account {0} if this is an advance entry.,Please check 'Is Advance' against Account {0} if this is an advance entry.
 Please click on 'Generate Schedule',请点击'生成计划'
 Please click on 'Generate Schedule' to fetch Serial No added for Item {0},请点击'生成计划'来获取商品{0}的已增序列号
@@ -1992,12 +2089,13 @@ Please enter valid Company Email,请输入有效的公司电邮地址
 Please enter valid Email Id,请输入有效的电子邮件Id
 Please enter valid Personal Email,请输入有效的个人电子邮件
 Please enter valid mobile nos,请输入有效的手机号
+Please find attached Sales Invoice #{0},随函附上销售发票#{0}
 Please install dropbox python module,请安装Dropbox的Python模块
 Please mention no of visits required,请注明需要访问次数
 Please pull items from Delivery Note,请从发货单中提取商品信息
 Please save the Newsletter before sending,请在发送之前保存简讯
 Please save the document before generating maintenance schedule,在产生维护计划之前请保存文档
-Please select Account first,请先选择账户
+Please see attachment,请参阅附件
 Please select Bank Account,请选择银行帐户
 Please select Carry Forward if you also want to include previous fiscal year's balance leaves to this fiscal year,如果你想让上一财年的余额留到下一财年请选择Carry Forward
 Please select Category first,请先选择分类
@@ -2005,14 +2103,17 @@ Please select Charge Type first,请先选择缴费类型
 Please select Fiscal Year,请选择会计年度(财年)
 Please select Group or Ledger value,请选择组或分类账
 Please select Incharge Person's name,请选择Incharge人的名字
+Please select Invoice Type and Invoice Number in atleast one row,请至少在其中一行选择发票类型和发票号码
 "Please select Item where ""Is Stock Item"" is ""No"" and ""Is Sales Item"" is ""Yes"" and there is no other Sales BOM",请将商品"是库存中商品"选择为否并将"是可销售商品"选择为是;并且没有其它销售的物料清单
 Please select Price List,请选择价格表
 Please select Start Date and End Date for Item {0},请选择商品{0}开始日期和结束日期
+Please select Time Logs.,请选择时间记录。
 Please select a csv file,请选择一个csv文件
 Please select a valid csv file with data,请选择一个有效csv数据文件
 Please select a value for {0} quotation_to {1},请选择报价给{1}的值{0}
 "Please select an ""Image"" first",请先选择一个图像
 Please select charge type first,请选择缴费类型
+Please select company first,请先选择公司
 Please select company first.,请先选择一个公司
 Please select item code,请先选择商品编码
 Please select month and year,请先选择年份和月份
@@ -2021,6 +2122,7 @@ Please select the document type first,请先选择文档类型
 Please select weekly off day,请选择每周休息日
 Please select {0},请选择{0}
 Please select {0} first,请先选择{0}
+Please select {0} first.,请先选择{0}。
 Please set Dropbox access keys in your site config,请在您的网站配置设置Dropbox的访问密钥
 Please set Google Drive access keys in {0},请在{0}中设置谷歌驱动器的访问密钥
 Please set default Cash or Bank account in Mode of Payment {0},请在付款方式{0}中设置默认的现金或银行账户
@@ -2047,6 +2149,7 @@ Postal,邮政
 Postal Expenses,邮政费用
 Posting Date,发布日期
 Posting Time,发布时间
+Posting date and posting time is mandatory,发布日期和发布时间是必需的
 Posting timestamp must be after {0},发布时间戳必须在{0}之后
 Potential opportunities for selling.,潜在的销售机会
 Preferred Billing Address,首选帐单地址
@@ -2073,8 +2176,10 @@ Price List not selected,没有选择价格列表
 Price List {0} is disabled,价格表{0}被禁用
 Price or Discount,价格或折扣
 Pricing Rule,定价规则
-Pricing Rule For Discount,折扣定价规则
-Pricing Rule For Price,价格定价规则
+Pricing Rule Help,定价规则说明
+"Pricing Rule is first selected based on 'Apply On' field, which can be Item, Item Group or Brand.",定价规则是基于“应用于”字段被先选择，其可以是商品，商品组或品牌。
+"Pricing Rule is made to overwrite Price List / define discount percentage, based on some criteria.",定价规则是基于某些条筛选件由此来覆盖价格表/定义折扣百分比。
+Pricing Rules are further filtered based on quantity.,定价规则进一步基于数量过滤。
 Print Format Style,打印格式样式
 Print Heading,打印标题
 Print Without Amount,打印(没有数量)
@@ -2102,7 +2207,9 @@ Production Plan Sales Orders,生产计划相关的销售订单
 Production Planning Tool,生产规划工具
 Products,产品
 "Products will be sorted by weight-age in default searches. More the weight-age, higher the product will appear in the list.",默认的搜索排序是产品将按照重量进行排序;越重越排在前面
+Professional Tax,Professional Tax
 Profit and Loss,损益
+Profit and Loss Statement,损益表
 Project,项目
 Project Costing,项目成本核算
 Project Details,项目详情
@@ -2125,7 +2232,9 @@ Projects & System,工程及系统
 Prompt for Email on Submission of,提交操作弹出邮件提醒
 Proposal Writing,建议书编写
 Provide email id registered in company,提供在公司注册电子邮件ID
+Provisional Profit / Loss (Credit),临时收益/亏损(贷方)
 Public,公共的
+Published on website at: {0},于{0}发表于网站
 Publishing,出版
 Pull sales orders (pending to deliver) based on the above criteria,基于上述条件获取销售订单(未交付)
 Purchase,采购
@@ -2134,7 +2243,6 @@ Purchase Analytics,采购分析
 Purchase Common,Purchase Common
 Purchase Details,采购详情
 Purchase Discounts,采购折扣
-Purchase In Transit,在运输途中的采购
 Purchase Invoice,采购发票
 Purchase Invoice Advance,Purchase Invoice Advance
 Purchase Invoice Advances,Purchase Invoice Advances
@@ -2142,7 +2250,6 @@ Purchase Invoice Item,采购发票的商品
 Purchase Invoice Trends,采购发票趋势
 Purchase Invoice {0} is already submitted,采购发票{0}已经提交
 Purchase Order,采购订单
-Purchase Order Date,采购订单日期
 Purchase Order Item,采购订单商品
 Purchase Order Item No,采购订单商品编号
 Purchase Order Item Supplied,采购订单
@@ -2206,7 +2313,6 @@ Quarter,季度
 Quarterly,按季度
 Quick Help,快速帮助
 Quotation,报价单
-Quotation Date,报价日期
 Quotation Item,产品报价
 Quotation Items,报价产品
 Quotation Lost Reason,报价遗失原因
@@ -2284,6 +2390,7 @@ Recurring Invoice,Recurring Invoice
 Recurring Type,Recurring Type
 Reduce Deduction for Leave Without Pay (LWP),Reduce Deduction for Leave Without Pay (LWP)
 Reduce Earning for Leave Without Pay (LWP),Reduce Earning for Leave Without Pay (LWP)
+Ref,参考
 Ref Code,参考代码
 Ref SQ,Ref SQ
 Reference,参考
@@ -2307,6 +2414,7 @@ Relieving Date,解除日期
 Relieving Date must be greater than Date of Joining,解除日期必须大于加入的日期
 Remark,备注
 Remarks,备注
+Remarks Custom,自定义备注
 Rename,重命名
 Rename Log,重命名日志
 Rename Tool,重命名工具
@@ -2322,6 +2430,7 @@ Report Type,报告类型
 Report Type is mandatory,报告类型是强制性的
 Reports to,报告给
 Reqd By Date,Reqd By Date
+Reqd by Date,REQD日期
 Request Type,请求类型
 Request for Information,需要信息
 Request for purchase.,需要采购。
@@ -2375,18 +2484,34 @@ Rounded Total,Rounded Total
 Rounded Total (Company Currency),Rounded Total (Company Currency)
 Row # ,行 #
 Row # {0}: , 行 # {0}
-"Row {0}: Account does not match with \ Purchase Invoice Credit To account","Row {0}: Account does not match with \ Purchase Invoice Credit To account"
-"Row {0}: Account does not match with \ Sales Invoice Debit To account","Row {0}: Account does not match with \ Sales Invoice Debit To account"
+Row #{0}: Ordered qty can not less than item's minimum order qty (defined in item master).,行#{0}：订购数量不能少于商品的最低订单数量(在商品主数据中定义)
+Row #{0}: Please specify Serial No for Item {1},行#{0}：请注明商品序号{1}
+"Row {0}: Account does not match with \
+						Purchase Invoice Credit To account","行{0}：\
+Account does not match with Purchase Invoice Credit To account"
+“Row {0}: Account does not match with \
+						Sales Invoice Debit To account","行{0}：\
+Account does not match with Sales Invoice Debit To account"
+Row {0}: Conversion Factor is mandatory,行{0}：转换系数是强制性的
 Row {0}: Credit entry can not be linked with a Purchase Invoice,Row {0}: Credit entry can not be linked with a Purchase Invoice
 Row {0}: Debit entry can not be linked with a Sales Invoice,Row {0}: Debit entry can not be linked with a Sales Invoice
-"Row {0}: To set {1} periodicity, difference between from and to date \ must be greater than or equal to {2}","Row {0}: To set {1} periodicity, difference between from and to date \ must be greater than or equal to {2}"
+Row {0}: Payment amount must be less than or equals to invoice outstanding amount. Please refer Note below.,行{0}：付款金额必须小于或等于发票未付金额。请参考下面的说明。
+Row {0}: Qty is mandatory,行{0}：数量是强制性的
+"Row {0}: Qty not avalable in warehouse {1} on {2} {3}.
+					Available Qty: {4}, Transfer Qty: {5}","行{0}：仓库{1}数量中在{2} {3}中不可用
+有货数量：{4}，转移数量：{5}"
+"Row {0}: To set {1} periodicity, difference between from and to date \
+						must be greater than or equal to {2}","行{0}：设置{1}的周期性，\
+开始日期和结束日期之间的天数必须大于或等于{2}"
 Row {0}:Start Date must be before End Date,行{0} ：开始日期必须在结束日期之前
 Rules for adding shipping costs.,增加运输成本的规则。
 Rules for applying pricing and discount.,定价和折扣的规则。
 Rules to calculate shipping amount for a sale,计算一次销售所需运费的规则
 S.O. No.,S.O. No.
+SHE Cess on Excise,SHE Cess on Excise
+SHE Cess on Service Tax,SHE Cess on Service Tax
+SHE Cess on TDS,SHE Cess on TDS
 SMS Center,短信中心
-SMS Control,短信控制
 SMS Gateway URL,短信网关URL
 SMS Log,短信日志
 SMS Parameter,短信参数
@@ -2491,15 +2616,20 @@ Securities and Deposits,证券及存款
 "Select ""Yes"" if this item represents some work like training, designing, consulting etc.","Select ""Yes"" if this item represents some work like training, designing, consulting etc."
 "Select ""Yes"" if you are maintaining stock of this item in your Inventory.",选择“是”，如果您维护该产品的存货在你的库存。
 "Select ""Yes"" if you supply raw materials to your supplier to manufacture this item.",选择“是”，如果您提供原料给供应商来制造该产品。
+Select Brand...,请选择品牌...
 Select Budget Distribution to unevenly distribute targets across months.,Select Budget Distribution to unevenly distribute targets across months.
 "Select Budget Distribution, if you want to track based on seasonality.",选择预算分配，如果你想要基于季度来跟踪。
+Select Company...,选择公司...
 Select DocType,选择文档类型
+Select Fiscal Year...,选择会计年度...
 Select Items,选择产品
+Select Project...,选择项目...
 Select Purchase Receipts,选择采购入库单
 Select Sales Orders,选择销售订单
 Select Sales Orders from which you want to create Production Orders.,Select Sales Orders from which you want to create Production Orders.
 Select Time Logs and Submit to create a new Sales Invoice.,选择时间日志和提交创建一个新的销售发票。
 Select Transaction,选择交易
+Select Warehouse...,选择仓库...
 Select Your Language,选择您的语言
 Select account head of the bank where cheque was deposited.,选取支票存入的银行账户。
 Select company name first.,先选择公司名称。
@@ -2517,6 +2647,7 @@ Select your home country and check the timezone and currency.,选择您的国家
 "Selecting ""Yes"" will give a unique identity to each entity of this item which can be viewed in the Serial No master.","Selecting ""Yes"" will give a unique identity to each entity of this item which can be viewed in the Serial No master."
 Selling,销售
 Selling Settings,销售设置
+"Selling must be checked, if Applicable For is selected as {0}",如果应用于被选择为{0}，销售选项必须被勾选上
 Send,发送
 Send Autoreply,发送自动回复
 Send Email,发送电​​子邮件
@@ -2552,7 +2683,9 @@ Serial No {0} status must be 'Available' to Deliver,序列号{0}的状态必须�
 Serial Nos Required for Serialized Item {0},已序列化物品{0}的序列号是必须的
 Serial Number Series,Serial Number Series
 Serial number {0} entered more than once,序列号{0}已存在
-"Serialized Item {0} cannot be updated \ using Stock Reconciliation",已序列化的物品{0}无法更新 \ 使用库存对账
+"Serialized Item {0} cannot be updated \
+					using Stock Reconciliation","序列化的项{0}不能更新\
+请使用盘点工具"
 Series,Series
 Series List for this Transaction,Series List for this Transaction
 Series Updated,Series Updated
@@ -2561,15 +2694,18 @@ Series is mandatory,Series is mandatory
 Series {0} already used in {1},Series {0} already used in {1}
 Service,服务
 Service Address,服务地址
+Service Tax,服务税
 Services,服务
 Set,设置
 "Set Default Values like Company, Currency, Current Fiscal Year, etc.",设置默认值，像公司、货币、当前财年等。
 Set Item Group-wise budgets on this Territory. You can also include seasonality by setting the Distribution.,Set Item Group-wise budgets on this Territory. You can also include seasonality by setting the Distribution.
+Set Status as Available,设置状态为可用
 Set as Default,设置为默认
 Set as Lost,设置为丢失
 Set prefix for numbering series on your transactions,为你的交易编号序列设置的前缀
 Set targets Item Group-wise for this Sales Person.,Set targets Item Group-wise for this Sales Person.
 Setting Account Type helps in selecting this Account in transactions.,设置帐户类型，在交易中可选择对应帐户。
+Setting this Address Template as default as there is no other default,因为没有其他的默认模板请设置此地址模板为默认
 Setting up...,设置...
 Settings,设置
 Settings for HR Module,设置
@@ -2577,6 +2713,7 @@ Settings for HR Module,设置
 Setup,设置
 Setup Already Complete!!,安装已经完成！
 Setup Complete,安装完成
+Setup SMS gateway settings,设置短信网关设置
 Setup Series,设置系列
 Setup Wizard,设置向导
 Setup incoming server for jobs email id. (e.g. jobs@example.com),Setup incoming server for jobs email id. (e.g. jobs@example.com)
@@ -2602,6 +2739,7 @@ Short biography for website and other publications.,Short biography for website 
 Show In Website,显示在网站
 Show a slideshow at the top of the page,显示幻灯片在页面顶部
 Show in Website,显示在网站
+Show rows with zero values,显示值为零的行
 Show this slideshow at the top of the page,显示该幻灯片在页面顶部
 Sick Leave,病假
 Signature,签名
@@ -2631,9 +2769,9 @@ Specifications,产品规格
 "Specify the operations, operating cost and give a unique Operation no to your operations.","Specify the operations, operating cost and give a unique Operation no to your operations."
 Split Delivery Note into packages.,提货单分割成包。
 Sports,运动
+Sr,Sr
 Standard,标准
 Standard Buying,标准采购
-Standard Rate,标准价格
 Standard Reports,标准报告
 Standard Selling,标准销售
 Standard contract terms for Sales or Purchase.,销售或采购的标准合同条款。
@@ -2642,6 +2780,7 @@ Start Date,开始日期
 Start date of current invoice's period,当前发票的开始日期
 Start date should be less than end date for Item {0},{0}的开始日期必须小于结束日期
 State,State
+Statement of Account,对账单
 Static Parameters,静态参数
 Status,状态
 Status must be one of {0},状态必须是{0}中的一个
@@ -2683,6 +2822,7 @@ Stock Value Difference,库存值差异
 Stock balances updated,库存剩余更新
 Stock cannot be updated against Delivery Note {0},Stock cannot be updated against Delivery Note {0}
 Stock entries exist against warehouse {0} cannot re-assign or modify 'Master Name',Stock entries exist against warehouse {0} cannot re-assign or modify 'Master Name'
+Stock transactions before {0} are frozen,在{0}之前库存事务被冻结
 Stop,停止
 Stop Birthday Reminders,停止生日提醒
 Stop Material Request,停止材料要求
@@ -2702,13 +2842,13 @@ Submit this Production Order for further processing.,提交此生产订单进行
 Submitted,提交
 Subsidiary,附属的
 Successful: ,成功：
-Successfully allocated,成功分配
+Successfully Reconciled,操作成功
 Suggestions,建议
 Sunday,星期天
 Supplier,供应商
 Supplier (Payable) Account,供应商（应付）账户
 Supplier (vendor) name as entered in supplier master,Supplier (vendor) name as entered in supplier master
-Supplier Account,供应商帐户
+Supplier > Supplier Type,供应商>供应商类型
 Supplier Account Head,供应商户头
 Supplier Address,供应商地址
 Supplier Addresses and Contacts,供应商的地址和联系方式
@@ -2746,6 +2886,12 @@ Sync with Google Drive,同步谷歌Drive
 System,系统
 System Settings,系统设置
 "System User (login) ID. If set, it will become default for all HR forms.",系统用户（登录）ID。如果设置，将成为所有人力资源表单的默认设置。
+TDS (Advertisement),TDS（广告）
+TDS (Commission),TDS（委员会）
+TDS (Contractor),TDS（承包商）
+TDS (Interest),TDS（利息）
+TDS (Rent),TDS（租）
+TDS (Salary),TDS（薪金）
 Target  Amount,目标金额
 Target Detail,目标详细信息
 Target Details,目标详细信息
@@ -2765,10 +2911,13 @@ Tax Assets,资产税
 Tax Category can not be 'Valuation' or 'Valuation and Total' as all items are non-stock items,Tax Category can not be 'Valuation' or 'Valuation and Total' as all items are non-stock items
 Tax Rate,税率
 Tax and other salary deductions.,Tax and other salary deductions.
-"Tax detail table fetched from item master as a string and stored in this field. Used for Taxes and Charges","Tax detail table fetched from item master as a string and stored in this field. Used for Taxes and Charges"
+"Tax detail table fetched from item master as a string and stored in this field.
+Used for Taxes and Charges","从主数据表中提取出来的税务明细表会存成一个字符串到这个字段中。
+被用于税收和费用"
 Tax template for buying transactions.,购买业务税费模板。
 Tax template for selling transactions.,销售业务税费模板。
 Taxable,应纳税
+Taxes,税
 Taxes and Charges,税费
 Taxes and Charges Added,税费增加
 Taxes and Charges Added (Company Currency),税费增加（公司货币）
@@ -2781,6 +2930,7 @@ Technology,技术
 Telecommunications,电信
 Telephone Expenses,电话费
 Television,电视
+Template,模板
 Template for performance appraisals.,绩效考核模板。
 Template of terms or contract.,条款或合同模板。
 Temporary Accounts (Assets),临时账户（资产）
@@ -2809,7 +2959,9 @@ The First User: You,您是第一个用户
 "The Item that represents the Package. This Item must have ""Is Stock Item"" as ""No"" and ""Is Sales Item"" as ""Yes""","The Item that represents the Package. This Item must have ""Is Stock Item"" as ""No"" and ""Is Sales Item"" as ""Yes"""
 The Organization,本组织
 "The account head under Liability, in which Profit/Loss will be booked","The account head under Liability, in which Profit/Loss will be booked"
-"The date on which next invoice will be generated. It is generated on submit.","The date on which next invoice will be generated. It is generated on submit."
+"The date on which next invoice will be generated. It is generated on submit.
+","发票的生成日期是在提交时生成的
+"
 The date on which recurring invoice will be stop,The date on which recurring invoice will be stop 
 "The day of the month on which auto invoice will be generated e.g. 05, 28 etc","The day of the month on which auto invoice will be generated e.g. 05, 28 etc"
 The day(s) on which you are applying for leave are holiday. You need not apply for leave.,The day(s) on which you are applying for leave are holiday. You need not apply for leave.
@@ -2821,6 +2973,7 @@ The net weight of this package. (calculated automatically as sum of net weight o
 The new BOM after replacement,更换后的新物料清单（BOM）
 The rate at which Bill Currency is converted into company's base currency,The rate at which Bill Currency is converted into company's base currency
 The unique id for tracking all recurring invoices. It is generated on submit.,The unique id for tracking all recurring invoices. It is generated on submit.
+"Then Pricing Rules are filtered out based on Customer, Customer Group, Territory, Supplier, Supplier Type, Campaign, Sales Partner etc.",然后定价规则将基于客户，客户组，区域，供应商，供应商类型，促销活动，销售合作伙伴等过滤。
 There are more holidays than working days this month.,这个月的假期比工作日更多。
 "There can only be one Shipping Rule Condition with 0 or blank value for ""To Value""","There can only be one Shipping Rule Condition with 0 or blank value for ""To Value"""
 There is not enough leave balance for Leave Type {0},There is not enough leave balance for Leave Type {0}
@@ -2833,6 +2986,7 @@ This Time Log Batch has been billed.,This Time Log Batch has been billed.
 This Time Log Batch has been cancelled.,该批时间日志已被取消。
 This Time Log conflicts with {0},该时间日志与{0}冲突
 This is a root account and cannot be edited.,这是一个根帐户，无法编辑。
+This format is used if country specific format is not found,如果指定的格式没有找到则会有这个格式
 This is a root customer group and cannot be edited.,这是一个根用户组，无法编辑
 This is a root item group and cannot be edited.,This is a root item group and cannot be edited.
 This is a root sales person and cannot be edited.,This is a root sales person and cannot be edited.
@@ -2847,7 +3001,9 @@ Time Log Batch,批时间记录
 Time Log Batch Detail,批时间记录详情
 Time Log Batch Details,批时间记录详情
 Time Log Batch {0} must be 'Submitted',批时间日志{0}必须'提交'
+Time Log Status must be Submitted.,时间日志状态必须会提交状态。
 Time Log for tasks.,任务时间记录。
+Time Log is not billable,时间日志不计费
 Time Log {0} must be 'Submitted',时间日志{0}必须'提交'
 Time Zone,时区
 Time Zones,时区
@@ -2859,7 +3015,8 @@ Titles for print templates e.g. Proforma Invoice.,打印模板标题，例如：
 To,To
 To Currency,To Currency
 To Date,To Date
-To Date should be same as From Date for Half Day leave,To Date should be same as From Date for Half Day leave
+To Date should be same as From Date for Half Day leave,如果申请半天假则结束时间与开始时间要一致
+To Date should be within the Fiscal Year. Assuming To Date = {0},结束日期应该是在会计年度内。假设结束日期 = {0}
 To Discuss,To Discuss
 To Do List,To Do List
 To Package No.,To Package No.
@@ -2869,8 +3026,8 @@ To Value,To Value
 To Warehouse,To Warehouse
 "To add child nodes, explore tree and click on the node under which you want to add more nodes.","To add child nodes, explore tree and click on the node under which you want to add more nodes."
 "To assign this issue, use the ""Assign"" button in the sidebar.",分配该问题可以使用侧边栏的“分配”按钮。
-To create a Bank Account:,创建一个银行帐号：
-To create a Tax Account:,创建一个纳税帐户：
+To create a Bank Account,创建一个银行帐号
+To create a Tax Account,创建一个纳税帐户
 "To create an Account Head under a different company, select the company and save customer.","To create an Account Head under a different company, select the company and save customer."
 To date cannot be before from date,该日期不能在开始日期之前
 To enable <b>Point of Sale</b> features,To enable <b>Point of Sale</b> features
@@ -2878,22 +3035,23 @@ To enable <b>Point of Sale</b> view,To enable <b>Point of Sale</b> view
 To get Item Group in details table,To get Item Group in details table
 "To include tax in row {0} in Item rate, taxes in rows {1} must also be included",要包括税款在价格项的行{0}中，税收在行{1}中也必须包括在内
 "To merge, following properties must be same for both items",若要合并，两个产品的以下属性必须相同
-"To report an issue, go to ",要报告问题，请至
+"To not apply Pricing Rule in a particular transaction, all applicable Pricing Rules should be disabled.",如果不想应用定价规则，那么所有适用的定价规则应该被禁用。
 "To set this Fiscal Year as Default, click on 'Set as Default'",要设置该财年为默认值，请点击“设为默认”
 To track any installation or commissioning related work after sales,跟踪销售后的任何安装或调试相关工作
 "To track brand name in the following documents Delivery Note, Opportunity, Material Request, Item, Purchase Order, Purchase Voucher, Purchaser Receipt, Quotation, Sales Invoice, Sales BOM, Sales Order, Serial No","To track brand name in the following documents Delivery Note, Opportunity, Material Request, Item, Purchase Order, Purchase Voucher, Purchaser Receipt, Quotation, Sales Invoice, Sales BOM, Sales Order, Serial No"
 To track item in sales and purchase documents based on their serial nos. This is can also used to track warranty details of the product.,基于产品序列号来跟踪产品的销售和采购情况，这也可以用来跟踪商品的保修细节。
 To track items in sales and purchase documents with batch nos<br><b>Preferred Industry: Chemicals etc</b>,To track items in sales and purchase documents with batch nos<br><b>Preferred Industry: Chemicals etc</b>
 To track items using barcode. You will be able to enter items in Delivery Note and Sales Invoice by scanning barcode of item.,使用条形码跟踪产品，您将能够通过扫描条码将产品填入交货单和销售发票。
+Too many columns. Export the report and print it using a spreadsheet application.,有太多的列；请考虑导出报表，并使用excel进行打印
 Tools,工具
 Total,总
+Total ({0}),总计({0})
 Total Advance,Total Advance
-Total Allocated Amount,分配总额
-Total Allocated Amount can not be greater than unmatched amount,Total Allocated Amount can not be greater than unmatched amount
 Total Amount,总金额
 Total Amount To Pay,支付总计
 Total Amount in Words,Total Amount in Words
 Total Billing This Year: ,今年总账单
+Total Characters,总字符
 Total Claimed Amount,总申报额
 Total Commission,佣金总额
 Total Cost,总成本
@@ -2917,14 +3075,13 @@ Total Score (Out of 5),总分（满分5分）
 Total Tax (Company Currency),总税（公司货币）
 Total Taxes and Charges,总税费和费用
 Total Taxes and Charges (Company Currency),总税费和费用（公司货币）
-Total Words,总字数
-Total Working Days In The Month,本月总工作日
 Total allocated percentage for sales team should be 100,销售团队总分配比例应为100
 Total amount of invoices received from suppliers during the digest period,Total amount of invoices received from suppliers during the digest period
 Total amount of invoices sent to the customer during the digest period,Total amount of invoices sent to the customer during the digest period
 Total cannot be zero,总数不能为零
 Total in words,总字数
 Total points for all goals should be 100. It is {0},所有的目标总分应该是100 ，它是{0}
+Total valuation for manufactured or repacked item(s) can not be less than total valuation of raw materials,制造出来的产品或重新打包的产品的估值不能低于原料的估值
 Total weightage assigned should be 100%. It is {0},分配的总权重应为100 ％ ，它是{0}
 Totals,总计
 Track Leads by Industry Type.,通过行业类型跟踪业务。
@@ -2960,7 +3117,7 @@ UOM Conversion Details,计量单位换算详情
 UOM Conversion Factor,计量单位换算系数
 UOM Conversion factor is required in row {0},行{0}中的计量单位换算系数是必需的
 UOM Name,计量单位名称
-UOM coversion factor required for UOM {0} in Item {1},UOM coversion factor required for UOM {0} in Item {1}
+UOM coversion factor required for UOM: {0} in Item: {1},商品{1} 的单位 {0} 的转换系数是必须的
 Under AMC,Under AMC
 Under Graduate,Under Graduate
 Under Warranty,在保修期
@@ -2970,8 +3127,8 @@ Unit of Measure {0} has been entered more than once in Conversion Factor Table,U
 "Unit of measurement of this item (e.g. Kg, Unit, No, Pair).",这个产品的计量单位（如公斤，单元，编号，双）。
 Units/Hour,单位/小时
 Units/Shifts,Units/Shifts
-Unmatched Amount,不匹配的数量
 Unpaid,未付款的
+Unreconciled Payment Details,Unreconciled Payment Details
 Unscheduled,未计划的
 Unsecured Loans,无抵押贷款
 Unstop,Unstop
@@ -2986,7 +3143,6 @@ Update Landed Cost,Update Landed Cost
 Update Series,Update Series
 Update Series Number,更新序列号
 Update Stock,库存更新
-"Update allocated amount in the above table and then click ""Allocate"" button",更新上表中的分配金额，然后点击“分配”按钮
 Update bank payment dates with journals.,Update bank payment dates with journals.
 Update clearance date of Journal Entries marked as 'Bank Vouchers',Update clearance date of Journal Entries marked as 'Bank Vouchers'
 Updated,更新
@@ -3003,6 +3159,7 @@ Upper Income,Upper Income
 Urgent,紧急
 Use Multi-Level BOM,使用多级BOM
 Use SSL,使用SSL安全通道
+Used for Production Plan,用于生产计划
 User,用户
 User ID,用户ID
 User ID not set for Employee {0},员工{0}没有设置用户ID
@@ -3040,10 +3197,10 @@ View Ledger,查看总帐
 View Now,立即查看
 Visit report for maintenance call.,报修访问记录。
 Voucher #,Voucher #
-Voucher Detail No,Voucher Detail No
+Voucher Detail No,凭单明细号
+Voucher Detail Number,凭单明细号
 Voucher ID,优惠券编号
 Voucher No,凭证号
-Voucher No is not valid,凭证号是无效的
 Voucher Type,凭证类型
 Voucher Type and Date,凭证类型和日期
 Walk In,Walk In
@@ -3059,11 +3216,12 @@ Warehouse is mandatory for stock Item {0} in row {1},Warehouse is mandatory for 
 Warehouse is missing in Purchase Order,采购订单中缺少仓库
 Warehouse not found in the system,系统中未找到仓库
 Warehouse required for stock Item {0},Warehouse required for stock Item {0}
-Warehouse required in POS Setting,在POS机需要设置仓库
 Warehouse where you are maintaining stock of rejected items,Warehouse where you are maintaining stock of rejected items
 Warehouse {0} can not be deleted as quantity exists for Item {1},Warehouse {0} can not be deleted as quantity exists for Item {1}
 Warehouse {0} does not belong to company {1},仓库{0}不属于公司{1}
 Warehouse {0} does not exist,仓库{0}不存在
+Warehouse {0}: Company is mandatory,仓库{0}：公司是必须的
+Warehouse {0}: Parent account {1} does not bolong to the company {2},仓库{0}：父帐户{1}不属于该公司{2}
 Warehouse-Wise Stock Balance,Warehouse-Wise Stock Balance
 Warehouse-wise Item Reorder,Warehouse-wise Item Reorder
 Warehouses,仓库
@@ -3108,13 +3266,14 @@ Will be updated when batched.,将在分批处理时将更新。
 Will be updated when billed.,将在账单出来时更新。
 Wire Transfer,Wire Transfer
 With Operations,With Operations
-With period closing entry,With period closing entry
+With period closing Entry,期末结账分录
 Work Details,工作细节
 Work Done,工作完成
 Work In Progress,Work In Progress
 Work-in-Progress Warehouse,Work-in-Progress Warehouse
 Work-in-Progress Warehouse is required before Submit,Work-in-Progress Warehouse is required before Submit
 Working,工作中
+Working Days,工作天数
 Workstation,工作站
 Workstation Name,工作站名称
 Write Off Account,Write Off Account
@@ -3130,10 +3289,7 @@ Year Closed,Year Closed
 Year End Date,年结束日期
 Year Name,Year Name
 Year Start Date,年开始日期
-Year Start Date and Year End Date are already set in Fiscal Year {0},年开始日期和结束日期已设置在财年内{0}
-Year Start Date and Year End Date are not within Fiscal Year.,年开始日期和结束日期不在财年内。
-Year Start Date should not be greater than Year End Date,年开始日期不应大于结束日期
-Year of Passing,Year of Passing
+Year of Passing,待过的年数
 Yearly,每年
 Yes,是的
 You are not authorized to add or update entries before {0},You are not authorized to add or update entries before{0}
@@ -3142,7 +3298,6 @@ You are the Expense Approver for this record. Please Update the 'Status' and Sav
 You are the Leave Approver for this record. Please Update the 'Status' and Save,您是该请假记录的审批人，请更新“状态”并保存
 You can enter any date manually,您可以手动输入任何日期
 You can enter the minimum quantity of this item to be ordered.,您可以输入该产品的最小订购数量。
-You can not assign itself as parent account,无法指定自己为父级账户
 You can not change rate if BOM mentioned agianst any item,You can not change rate if BOM mentioned agianst any item
 You can not enter both Delivery Note No and Sales Invoice No. Please enter any one.,您不能同时输入提货单号和销售发票号，请任选其一。
 You can not enter current voucher in 'Against Journal Voucher' column,You can not enter current voucher in 'Against Journal Voucher' column
@@ -3154,7 +3309,6 @@ You cannot credit and debit same account at the same time,You cannot credit and 
 You have entered duplicate items. Please rectify and try again.,您输入了重复的产品。请纠正并重试。
 You may need to update: {0},您可能需要更新： {0}
 You must Save the form before proceeding,在继续之前，您必须先保存数据
-You must allocate amount before reconcile,You must allocate amount before reconcile
 Your Customer's TAX registration numbers (if applicable) or any general information,您客户的税务登记证号码（如果适用）或任何基本资料
 Your Customers,您的客户
 Your Login Id,您的登录ID
@@ -3167,11 +3321,13 @@ Your sales person who will contact the customer in future,您的销售人员谁�
 Your sales person will get a reminder on this date to contact the customer,您的销售人员在此日期将收到一个联系客户的提醒
 Your setup is complete. Refreshing...,您的设置已完成。更新中...
 Your support email id - must be a valid email - this is where your emails will come!,Your support email id - must be a valid email - this is where your emails will come!
+[Error],[错误]
 [Select],[选择]
 `Freeze Stocks Older Than` should be smaller than %d days.,`Freeze Stocks Older Than` should be smaller than %d days.
 and,和
 are not allowed.,是不允许的
 assigned by,分配人
+cannot be greater than 100,不能大于100
 "e.g. ""Build tools for builders""","e.g. ""Build tools for builders"""
 "e.g. ""MC""",例如“MC”
 "e.g. ""My Company LLC""",例如“我的公司名字”
@@ -3184,32 +3340,34 @@ example: Next Day Shipping,例如：次日发货
 lft,LFT
 old_parent,old_parent
 rgt,RGT
+subject,主题
+to,至
 website page link,网站页面链接
 {0} '{1}' not in Fiscal Year {2},{0}“ {1}”不在财年内{2}
 {0} Credit limit {0} crossed,{0}赊销限额{0}已超过
 {0} Serial Numbers required for Item {0}. Only {0} provided.,{0} Serial Numbers required for Item {0}. Only {0} provided.
 {0} budget for Account {1} against Cost Center {2} will exceed by {3},{0} budget for Account {1} against Cost Center {2} will exceed by {3}
+{0} can not be negative,{0}不能为负
 {0} created,{0}已创建
 {0} does not belong to Company {1},{0}不属于公司{1}
 {0} entered twice in Item Tax,{0} entered twice in Item Tax
 {0} is an invalid email address in 'Notification Email Address',{0}是一个无效的电邮地址在“接收通知电邮地址”
 {0} is mandatory,{0} is mandatory
 {0} is mandatory for Item {1},{0} is mandatory for Item {1}
+{0} is mandatory. Maybe Currency Exchange record is not created for {1} to {2}.,{0}是强制性的。也许是{1}与{2}的汇率兑换记录尚未建立。
 {0} is not a stock Item,{0}不是一个库存产品
 {0} is not a valid Batch Number for Item {1},{0}不是一个有效的产品批号{1}
-{0} is not a valid Leave Approver,{0}不是一个有效的请假审批
+{0} is not a valid Leave Approver. Removing row #{1}.,{0}不是一个有效的请假审批请移除第{1}行
 {0} is not a valid email id,{0}不是一个有效的电子邮件ID
 {0} is now the default Fiscal Year. Please refresh your browser for the change to take effect.,{0}现在是默认的财政年度。请刷新您的浏览器，以使更改生效。
 {0} is required,{0}是必需的
 {0} must be a Purchased or Sub-Contracted Item in row {1},{0}必须是已购买或分包产品在行{1}
-{0} must be less than or equal to {1},{0}必须小于或等于{1}
+{0} must be reduced by {1} or you should increase overflow tolerance,{0}必须减少{1}或应增加溢出容忍度
 {0} must have role 'Leave Approver',{0}必须具备“请假审批”权限的角色
 {0} valid serial nos for Item {1},{0}对产品有效的序列号{1}
 {0} {1} against Bill {2} dated {3},{0} {1} against Bill {2} dated {3}
 {0} {1} against Invoice {2},{0} {1}凭发票{2}
 {0} {1} has already been submitted,{0} {1}已经提交
-{0} {1} has been modified. Please Refresh,{0} {1}已被修改。请刷新
-{0} {1} has been modified. Please refresh,{0} {1}已被修改。请刷新
 {0} {1} has been modified. Please refresh.,{0} {1}已被修改。请刷新。
 {0} {1} is not submitted,{0} {1}未提交
 {0} {1} must be submitted,{0} {1}必须提交
@@ -3217,3 +3375,5 @@ website page link,网站页面链接
 {0} {1} status is 'Stopped',{0} {1}状态为“已停止”
 {0} {1} status is Stopped,{0} {1}状态为已停止
 {0} {1} status is Unstopped,{0} {1}状态为取消停止
+{0} {1}: Cost Center is mandatory for Item {2},{0} {1}：{2}的成本中心是必须的
+{0}: {1} not found in Invoice Details table,{0}：在发票明细表中不能找到{1}
