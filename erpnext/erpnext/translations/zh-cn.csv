@@ -288,7 +288,7 @@ As per Stock UOM,按库存计量单位
 "As there are existing stock transactions for this item, you can not change the values of 'Has Serial No', 'Is Stock Item' and 'Valuation Method'",由于库存中的此物品存在交易因此你不能改变'物料编码';'是库存物品';'测量方法'等字段的值
 Asset,资产
 Assistant,助理
-Associate,助理
+Associate,合伙人
 Atleast one of the Selling or Buying must be selected,必须选择至少一个销售或采购
 Atleast one warehouse is mandatory,至少得有一个仓库
 Attach Image,上传图片
@@ -2428,7 +2428,7 @@ Replied,已回复
 Report Date,报表日期
 Report Type,报表类型
 Report Type is mandatory,报表类型是强制性的
-Reports to,报表给（上级）
+Reports to,报告给（上级）
 Reqd By Date,需要的日期
 Reqd by Date,REQD日期
 Request Type,请求类型
