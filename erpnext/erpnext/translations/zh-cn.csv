@@ -1222,7 +1222,7 @@ Health Concerns,健康问题
 Health Details,健康细节
 Held On,公司处理日期
 Help HTML,HTML帮助
-"Help: To link to another record in the system, use ""#Form/Note/[Note Name]"" as the Link URL. (don't use ""http://"")",帮助：要链接到系统中另一条记录， 可使用“#Form/Note/[Note Name]”链接网址。（不要使用"http://"）
+"Help: To link to another record in the system, use ""#Form/Note/[Note Name]"" as the Link URL. (don't use ""http://"")",帮助：要链接到系统中另一条记录， 可使用“#Form/Note/[Note Name]”链接网址。（不要使用“http://”）
 "Here you can maintain family details like name and occupation of parent, spouse and children",在这里你可以维系家庭的详细信息，如姓名;父母配偶子女及其职业
 "Here you can maintain height, weight, allergies, medical concerns etc",在这里你可以保持身高，体重，过敏，医疗问题等
 Hide Currency Symbol,隐藏货币符号
