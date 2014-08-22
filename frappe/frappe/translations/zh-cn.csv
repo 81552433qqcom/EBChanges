@@ -28,7 +28,7 @@ A user can be permitted to multiple records of the same DocType.,用户可以被
 About,关于
 About Us Settings,关于我们设置
 About Us Team Member,关于我们团队成员
-Action,操作
+Action,行为
 Actions,操作
 "Actions for workflow (e.g. Approve, Cancel).",对工作流操作(例如审批，取消)
 Add,添加
@@ -99,7 +99,7 @@ Apply Style,应用样式
 Apply User Permissions,应用用户权限设置
 Are you sure you want to delete the attachment?,您确定要删除附件?
 Arial,宋体
-"As a best practice, do not assign the same set of permission rule to different Roles. Instead, set multiple Roles to the same User.",作为最佳实践，不要给不同的角色设置同样的权限.相反要给用户分配多个角色并且每个角色的权限是不一样的。
+"As a best practice, do not assign the same set of permission rule to different Roles. Instead, set multiple Roles to the same User.",最好的做法：不要分配相同的权限给不同的角色。相反的，可以设置多个角色给相同的用户。
 Ascending,升序
 Assign To,分配给
 Assigned By,由谁分配
@@ -142,7 +142,7 @@ Blogger,博客
 Bookmarks,书签
 Both login and password required,需要登录名和密码
 Brand HTML,品牌的HTML
-Bulk Email,大批量的电子邮件
+Bulk Email,群发邮件
 Bulk email limit {0} crossed,已超过群发电子邮件的限制{0}
 Button,按钮
 By,通过
@@ -179,8 +179,8 @@ Chat,聊天
 Check,检查
 Check / Uncheck roles assigned to the User. Click on the Role to find out what permissions that Role has.,选中/取消选中分配给个人的角色。点击角色就能查看角色被赋予了哪些权限。
 Check this if you want to send emails as this id only (in case of restriction by your email provider).,如果您要以这个Email ID作为标识发送邮件，请勾选这个选项。
-Check this to make this the default letter head in all prints,勾选这个来让这个信头默认出现在所有打印中
-Check which Documents are readable by a User,查看哪些文件是用户可读的
+Check this to make this the default letter head in all prints,勾选让此抬头默认出现在所有打印中 
+Check which Documents are readable by a User,勾选用户只读的文档
 Checked items shown on desktop,在桌面上显示检查的项目
 Child Tables are shown as a Grid in other DocTypes.,子表中会显示在一个表格中。
 City,城市
@@ -188,9 +188,9 @@ Classic,经典
 Clear Cache,清除缓存
 Clear all roles,清除所有角色
 Click on a link to get options,点击一个链接以获取选项
-Click on row to view / edit.,点击一行来查看/编辑。
+Click on row to view / edit.,点击行可查看/编辑
 Client,客户
-Client-side formats are now deprecated,客户端的格式现在已经过期
+Client-side formats are now deprecated,客户端格式现已弃用
 Close,关闭
 Close: {0},关闭:{0}
 Closed,已关闭
@@ -227,7 +227,7 @@ Could not find {0},找不到{0}
 Count,计算
 Country,国家
 Create,创建
-Create a new {0},创建一个新的{0}
+Create a new {0},创建一个新{0}
 Created Custom Field {0} in {1},在{1}里面创建自定义字段{0}
 Created Customer Issue,已创建的客户反馈的问题
 Created Opportunity,已创造的机会
@@ -245,7 +245,7 @@ Customize,定制
 Customize Form,自定义表单
 Customize Form Field,自定义表单字段
 "Customize Label, Print Hide, Default etc.",自定义标签，打印隐藏，默认值等。
-Customized HTML Templates for printing transctions.,自定义的HTML模板印刷transctions 。
+Customized HTML Templates for printing transctions.,自定义HTML模板的打印格式。
 Daily Event Digest is sent for Calendar Events where reminders are set.,当提醒被设置后每日精华会被发送至日历事件。
 Danger,危险
 Data,数据
@@ -327,7 +327,7 @@ Email,电子邮件
 Email Alert,邮件警报
 Email Alert Recipient,邮件警报收件人
 Email Alert Recipients,邮件警报收件人
-Email By Document Field,Email By Document Field
+Email By Document Field,发送至(从文档类型中提取)
 Email Footer,电子邮件页脚
 Email Host,电子邮件主机
 Email Id,电子邮件Id
@@ -374,7 +374,7 @@ Every Week,每一周
 Every Year,每年
 Everyone,每个人
 Example:,例如：
-Expand,展开/扩展
+Expand,展开
 Export,导出
 Export not allowed. You need {0} role to export.,没有权限进行导出。您需要{0}的角色来进行导出。
 Exported,已导出
@@ -432,7 +432,7 @@ For DocType,对于DocType而言
 For Select, enter list of Options separated by comma","对于链接，键入DocType为范围;
 对于选择，以逗号分隔键入选择列表"
 "For comparative filters, start with",对于比较过滤器，请以说明的开始
-For example if you cancel and amend 'INV004' it will become a new document 'INV004-1'. This helps you to keep track of each amendment.,例如，如果你取消并修订“INV004”它将成为一个新的文档INV004-1;。这样的话可以帮助您追踪每个改变以及版本。
+For example if you cancel and amend 'INV004' it will become a new document 'INV004-1'. This helps you to keep track of each amendment.,例如，如果你取消并修改“INV004”它将成为一个新的文档“INV004-1”。这样的话可以帮助您追踪每个改变以及版本。
 For ranges,对于范围而言
 For top bar,对于顶部bar而言
 For {0} at level {1} in {2} in row {3},对于第{3}行在{2}中的级别为{1}的{0}而言
@@ -456,8 +456,8 @@ Get From ,从指明初获取
 GitHub,GitHub
 GitHub Client ID,GitHub的客户ID
 GitHub Client Secret,GitHub的客户端密钥
-Github User ID,Github上的用户ID
-Github Username,Github上用户名
+Github User ID,Github 用户ID
+Github Username,Github 用户名
 Google,谷歌
 Google Analytics ID,谷歌Analytics（分析）的ID
 Google Client ID,谷歌客户ID
@@ -496,7 +496,7 @@ Home Page is Products,首页是用来展示展品的
 ID (name) of the entity whose property is to be set,实体的属性需要被设置
 Icon,图标
 Icon will appear on the button,图标将显示在按钮上
-"If a Role does not have access at Level 0, then higher levels are meaningless.",如果角色没有对0级的访问权限，那么更高的级别的权限是没有意义的。
+"If a Role does not have access at Level 0, then higher levels are meaningless.",如果角色没有0级权限，那么更高级的权限是没有意义的。
 "If checked, an email with an attached HTML format will be added to part of the EMail body as well as attachment. To only send as attachment, uncheck this.",如果选中，则带有附加的HTML格式的电子邮件会被添加到电子邮件正文的一部分，以及作为附件。如果只作为附件发送，请取消勾选此。
 "If checked, the Home page will be the default Item Group for the website.",如果选中，网站的主页将显示默认的产品或服务。
 "If image is selected, color will be ignored (attach first)",如果图像被选中，颜色将被忽略
@@ -510,7 +510,7 @@ Image Link,图片链接
 Import,导入
 Import / Export Data,导入/导出数据
 Import / Export Data from .csv files.,从CSV文件导入/导出数据。
-In,在其中
+In,包括
 In Dialog,在对话框中
 In Filter,在过滤器中
 In List View,在列表视图中
@@ -582,7 +582,7 @@ Letter Head Name,信头名
 Letter Head in HTML,信头中的HTML
 Level,级别
 "Level 0 is for document level permissions, higher levels for field level permissions.",0级是文档级权限，更高层次为字段级权限。
-Like,喜欢
+Like,类似于
 Link,链接
 "Link that is the website home page. Standard Links (index, login, products, blog, about, contact)",网站的主页链接。标准链接（索引，登录，产品，博客，关于，联系）
 Link to other pages in the side bar and next section,通过侧边栏和章节链接到其它的页面
@@ -719,7 +719,7 @@ Notify by Email,通过电子邮件通知
 Number Format,数字格式
 Old Parent,Old Parent
 On,On
-"Once you have set this, the users will only be able access documents (eg. Blog Post) where the link exists (eg. Blogger).",一旦设置这个，用户将只能访问链路存在（如Blogger的）的文档（如博客文章） 。
+"Once you have set this, the users will only be able access documents (eg. Blog Post) where the link exists (eg. Blogger).",一旦你设置这个，那么用户将只能访问有链接关系的文档。
 Only Administrator allowed to create Query / Script Reports,只有管​​理员可以创建查询/报告的脚本
 Only Administrator can save a standard report. Please rename and save.,只有管​​理员可以保存标准的报告。请重新命名并保存。
 Only Allow Edit For,只允许编辑
@@ -745,7 +745,7 @@ Org History,组织历史
 Org History Heading,组织历史标题
 Original Message,原始消息
 Other,其他
-Outgoing Email Settings,发送电子邮件设置
+Outgoing Email Settings,邮件发送设置
 Outgoing Mail Server,发送邮件服务器
 Outgoing Mail Server not specified,未指定发送邮件服务器
 Owner,拥有者
@@ -791,11 +791,11 @@ Permission already set,权限已经设置
 Permissions,权限
 Permissions Settings,权限设置
 Permissions are automatically translated to Standard Reports and Searches.,权限设置会自动应用到标准报表和搜索中。
-"Permissions are set on Roles and Document Types (called DocTypes) by setting rights like Read, Write, Create, Delete, Submit, Cancel, Amend, Report, Import, Export, Print, Email and Set User Permissions.",通过设置读，写，创建，删除，提交，取消，修改，报表，导入，导出，打印，电子邮件权限并将其应用到用户权的角色和文件类型（称为文档类型）。
+"Permissions are set on Roles and Document Types (called DocTypes) by setting rights like Read, Write, Create, Delete, Submit, Cancel, Amend, Report, Import, Export, Print, Email and Set User Permissions.",通过设置读，写，创建，删除，提交，取消，修改，报表，导入，导出，打印，邮件权限并将其应用到用户权限的角色和文件类型（称为文档类型）。
 Permissions at higher levels are 'Field Level' permissions. All Fields have a 'Permission Level' set against them and the rules defined at that permissions apply to the field. This is useful in case you want to hide or make certain field read-only for certain Roles.,字段权限是更高级别的权限;所有的字段都可以应用权限以及权限规则;这样你可以针对特定的角色隐藏或设置为只读
 "Permissions at level 0 are 'Document Level' permissions, i.e. they are primary for access to the document.",0级权限是“文档级”的权限，也就是说，它们是主要用于访问文档。
 Permissions get applied on Users based on what Roles they are assigned.,用户的权限是由他所在的角色的权限集合决定的。
-Permitted Documents For User,用户授权访问的文件
+Permitted Documents For User,用户有权限访问的文档
 Person,人
 Personal Info,个人信息
 Phone,电话
@@ -859,7 +859,7 @@ Properties,属性列表
 Property,属性
 Property Setter,属性设置
 Property Type,物业类型
-Public,公共的
+Public,公开的
 Published,已发布
 Published On,发表于
 Published on website at: {0},发表于网站：{0}
@@ -911,7 +911,7 @@ Report was not saved (there were errors),有错误发生因此报告没有被保
 Reqd,REQD
 Reset Password Key,重设密码密钥
 Reset Permissions for {0}?,为{0}重置权限?
-Response,响应
+Response,回复
 Restrict IP,限制IP
 Restrict user from this IP address only. Multiple IP addresses can be added by separating with commas. Also accepts partial IP addresses like (111.111.111),限制用户仅能通过此IP地址访问。多个IP地址，可以通过用逗号分隔。也接受像（111.111.111）部分的IP地址
 Right,右边
@@ -938,7 +938,7 @@ Same file has already been attached to the record,相同的文件已经被附加
 Sample,样品/例子
 Saturday,星期六
 Save,保存
-Scheduler Log,定时计划器日志
+Scheduler Log,定时计划任务日志
 Script,脚本
 Script Report,脚本报告
 Script Type,脚本类型
@@ -974,7 +974,7 @@ Send Email,发送电​​子邮件
 Send Email Print Attachments as PDF (Recommended),邮件中附件以PDF格式（推荐）发送
 Send Me A Copy,给我发一份
 Send Password,发送密码
-Send Print as PDF,以PDF发送打印命令
+Send Print as PDF,发送打印为PDF
 Send alert if date matches this field's value,如果日期匹配该字段的值则发送警报
 Send alert if this field's value changes,如果这个字段的值改变发送警报
 Send an email reminder in the morning,在早上发送电​​子邮件提醒
@@ -1005,7 +1005,7 @@ Set User Permissions,设置用户权限
 Set Value,设定值
 "Set default format, page size, print style etc.",设置默认格式，页面大小，打印样式等
 Set numbering series for transactions.,为交易设置编号系列。
-Set outgoing mail server.,设置发送邮件服务器
+Set outgoing mail server.,设置邮件发送服务器
 Settings,设置
 Settings for About Us Page.,关于我们页面的设置。
 Settings for Contact Us Page.,联系我们页面的设置。
@@ -1054,7 +1054,7 @@ Standard replies to common queries.,常见问题的回复
 Start Report For,启动报告
 Starts on,开始于
 State,状态
-States,列表列表
+States,状态
 "States for workflow (e.g. Draft, Approved, Cancelled).",工作流程状态（例如草案，批准，已取消）
 Static File Timestamp,静态文件的时间戳
 Status,状态
@@ -1135,9 +1135,9 @@ Title Prefix,标题前缀
 Title field must be a valid fieldname,标题字段必须是有效的字段名
 Title is required,标题是必需的
 To,至
-To Do,代办事项
+To Do,待办事项
 "To format columns, give column labels in the query.",要格式化列，将列标签放入查询中。
-"To give acess to a role for only specific records, check the 'Apply User Permissions'. User Permissions are used to limit users with such role to specific records.",让某个选择只能访问某些记录，选择“应用用户权限”功能
+"To give acess to a role for only specific records, check the 'Apply User Permissions'. User Permissions are used to limit users with such role to specific records.",如果让角色只能访问特定的一些记录则请勾选“应用用户权限”。用户权限能够限制有相应角色的用户只能访问特定的记录（设置 > 用户权限管理）
 "To run a test add the module name in the route after '{0}'. For example, {1}", 让一个模块的测试运行请在“{0}”之后添加模块名称到路由。例如， {1}
 ToDo,待办事项
 Too many writes in one request. Please send smaller requests,一个请求中包含太多的写操作请分割成小些的请求
@@ -1228,14 +1228,14 @@ Website Slideshow Item,网站幻灯片元素
 Website User,网站用户
 Wednesday,星期三
 Welcome email sent,欢迎电子邮件已发送
-"When you Amend a document after Cancel and save it, it will get a new number that is a version of the old number.",当您取消一个文件后并进行保存，它会得到一个新的编号，例如从SN1000变成SN1000-1。
+"When you Amend a document after Cancel and save it, it will get a new number that is a version of the old number.",当您修改一个文件在取消并保存后，它会得到一个新的编号，例如从SN1000变成SN1000-1。
 Width,宽度
 Will be used in url (usually first name).,在URL（通常是姓）将被使用。
 With Groups,与组
 With Ledgers,与分类账
-With Letterhead,与信头
+With Letterhead,打印抬头
 Workflow,工作流程
-Workflow Action,工作流操作
+Workflow Action,工作流行为
 Workflow Action Name,工作流操作名称
 Workflow Document State,工作流文档状态
 Workflow Document States,工作流文档状态列表
@@ -1259,7 +1259,7 @@ You are not allowed to export this report,你没有权限导出本报告
 You are not allowed to print this document,你不允许打印此文档
 You are not allowed to send emails related to this document,你没有权限发送与此文档相关的电子邮件
 "You can change Submitted documents by cancelling them and then, amending them.",您可以通过取消已提交的文件然后对其进行修正更改
-You can use Customize Form to set levels on fields.,您可以使用自定义表单来设置字段的级别。
+You can use Customize Form to set levels on fields.,您可以使用自定义表单来设置级别到字段。
 You can use wildcard %,可以使用通配符%
 You cannot install this app,您无法安装这个应用
 You have unsaved changes in this form. Please save before you continue.,你在本表单有未保存的更改;在继续之前请保存
@@ -1293,7 +1293,7 @@ book,书
 bookmark,书签
 briefcase,公文包
 bullhorn,扩音器
-calendar,日历
+calendar,日程事件
 camera,相机
 certificate,证书
 check,勾选
@@ -1331,7 +1331,7 @@ folder-close,文件夹闭
 folder-open,文件夹打开
 font,字形
 forward,向前
-found,发现
+found,被发现
 fullscreen,全屏
 gift,礼物
 glass,玻璃
@@ -1428,7 +1428,7 @@ use % as wildcard,使用%作为通配符
 user,用户
 user_image_show,user_image_show
 values and dates,值和日期
-values separated by commas,值用逗号分隔
+values separated by commas,多值用逗号分隔
 volume-down,容积下降
 volume-off,体积关
 volume-up,容积上升
@@ -1437,7 +1437,7 @@ wrench,扳手
 yyyy-mm-dd,yyyy-mm-dd
 zoom-in,放大
 zoom-out,拉远
-{0} List,{0}的列表
+{0} List,{0}列表
 {0} added,{0}已添加
 {0} by {1},{0} by {1}
 {0} cannot be set for Single types,单类型不能设置{0}
