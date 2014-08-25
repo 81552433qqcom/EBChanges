@@ -1,7 +1,7 @@
 #Role table update
 UPDATE `tabRole` SET  `name` =  '财务经理', `role_name` =  '财务经理' WHERE  `tabRole`.`name` =  'Accounts Manager';
 UPDATE `tabRole` SET  `name` =  '财务人员', `role_name` =  '财务人员' WHERE  `tabRole`.`name` =  'Accounts User';
-UPDATE `tabRole` SET  `name` =  '系统管理员',`role_name` =  '系统管理员' WHERE  `tabRole`.`name` =  'Administrator';
+UPDATE `tabRole` SET  `name` =  'Administrator',`role_name` =  'Administrator' WHERE  `tabRole`.`name` =  'Administrator';
 UPDATE `tabRole` SET  `name` =  '分析人员',`role_name` =  '分析人员' WHERE  `tabRole`.`name` =  'Analytics';
 UPDATE `tabRole` SET  `name` =  '审计人员',`role_name` =  '审计人员' WHERE  `tabRole`.`name` =  'Auditor';
 UPDATE `tabRole` SET  `name` =  '博客人员',`role_name` =  '博客人员' WHERE  `tabRole`.`name` =  'Blogger';
@@ -40,7 +40,7 @@ UPDATE `tabRole` SET  `name` =  '任何人',`role_name` =  '任何人' WHERE  `tabRole
 #User Role Relationship UPDATE role column
 UPDATE `tabUserRole` SET  `role` =  '财务经理' WHERE  `tabUserRole`.`role` =  'Accounts Manager';
 UPDATE `tabUserRole` SET  `role` =  '财务人员' WHERE  `tabUserRole`.`role` =  'Accounts User';
-UPDATE `tabUserRole` SET  `role` =  '系统管理员' WHERE  `tabUserRole`.`role` =  'Administrator';
+UPDATE `tabUserRole` SET  `role` =  'Administrator' WHERE  `tabUserRole`.`role` =  'Administrator';
 UPDATE `tabUserRole` SET  `role` =  '分析人员' WHERE  `tabUserRole`.`role` =  'Analytics';
 UPDATE `tabUserRole` SET  `role` =  '审计人员' WHERE  `tabUserRole`.`role` =  'Auditor';
 UPDATE `tabUserRole` SET  `role` =  '博客人员' WHERE  `tabUserRole`.`role` =  'Blogger';
@@ -78,7 +78,7 @@ UPDATE `tabUserRole` SET  `role` =  '任何人' WHERE  `tabUserRole`.`role` =  'All
 #update user role parent column
 UPDATE `tabUserRole` SET  `parent` =  '财务经理' WHERE  `tabUserRole`.`parent` =  'Accounts Manager';
 UPDATE `tabUserRole` SET  `parent` =  '财务人员' WHERE  `tabUserRole`.`parent` =  'Accounts User';
-UPDATE `tabUserRole` SET  `parent` =  '系统管理员' WHERE  `tabUserRole`.`parent` =  'Administrator';
+UPDATE `tabUserRole` SET  `parent` =  'Administrator' WHERE  `tabUserRole`.`parent` =  'Administrator';
 UPDATE `tabUserRole` SET  `parent` =  '分析人员' WHERE  `tabUserRole`.`parent` =  'Analytics';
 UPDATE `tabUserRole` SET  `parent` =  '审计人员' WHERE  `tabUserRole`.`parent` =  'Auditor';
 UPDATE `tabUserRole` SET  `parent` =  '博客人员' WHERE  `tabUserRole`.`parent` =  'Blogger';
@@ -116,7 +116,7 @@ UPDATE `tabUserRole` SET  `parent` =  '任何人' WHERE  `tabUserRole`.`parent` =  
 #update tabPage Role
 UPDATE `tabPage Role` SET  `role` =  '财务经理' WHERE  `tabPage Role`.`role` =  'Accounts Manager';
 UPDATE `tabPage Role` SET  `role` =  '财务人员' WHERE  `tabPage Role`.`role` =  'Accounts User';
-UPDATE `tabPage Role` SET  `role` =  '系统管理员' WHERE  `tabPage Role`.`role` =  'Administrator';
+UPDATE `tabPage Role` SET  `role` =  'Administrator' WHERE  `tabPage Role`.`role` =  'Administrator';
 UPDATE `tabPage Role` SET  `role` =  '分析人员' WHERE  `tabPage Role`.`role` =  'Analytics';
 UPDATE `tabPage Role` SET  `role` =  '审计人员' WHERE  `tabPage Role`.`role` =  'Auditor';
 UPDATE `tabPage Role` SET  `role` =  '博客人员' WHERE  `tabPage Role`.`role` =  'Blogger';
@@ -154,7 +154,7 @@ UPDATE `tabPage Role` SET  `role` =  '任何人' WHERE  `tabPage Role`.`role` =  'A
 #update permission table
 UPDATE `tabDocPerm` SET  `role` =  '财务经理' WHERE  `tabDocPerm`.`role` =  'Accounts Manager';
 UPDATE `tabDocPerm` SET  `role` =  '财务人员' WHERE  `tabDocPerm`.`role` =  'Accounts User';
-UPDATE `tabDocPerm` SET  `role` =  '系统管理员' WHERE  `tabDocPerm`.`role` =  'Administrator';
+UPDATE `tabDocPerm` SET  `role` =  'Administrator' WHERE  `tabDocPerm`.`role` =  'Administrator';
 UPDATE `tabDocPerm` SET  `role` =  '分析人员' WHERE  `tabDocPerm`.`role` =  'Analytics';
 UPDATE `tabDocPerm` SET  `role` =  '审计人员' WHERE  `tabDocPerm`.`role` =  'Auditor';
 UPDATE `tabDocPerm` SET  `role` =  '博客人员' WHERE  `tabDocPerm`.`role` =  'Blogger';
