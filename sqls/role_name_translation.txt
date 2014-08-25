@@ -27,7 +27,7 @@ UPDATE `tabRole` SET  `name` =  '采购人员',`role_name` =  '采购人员' WHE
 UPDATE `tabRole` SET  `name` =  '质检经理',`role_name` =  '质检经理' WHERE  `tabRole`.`name` =  'Quality Manager';
 UPDATE `tabRole` SET  `name` =  '报表管理员',`role_name` =  '报表管理员' WHERE  `tabRole`.`name` =  'Report Manager';
 UPDATE `tabRole` SET  `name` =  '销售经理',`role_name` =  '销售经理' WHERE  `tabRole`.`name` =  'Sales Manager';
-UPDATE `tabRole` SET  `name` =  '销售主数据管理员',`role_name` =  '销售主数据管理员' WHERE  `tabrole`.`name` =  'Sales Master Manager';
+UPDATE `tabRole` SET  `name` =  '销售主数据管理员',`role_name` =  '销售主数据管理员' WHERE  `tabRole`.`name` =  'Sales Master Manager';
 UPDATE `tabRole` SET  `name` =  '销售人员',`role_name` =  '销售人员' WHERE  `tabRole`.`name` =  'Sales User';
 UPDATE `tabRole` SET  `name` =  '供应商',`role_name` =  '供应商' WHERE  `tabRole`.`name` =  'Supplier';
 UPDATE `tabRole` SET  `name` =  '客户支持经理',`role_name` =  '客户支持经理' WHERE  `tabRole`.`name` =  'Support Manager';
