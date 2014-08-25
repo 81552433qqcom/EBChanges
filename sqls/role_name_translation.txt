@@ -1,7 +1,7 @@
 ﻿#Role table update
 UPDATE `tabRole` SET  `name` =  '财务经理', `role_name` =  '财务经理' WHERE  `tabRole`.`name` =  'Accounts Manager';
 UPDATE `tabRole` SET  `name` =  '财务人员', `role_name` =  '财务人员' WHERE  `tabRole`.`name` =  'Accounts User';
-UPDATE `tabRole` SET  `name` =  'Administrator',`role_name` =  '系统管理员' WHERE  `tabRole`.`name` =  'Administrator';
+UPDATE `tabRole` SET  `name` =  'Administrator',`role_name` =  '超级管理员' WHERE  `tabRole`.`name` =  'Administrator';
 UPDATE `tabRole` SET  `name` =  '分析人员',`role_name` =  '分析人员' WHERE  `tabRole`.`name` =  'Analytics';
 UPDATE `tabRole` SET  `name` =  '审计人员',`role_name` =  '审计人员' WHERE  `tabRole`.`name` =  'Auditor';
 UPDATE `tabRole` SET  `name` =  '博客人员',`role_name` =  '博客人员' WHERE  `tabRole`.`name` =  'Blogger';
@@ -32,7 +32,7 @@ UPDATE `tabRole` SET  `name` =  '销售人员',`role_name` =  '销售人员' WHE
 UPDATE `tabRole` SET  `name` =  '供应商',`role_name` =  '供应商' WHERE  `tabRole`.`name` =  'Supplier';
 UPDATE `tabRole` SET  `name` =  '客户支持经理',`role_name` =  '客户支持经理' WHERE  `tabRole`.`name` =  'Support Manager';
 UPDATE `tabRole` SET  `name` =  '客户支持团队',`role_name` =  '客户支持团队' WHERE  `tabRole`.`name` =  'Support Team';
-UPDATE `tabRole` SET  `name` =  '系统经理',`role_name` =  '系统经理' WHERE  `tabRole`.`name` =  'System Manager';
+UPDATE `tabRole` SET  `name` =  'System Manager',`role_name` =  '系统管理员' WHERE  `tabRole`.`name` =  'System Manager';
 UPDATE `tabRole` SET  `name` =  '网站管理员',`role_name` =  '网站管理员' WHERE  `tabRole`.`name` =  'Website Manager';
 UPDATE `tabRole` SET  `name` =  '任何人',`role_name` =  '任何人' WHERE  `tabRole`.`name` =  'All';
 
@@ -71,7 +71,7 @@ UPDATE `tabUserRole` SET  `role` =  '销售人员' WHERE  `tabUserRole`.`role` =
 UPDATE `tabUserRole` SET  `role` =  '供应商' WHERE  `tabUserRole`.`role` =  'Supplier';
 UPDATE `tabUserRole` SET  `role` =  '客户支持经理' WHERE  `tabUserRole`.`role` =  'Support Manager';
 UPDATE `tabUserRole` SET  `role` =  '客户支持团队' WHERE  `tabUserRole`.`role` =  'Support Team';
-UPDATE `tabUserRole` SET  `role` =  '系统经理' WHERE  `tabUserRole`.`role` =  'System Manager';
+UPDATE `tabUserRole` SET  `role` =  'System Manager' WHERE  `tabUserRole`.`role` =  'System Manager';
 UPDATE `tabUserRole` SET  `role` =  '网站管理员' WHERE  `tabUserRole`.`role` =  'Website Manager';
 UPDATE `tabUserRole` SET  `role` =  '任何人' WHERE  `tabUserRole`.`role` =  'All';
 
@@ -109,7 +109,7 @@ UPDATE `tabUserRole` SET  `parent` =  '销售人员' WHERE  `tabUserRole`.`paren
 UPDATE `tabUserRole` SET  `parent` =  '供应商' WHERE  `tabUserRole`.`parent` =  'Supplier';
 UPDATE `tabUserRole` SET  `parent` =  '客户支持经理' WHERE  `tabUserRole`.`parent` =  'Support Manager';
 UPDATE `tabUserRole` SET  `parent` =  '客户支持团队' WHERE  `tabUserRole`.`parent` =  'Support Team';
-UPDATE `tabUserRole` SET  `parent` =  '系统经理' WHERE  `tabUserRole`.`parent` =  'System Manager';
+UPDATE `tabUserRole` SET  `parent` =  'System Manager' WHERE  `tabUserRole`.`parent` =  'System Manager';
 UPDATE `tabUserRole` SET  `parent` =  '网站管理员' WHERE  `tabUserRole`.`parent` =  'Website Manager';
 UPDATE `tabUserRole` SET  `parent` =  '任何人' WHERE  `tabUserRole`.`parent` =  'All';
 
@@ -147,7 +147,7 @@ UPDATE `tabPage Role` SET  `role` =  '销售人员' WHERE  `tabPage Role`.`role`
 UPDATE `tabPage Role` SET  `role` =  '供应商' WHERE  `tabPage Role`.`role` =  'Supplier';
 UPDATE `tabPage Role` SET  `role` =  '客户支持经理' WHERE  `tabPage Role`.`role` =  'Support Manager';
 UPDATE `tabPage Role` SET  `role` =  '客户支持团队' WHERE  `tabPage Role`.`role` =  'Support Team';
-UPDATE `tabPage Role` SET  `role` =  '系统经理' WHERE  `tabPage Role`.`role` =  'System Manager';
+UPDATE `tabPage Role` SET  `role` =  'System Manager' WHERE  `tabPage Role`.`role` =  'System Manager';
 UPDATE `tabPage Role` SET  `role` =  '网站管理员' WHERE  `tabPage Role`.`role` =  'Website Manager';
 UPDATE `tabPage Role` SET  `role` =  '任何人' WHERE  `tabPage Role`.`role` =  'All';
 
@@ -185,6 +185,6 @@ UPDATE `tabDocPerm` SET  `role` =  '销售人员' WHERE  `tabDocPerm`.`role` =  
 UPDATE `tabDocPerm` SET  `role` =  '供应商' WHERE  `tabDocPerm`.`role` =  'Supplier';
 UPDATE `tabDocPerm` SET  `role` =  '客户支持经理' WHERE  `tabDocPerm`.`role` =  'Support Manager';
 UPDATE `tabDocPerm` SET  `role` =  '客户支持团队' WHERE  `tabDocPerm`.`role` =  'Support Team';
-UPDATE `tabDocPerm` SET  `role` =  '系统经理' WHERE  `tabDocPerm`.`role` =  'System Manager';
+UPDATE `tabDocPerm` SET  `role` =  'System Manager' WHERE  `tabDocPerm`.`role` =  'System Manager';
 UPDATE `tabDocPerm` SET  `role` =  '网站管理员' WHERE  `tabDocPerm`.`role` =  'Website Manager';
 UPDATE `tabDocPerm` SET  `role` =  '任何人' WHERE  `tabDocPerm`.`role` =  'All';
