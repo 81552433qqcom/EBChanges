@@ -1,7 +1,7 @@
 ﻿#Role table update
 UPDATE `tabRole` SET  `name` =  '财务经理', `role_name` =  '财务经理' WHERE  `tabRole`.`name` =  'Accounts Manager';
 UPDATE `tabRole` SET  `name` =  '财务人员', `role_name` =  '财务人员' WHERE  `tabRole`.`name` =  'Accounts User';
-UPDATE `tabRole` SET  `name` =  'Administrator',`role_name` =  'Administrator' WHERE  `tabRole`.`name` =  'Administrator';
+UPDATE `tabRole` SET  `name` =  'Administrator',`role_name` =  '系统管理员' WHERE  `tabRole`.`name` =  'Administrator';
 UPDATE `tabRole` SET  `name` =  '分析人员',`role_name` =  '分析人员' WHERE  `tabRole`.`name` =  'Analytics';
 UPDATE `tabRole` SET  `name` =  '审计人员',`role_name` =  '审计人员' WHERE  `tabRole`.`name` =  'Auditor';
 UPDATE `tabRole` SET  `name` =  '博客人员',`role_name` =  '博客人员' WHERE  `tabRole`.`name` =  'Blogger';
