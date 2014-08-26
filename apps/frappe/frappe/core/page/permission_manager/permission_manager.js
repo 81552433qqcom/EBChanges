@@ -41,13 +41,13 @@ frappe.PermissionEngine = Class.extend({
 	setup_appframe: function() {
 		var me = this;
 		this.doctype_select
-			= this.wrapper.appframe.add_select(__("doctypes"),
+			= this.wrapper.appframe.add_select(__("Doctypes"),
 				[{value: "", label: __("Select Document Type")+"..."}].concat(this.options.doctypes))
 				.change(function() {
 					frappe.set_route("permission-manager", $(this).val());
 				});
 		this.role_select
-			= this.wrapper.appframe.add_select(__("roles"),
+			= this.wrapper.appframe.add_select(__("Roles"),
 				[__("Select Role")+"..."].concat(this.options.roles))
 				.change(function() {
 					me.refresh();
@@ -231,7 +231,7 @@ frappe.PermissionEngine = Class.extend({
 			var perm_container = $("<div class='row'></div>").appendTo(perm_cell);
 
 			$.each(me.rights, function(i, r) {
-				add_check(perm_container, d, r);
+				add_check(perm_container, d, r,r);
 			});
 
 			// buttons
@@ -331,14 +331,14 @@ frappe.PermissionEngine = Class.extend({
 				var d = new frappe.ui.Dialog({
 					title: __("Add New Permission Rule"),
 					fields: [
-						{fieldtype:"Select", label:"Document Type",
+						{fieldtype:"Select", label:__("Document Type"),
 							options:me.options.doctypes, reqd:1, fieldname:"parent"},
-						{fieldtype:"Select", label:"Role",
+						{fieldtype:"Select", label:__("Role"),
 							options:me.options.roles, reqd:1},
-						{fieldtype:"Select", label:"Permission Level",
+						{fieldtype:"Select", label:__("Permission Level"),
 							options:[0,1,2,3,4,5,6,7,8,9], reqd:1, fieldname: "permlevel",
 							description: __("Level 0 is for document level permissions, higher levels for field level permissions.")},
-						{fieldtype:"Button", label:"Add"},
+						{fieldtype:"Button", label:__("Add")},
 					]
 				});
 				if(me.get_doctype()) {
