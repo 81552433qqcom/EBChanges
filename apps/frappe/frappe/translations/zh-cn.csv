@@ -1471,7 +1471,7 @@ zoom-out,拉远
 "{0}: Only one rule allowed with the same Role, Level and Apply User Permissions",{0}:只有一个规则被允许应用到相同的角色，级别和用户权限中
 {0}: Permission at level 0 must be set before higher levels are set,{0}:在更高级别设置前必须先设置级别0的权限
 {app_title},{ app_title }
-###########################:###########################
+###########################,###########################
 Select User,选择用户
 Select DocType,选择文档类型
 Add Filter,添加过滤
@@ -1508,3 +1508,4 @@ Support Team,客户支持团队
 System Manager,系统管理员
 Website Manager,网站管理员
 All,任何人
+Role Permission Manager,角色权限管理
