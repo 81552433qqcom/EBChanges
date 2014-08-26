@@ -191,7 +191,7 @@ frappe.PermissionEngine = Class.extend({
 			}
 
 			var checkbox = $("<div class='col-md-4'><div class='checkbox'>\
-					<label><input type='checkbox'>"+__(label)+"</input></label>"
+					<label><input type='checkbox'>"+__(fieldname)+"</input></label>"
 					+ (d.help || "") + "</div></div>").appendTo(cell)
 				.attr("data-fieldname", fieldname)
 				.css("text-transform", "capitalize");
@@ -242,7 +242,7 @@ frappe.PermissionEngine = Class.extend({
 		"print", "email", "report", "import", "export", "set_user_permissions"],
 
 	set_show_users: function(cell, role) {
-		cell.html("<a href='#'>"+role+"</a>")
+		cell.html("<a href='#'>"+__(role)+"</a>")
 			.find("a")
 			.attr("data-role", role)
 			.click(function() {
