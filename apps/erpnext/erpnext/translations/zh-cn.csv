@@ -162,8 +162,8 @@ Address Type,地址类型
 Address master.,地址主人
 Administrative Expenses,行政费用
 Administrative Officer,行政官
-Advance Amount,提前量
-Advance amount,提前量
+Advance Amount,预付款金额
+Advance amount,预付款金额
 Advances,进展
 Advertisement,广告
 Advertising,广告
@@ -1158,8 +1158,8 @@ Generate Material Requests (MRP) and Production Orders.,生成物料请求(MRP)�
 Generate Salary Slips,生成工资条
 Generate Schedule,生成时间表
 Generates HTML to include selected image in the description,生成HTML包括所选图像的描述
-Get Advances Paid,获取预付款
-Get Advances Received,查看已收预付款
+Get Advances Paid,获取已付预付款
+Get Advances Received,获取已收预付款
 Get Current Stock,查看那当前库存
 Get Items,获取材料
 Get Items From Sales Orders,从销售订单获取产品
@@ -1367,7 +1367,7 @@ Is Default,是默认的
 Is Encash,是兑现了的
 Is Fixed Asset Item,是固定资产项
 Is LWP,是无薪假期
-Is Opening,是期初类型吗?
+Is Opening,是期初分录吗?
 Is Opening Entry,是开始分录
 Is POS,是POS机
 Is Primary Contact,是主要联络人
@@ -1612,7 +1612,7 @@ Make Bank Voucher,创建银行凭证
 Make Credit Note,创建贷方凭证(应付款通知单)
 Make Debit Note,创建借记通知单
 Make Delivery,交货
-Make Difference Entry,做不同的录入
+Make Difference Entry,创建差异记录
 Make Excise Invoice,创建消费税发票
 Make Installation Note,创建安装注意事项
 Make Invoice,创建发票
@@ -2042,7 +2042,7 @@ Please Enter Abbreviation or Short Name properly as it will be added as Suffix t
 Please Update SMS Settings,请更新短信设置
 Please add expense voucher details,请新增支出凭单明细
 Please add to Modes of Payment from Setup.,请在设置中添加付款方式
-Please check 'Is Advance' against Account {0} if this is an advance entry.,Please check 'Is Advance' against Account {0} if this is an advance entry.
+Please check 'Is Advance' against Account {0} if this is an advance entry.,如果是预付款条目则在账户{0}中请勾选'是预付'。
 Please click on 'Generate Schedule',请点击'生成计划'
 Please click on 'Generate Schedule' to fetch Serial No added for Item {0},请点击'生成计划'来获取商品{0}的已增序列号
 Please click on 'Generate Schedule' to get schedule,请在'生成计划'点击获取计划表
@@ -2187,7 +2187,7 @@ Print and Stationary,印刷和文具
 Printing and Branding,打印及格式
 Priority,优先级
 Private Equity,私人股本
-Privilege Leave,特权休假
+Privilege Leave,年假
 Probation,试用期
 Process Payroll,工资生成
 Produced,已生产
@@ -2807,7 +2807,7 @@ Stock Level,库存水平
 Stock Liabilities,库存债务
 Stock Projected Qty,Stock Projected Qty
 Stock Queue (FIFO),库存队列（FIFO）
-Stock Received But Not Billed,Stock Received But Not Billed
+Stock Received But Not Billed,已入库但未付款
 Stock Reconciliation Data,库存对账数据
 Stock Reconciliation Template,库存对账模板
 Stock Reconciliation,库存盘点
@@ -2829,7 +2829,7 @@ Stop Material Request,停止材料要求
 Stop users from making Leave Applications on following days.,用户不能在禁止休假的日期进行休假申请
 Stop!,停止！
 Stopped,停止
-Stopped order cannot be cancelled. Unstop to cancel.,Stopped order cannot be cancelled. Unstop to cancel.
+Stopped order cannot be cancelled. Unstop to cancel.,停止的订单不能被取消请先更改为非停止状态然后取消
 Stores,物料
 Stub,存根
 Sub Assemblies,子组件
@@ -2866,11 +2866,11 @@ Supplier Type,供应商类型
 Supplier Type / Supplier,供应商类型/供应商
 Supplier Type master.,供应商类型主数据。
 Supplier Warehouse,供应商仓库
-Supplier Warehouse mandatory for sub-contracted Purchase Receipt,Supplier Warehouse mandatory for sub-contracted Purchase Receipt
+Supplier Warehouse mandatory for sub-contracted Purchase Receipt,分包合同采购单中的供应商仓库必须指明
 Supplier database.,供应商数据库。
 Supplier master.,供应商主数据。
-Supplier warehouse where you have issued raw materials for sub - contracting,Supplier warehouse where you have issued raw materials for sub - contracting
-Supplier-Wise Sales Analytics,Supplier-Wise Sales Analytics
+Supplier warehouse where you have issued raw materials for sub - contracting,原材料需要发给供应商的仓库(分包合同)
+Supplier-Wise Sales Analytics,供应商层面销售分析
 Support,支持
 Support Analtyics,支持分析
 Support Analytics,支持分析
@@ -2901,14 +2901,14 @@ Target On,目标在
 Target Qty,目标数量
 Target Warehouse,目标仓库
 Target warehouse in row {0} must be same as Production Order,行{0}中的目标仓库必须与生产订单中的一样
-Target warehouse is mandatory for row {0},Target warehouse is mandatory for row {0}
+Target warehouse is mandatory for row {0},行{0}的目标仓库必须指明
 Task,任务
 Task Details,任务详细信息
 Tasks,任务
 Tax,税务
 Tax Amount After Discount Amount,折后税额
 Tax Assets,税资产
-Tax Category can not be 'Valuation' or 'Valuation and Total' as all items are non-stock items,Tax Category can not be 'Valuation' or 'Valuation and Total' as all items are non-stock items
+Tax Category can not be 'Valuation' or 'Valuation and Total' as all items are non-stock items,由于所有的商品为非库存商品因此税务类别不能是'估计(库存)' 或 '总额以及库存估值'
 Tax Rate,税率
 Tax and other salary deductions.,税以及其它薪资扣除。
 "Tax detail table fetched from item master as a string and stored in this field.
@@ -2950,7 +2950,7 @@ Territory / Customer,区域/客户
 Territory Manager,区域经理
 Territory Name,区域名称
 Territory Target Variance Item Group-Wise,Territory Target Variance Item Group-Wise
-Territory Targets,Territory Targets
+Territory Targets,区域目标
 Test,测试
 Test Email Id,测试电子邮件Id
 Test the Newsletter,测试新闻通讯
@@ -2962,37 +2962,37 @@ The Organization,本组织
 "The date on which next invoice will be generated. It is generated on submit.
 ","发票的生成日期是在提交时生成的
 "
-The date on which recurring invoice will be stop,The date on which recurring invoice will be stop 
-"The day of the month on which auto invoice will be generated e.g. 05, 28 etc","The day of the month on which auto invoice will be generated e.g. 05, 28 etc"
-The day(s) on which you are applying for leave are holiday. You need not apply for leave.,The day(s) on which you are applying for leave are holiday. You need not apply for leave.
+The date on which recurring invoice will be stop,经常性发票停止产生的日期
+"The day of the month on which auto invoice will be generated e.g. 05, 28 etc",发票自动产生出来的日期，例如每月的5号
+The day(s) on which you are applying for leave are holiday. You need not apply for leave.,你申请休假的日期是节假日无需请假
 The first Leave Approver in the list will be set as the default Leave Approver,该列表中的第一个休假审批人将被设置为默认休假审批人
 The first user will become the System Manager (you can change that later).,第一个用户将成为系统管理员（您可以在以后更改）。
 The gross weight of the package. Usually net weight + packaging material weight. (for print),包的总重量。通常净重+包装材料的重量。 （用于打印）
 The name of your company for which you are setting up this system.,请设置公司基本信息。
 The net weight of this package. (calculated automatically as sum of net weight of items),包净重（自动计算物品的净重总和）
 The new BOM after replacement,更换后的新物料清单（BOM）
-The rate at which Bill Currency is converted into company's base currency,The rate at which Bill Currency is converted into company's base currency
-The unique id for tracking all recurring invoices. It is generated on submit.,The unique id for tracking all recurring invoices. It is generated on submit.
+The rate at which Bill Currency is converted into company's base currency,付款货币与公司货币的转换比率
+The unique id for tracking all recurring invoices. It is generated on submit.,用于跟踪所有经常性发票的唯一识别号会在提交后自动产生出来
 "Then Pricing Rules are filtered out based on Customer, Customer Group, Territory, Supplier, Supplier Type, Campaign, Sales Partner etc.",然后定价规则将基于客户，客户组，区域，供应商，供应商类型，促销活动，销售合作伙伴等过滤。
 There are more holidays than working days this month.,这个月的假期比工作日更多。
 "There can only be one Shipping Rule Condition with 0 or blank value for ""To Value""","There can only be one Shipping Rule Condition with 0 or blank value for ""To Value"""
-There is not enough leave balance for Leave Type {0},There is not enough leave balance for Leave Type {0}
+There is not enough leave balance for Leave Type {0},休假类型 {0}已无可用的休假天数
 There is nothing to edit.,没有什么可编辑
 There was an error. One probable reason could be that you haven't saved the form. Please contact support@erpnext.com if the problem persists.,有一个错误有可能是因为您没有保存数据。如果问题仍然存在，请联系管理员。
-There were errors.,有错误。
-This Currency is disabled. Enable to use in transactions,This Currency is disabled. Enable to use in transactions
+There were errors.,有错误发生
+This Currency is disabled. Enable to use in transactions,此货币被禁用了，如果要使用请启用
 This Leave Application is pending approval. Only the Leave Apporver can update status.,该休假申请尚待批准， 只有休假审批人可以更新状态。
-This Time Log Batch has been billed.,This Time Log Batch has been billed.
+This Time Log Batch has been billed.,此批记录的时间都已经付款
 This Time Log Batch has been cancelled.,该批时间日志已被取消。
 This Time Log conflicts with {0},该时间日志与{0}冲突
 This is a root account and cannot be edited.,这是一个根帐户，无法编辑。
 This format is used if country specific format is not found,如果指定的格式没有找到则会有这个格式
 This is a root customer group and cannot be edited.,这是一个根用户组，无法编辑
-This is a root item group and cannot be edited.,This is a root item group and cannot be edited.
-This is a root sales person and cannot be edited.,This is a root sales person and cannot be edited.
+This is a root item group and cannot be edited.,这是根类型不能被编辑
+This is a root sales person and cannot be edited.,这是根类型不能被编辑
 This is a root territory and cannot be edited.,这是一个根领域无法编辑。
 This is an example website auto-generated from ERPBoost,这是一个从ERPNext自动生成的示例网站
-This is the number of the last created transaction with this prefix,This is the number of the last created transaction with this prefix
+This is the number of the last created transaction with this prefix,这次上次交易的前缀编号
 This will be used for setting rule in HR module,这将用于人力资源模块中的设置规则
 Thread HTML,Thread HTML
 Thursday,星期四
@@ -3008,7 +3008,7 @@ Time Log {0} must be 'Submitted',时间日志{0}必须'提交'
 Time Zone,时区
 Time Zones,时区
 Time and Budget,时间和预算
-Time at which items were delivered from warehouse,Time at which items were delivered from warehouse
+Time at which items were delivered from warehouse,商品从仓库的发货时间
 Time at which materials were received,收到材料时间
 Title,标题
 Titles for print templates e.g. Proforma Invoice.,打印模板标题，例如：形式发票。
@@ -3030,9 +3030,9 @@ To create a Bank Account,创建一个银行帐号
 To create a Tax Account,创建一个纳税帐户
 "To create an Account Head under a different company, select the company and save customer.",如果要在另一个公司下创建户头，请选择一个新的公司并点击保存按钮保存客户信息
 To date cannot be before from date,该日期不能在开始日期之前
-To enable <b>Point of Sale</b> features,To enable <b>Point of Sale</b> features
-To enable <b>Point of Sale</b> view,To enable <b>Point of Sale</b> view
-To get Item Group in details table,To get Item Group in details table
+To enable <b>Point of Sale</b> features,启用<b>POS</b> 功能
+To enable <b>Point of Sale</b> view,启用<b>POS</b>视图
+To get Item Group in details table,获取商品组明细表
 "To include tax in row {0} in Item rate, taxes in rows {1} must also be included",要包括税款在价格项的行{0}中，税收在行{1}中也必须包括在内
 "To merge, following properties must be same for both items",若要合并，两个产品的以下属性必须相同
 "To not apply Pricing Rule in a particular transaction, all applicable Pricing Rules should be disabled.",如果不想应用定价规则，那么所有适用的定价规则应该被禁用。
