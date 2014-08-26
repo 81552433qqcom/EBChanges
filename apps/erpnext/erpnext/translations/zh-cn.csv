@@ -3377,3 +3377,46 @@ website page link,网站页面链接
 {0} {1} status is Unstopped,{0} {1}状态为取消停止
 {0} {1}: Cost Center is mandatory for Item {2},{0} {1}：{2}的成本中心是必须的
 {0}: {1} not found in Invoice Details table,{0}：在发票明细表中不能找到{1}
+###########################,###########################
+Select User,选择用户
+Select DocType,选择文档类型
+Add Filter,添加过滤
+Accounts Manager,财务经理
+Accounts User,财务人员
+Administrator,超级管理员
+Analytics,分析人员
+Auditor,审计人员
+Expense Approver,费用审批人员
+Guest,来宾
+HR Manager,人力资源经理
+HR User,人力资源人员
+Leave Approver,休假审批
+Maintenance Manager,维保经理
+Maintenance User,维保人员
+Manufacturing User,生产人员
+Manufacturing Manager,生产经理
+Material Manager,原材料经理
+Material Master Manager,原材料数据管理员
+Material User,原材料人员
+Projects Manager,项目经理
+Projects User,项目人员
+Purchase Manager,采购经理
+Purchase Master Manager,采购主数据管理员
+Purchase User,采购人员
+Quality Manager,质检经理
+Report Manager,报表管理员
+Sales Manager,销售经理
+Sales Master Manager,销售主数据管理员
+Sales User,销售人员
+Supplier,供应商
+Support Manager,客户支持经理
+Support Team,客户支持团队
+System Manager,系统管理员
+Website Manager,网站管理员
+All,任何人
+Role Permission Manager,角色权限管理
+Restore Original Permissions,恢复初始权限
+Doctypes,文档类型
+Show User Permission,显示用户权限
+read,读
+write,写
