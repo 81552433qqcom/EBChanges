@@ -1510,4 +1510,6 @@ Website Manager,网站管理员
 All,任何人
 Role Permission Manager,角色权限管理
 Restore Original Permissions,恢复初始权限
-DocTypes,文档类型
+Doctypes,文档类型
+read,读
+write,写
