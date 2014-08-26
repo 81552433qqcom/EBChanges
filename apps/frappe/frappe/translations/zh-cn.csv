@@ -1514,3 +1514,4 @@ Doctypes,文档类型
 Show User Permission,显示用户权限
 read,读
 write,写
+No {0} found, 未找到{0}的记录
