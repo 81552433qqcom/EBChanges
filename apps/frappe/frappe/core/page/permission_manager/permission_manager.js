@@ -190,6 +190,8 @@ frappe.PermissionEngine = Class.extend({
 				return;
 			}
 
+			console.log(fieldname+ ": " + __(fieldname+""));
+
 			var checkbox = $("<div class='col-md-4'><div class='checkbox'>\
 					<label><input type='checkbox'>"+__(fieldname)+"</input></label>"
 					+ (d.help || "") + "</div></div>").appendTo(cell)
