@@ -1511,5 +1511,6 @@ All,任何人
 Role Permission Manager,角色权限管理
 Restore Original Permissions,恢复初始权限
 Doctypes,文档类型
+Show User Permission,显示用户权限
 read,读
 write,写
