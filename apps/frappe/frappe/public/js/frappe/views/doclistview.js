@@ -62,7 +62,8 @@ frappe.views.DocListView = frappe.ui.Listing.extend({
 			.parent().css({"margin-top":"-15px"});
 		this.appframe = this.page.appframe;
 		var module = locals.DocType[this.doctype].module;
-
+		console.log(__(this.doctype) + __('List'));
+		
 		this.appframe.set_title(__("{0} List", __([this.doctype]));
 		this.appframe.add_module_icon(module, this.doctype, null, true);
 		this.appframe.set_title_left(function() {
