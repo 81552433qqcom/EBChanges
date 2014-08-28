@@ -1530,6 +1530,3 @@ Click on Save,点击保存
 Performing hardcore import process....,导入进行中....
 All Tables (Main + Child Tables),所有的主表与字表
 Ignore Encoding Errors,忽略编码错误
-"If you are inserting new records (overwrite not checked) \
-and if you have submit permission, the record will be submitted.", "如果插入新数据(覆盖没有勾选)\
-在有权限的情况下数据将被提交进数据库"
