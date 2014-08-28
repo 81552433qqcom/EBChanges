@@ -64,7 +64,7 @@ A Lead with this email id should exist,一个有同样邮件地址的销售机�
 A Product or Service,产品或服务
 A Supplier exists with same name,存在具有相同名称的供应商
 A symbol for this currency. For e.g. $,货币符号.例如美元是$
-AMC Expiry Date,AMC到期时间
+AMC Expiry Date,年度维护合同到期时间
 Abbr,缩写
 Abbreviation cannot have more than 5 characters,缩写不能超过5个字符
 Above Value,上述值
@@ -164,7 +164,7 @@ Administrative Expenses,行政费用
 Administrative Officer,行政官
 Advance Amount,预付款金额
 Advance amount,预付款金额
-Advances,进展
+Advances,预付款
 Advertisement,广告
 Advertising,广告
 Aerospace,航天
@@ -172,10 +172,10 @@ After Sale Installations,销售后安装
 Against,针对
 Against Account,账户
 Against Bill {0} dated {1},对于账单{0}而言日期为{1}
-Against Docname,基于文档
-Against Doctype,对于文档类型
-Against Document Detail No,对于文档详情编号
-Against Document No,对于文件编号
+Against Docname,基于档案
+Against Doctype,对于档案类型
+Against Document Detail No,对于档案详情编号
+Against Document No,对于档案编号
 Against Expense Account,对于费用帐户
 Against Income Account,对于收入账户
 Against Journal Voucher,记帐凭证
@@ -231,7 +231,7 @@ Allow Production Order,允许生产订单
 Allow User,有权限的用户
 Allow Users,有权限的用户
 Allow the following users to approve Leave Applications for block days.,允许以下用户在禁止休假的日期批准假期
-Allow user to edit Price List Rate in transactions,在交易中允许用户编辑价目表
+Allow user to edit Price List Rate in transactions,在交易中允许用户编辑价目表价格
 Allowance Percent,允许百分比
 Allowance for over-{0} crossed for Item {1},商品{1}的{0}的过界允许范围
 Allowance for over-{0} crossed for Item {1}.,商品{1}的{0}的过界允许范围.
@@ -308,11 +308,11 @@ Authorization Control,授权控制
 Authorization Rule,授权规则
 Auto Accounting For Stock Settings,基于库存设定自动应用财务计算
 Auto Material Request,自动申请材料
-Auto-raise Material Request if quantity goes below re-order level in a warehouse,如果数量低于仓库中再订购水平的条件则自动启动材料请求
+Auto-raise Material Request if quantity goes below re-order level in a warehouse,如果数量低于仓库中再订购水平的条件则自动启动物料需求
 Automatically compose message on submission of transactions.,在提交交易时自动写消息
 Automatically extract Job Applicants from a mail box, 自动从邮箱里面提取出工作申请者
 Automatically extract Leads from a mail box e.g.,自动从邮箱里提取出销售引子
-Automatically updated via Stock Entry of type Manufacture/Repack,经由库存制造/重新包装的类型已经进行自动更新
+Automatically updated via Stock Entry of type Manufacture/Repack,经由库存生产/重新包装的类型已经进行自动更新
 Automotive,自动的
 Autoreply when a new mail is received,在接收到新邮件时自动回复
 Available,有效
@@ -332,8 +332,8 @@ BOM No. for a Finished Good Item,已完成的正品的物料清单编号
 BOM Operation,物料清单的操作
 BOM Operations,物料清单的操作
 BOM Replace Tool,物料清单替换工具
-BOM number is required for manufactured Item {0} in row {1},行{1}中的制造项{0}需要物料清单号
-BOM number not allowed for non-manufactured Item {0} in row {1},行{1}的非制造产品{0}不允许输入物料清单号
+BOM number is required for manufactured Item {0} in row {1},行{1}中的生产项{0}需要物料清单号
+BOM number not allowed for non-manufactured Item {0} in row {1},行{1}的非生产产品{0}不允许输入物料清单号
 BOM recursion: {0} cannot be parent or child of {2},物料清单递归: {0}不能为{2}的父项或子项
 BOM replaced,被替换的物料清单
 BOM {0} for Item {1} in row {2} is inactive or not submitted,行{2}的项{1}的物料清单{0}的是无效的或是未提交的物料清单
@@ -373,12 +373,12 @@ Basic Information,基本信息
 Basic Rate,基础比率
 Basic Rate (Company Currency),基础比率(公司货币)
 Batch,批次
-Batch (lot) of an Item.,一批该产品的(很多)
+Batch (lot) of an Item.,一批（大量）某产品，分批次接收
 Batch Finished Date,批次结束日期
 Batch ID,批次ID
 Batch No,批号
 Batch Started Date,批次开始日期
-Batch Time Logs for billing.,Batch Time Logs for billing
+Batch Time Logs for billing.,批量时间记录（计费）
 Batch-Wise Balance History,Batch-Wise Balance History
 Batched for Billing,批量计费
 Better Prospects,更好的前景
@@ -666,8 +666,8 @@ Create rules to restrict transactions based on values.,基于价值来创建规�
 Created By,创建人
 Creates salary slip for above mentioned criteria.,根据上面提到的标准创建工资单
 Creation Date,创建日期
-Creation Document No,创建文档编号
-Creation Document Type,创建文档类型
+Creation Document No,创建档案编号
+Creation Document Type,创建档案类型
 Creation Time,创建时间
 Credentials,证书
 Credit,贷方
@@ -683,7 +683,7 @@ Currency,货币
 Currency Exchange,货币兑换
 Currency Name,货币名称
 Currency Settings,货币设置
-Currency and Price List,货币和价格表
+Currency and Price List,货币和价目表
 Currency exchange rate master.,货币汇率的主数据
 Current Address,当前地址
 Current Address Is,当前地址类型
@@ -717,8 +717,8 @@ Customer Group,客户组
 Customer Group / Customer,客户组/客户
 Customer Group Name,客户群组名称
 Customer Intro,客户简介
-Customer Issue,客户问题
-Customer Issue against Serial No.,基于序列号的客户问题
+Customer Issue,工单
+Customer Issue against Serial No.,客户报修
 Customer Name,客户名称
 Customer Naming By,客户命名规则
 Customer Service,顾客服务
@@ -776,7 +776,7 @@ Default BOM,默认的物料清单
 Default Bank / Cash account will be automatically updated in POS Invoice when this mode is selected.,当选择此模式后;默认银行/现金帐户将自动在POS机发票时更新
 Default Bank Account,默认银行账户
 Default Buying Cost Center,默认采购成本中心
-Default Buying Price List,默认采购价格表
+Default Buying Price List,默认采购价目表
 Default Cash Account,默认的现金账户
 Default Company,默认公司
 Default Currency,默认货币
@@ -784,7 +784,7 @@ Default Customer Group,默认客户组
 Default Expense Account,默认支出账户
 Default Income Account,默认收入账户
 Default Item Group,默认商品组
-Default Price List,默认价格表
+Default Price List,默认价目表
 Default Purchase Account in which cost of the item will be debited.,该商品的成本将从默认购买帐户中被扣除
 Default Selling Cost Center,默认销售成本中心
 Default Settings,默认设置
@@ -814,8 +814,8 @@ Delivered Qty,交付数量
 Delivered Serial No {0} cannot be deleted,交付编号{0}无法删除
 Delivery Date,交货日期
 Delivery Details,交付细节
-Delivery Document No,交付文档编号
-Delivery Document Type,交付文档类型
+Delivery Document No,交付档案编号
+Delivery Document Type,交付档案类型
 Delivery Note,发货单
 Delivery Note Item,送货单清单
 Delivery Note Items,送货单清单
@@ -846,7 +846,7 @@ Different UOM for items will lead to incorrect (Total) Net Weight value. Make su
 Direct Expenses,直接费用
 Direct Income,直接收入
 Disable,已禁用
-Disable Rounded Total,总额（四舍五入）
+Disable Rounded Total,Disable Rounded Total
 Disabled,禁用
 Discount  %,折扣%
 Discount %,折扣%
@@ -874,18 +874,18 @@ Do you really want to Submit all Salary Slip for month {0} and year {1},你确�
 Do you really want to UNSTOP ,你确定要取消停止操作吗?
 Do you really want to UNSTOP this Material Request?,你确定要取消停止物料请求?
 Do you really want to stop production order: ,你确定要停止生产订单吗?
-Doc Name,文件名称
-Doc Type,文件类型
-Document Description,文档说明
-Document Type,文件类型
-Documents,文件
+Doc Name,档案名称
+Doc Type,档案类型
+Document Description,档案说明
+Document Type,档案类型
+Documents,档案
 Domain,域
 Don't send Employee Birthday Reminders,不要发送员工生日提醒
 Download Materials Required,下载物料需求
 Download Reconcilation Data,下载汇总数据
 Download Template,下载模板
 Download a report containing all raw materials with their latest inventory status,下载一个包含所有原料信息以及他们最新的库存状态的报表
-"Download the Template, fill appropriate data and attach the modified file.",下载模板，填写相应的数据，并上传修改后的文件
+"Download the Template, fill appropriate data and attach the modified file.",下载模板，填写相应的数据，并上传修改后的档案
 "Download the Template, fill appropriate data and attach the modified file.
 All dates and employee combination in the selected period will come in the template, with existing attendance records","下载模板，
 填写员工及相应日期的出勤记录并附上修改后的文件"
@@ -1090,7 +1090,7 @@ Food,食物
 For Company,公司
 For Employee,对于员工
 For Employee Name,对于员工姓名
-For Price List,适用于价格表
+For Price List,适用于价目表
 For Production,对于生产
 For Reference Only.,仅供参考
 For Sales Invoice,销售发票
@@ -1114,7 +1114,7 @@ From Company,从公司
 From Currency,从货币
 From Currency and To Currency cannot be same,货币不能相同
 From Customer,从客户
-From Customer Issue,从客户问题
+From Customer Issue,从工单获取
 From Date,开始日期
 From Date cannot be greater than To Date,开始日期不能大于结束日期
 From Date must be before To Date,开始日期必须早于结束日期
@@ -1122,15 +1122,15 @@ From Date should be within the Fiscal Year. Assuming From Date = {0},开始日�
 From Delivery Note,从送货单
 From Employee,员工
 From Lead,从潜在客户获取
-From Maintenance Schedule,对维护计划
-From Material Request,从物料需求获取产品
+From Maintenance Schedule,从维保计划获取
+From Material Request,从物料需求获取
 From Opportunity,从机会获取产品
 From Package No.,从包装号
 From Purchase Order,从采购单获取
 From Purchase Receipt,从采购收货单获取
 From Quotation,从报价单
-From Sales Order,从销售订单获取产品
-From Supplier Quotation,从供应商报价单获取产品
+From Sales Order,从销售订单获取
+From Supplier Quotation,从供应商报价单获取
 From Time,开始时间
 From Value,开始值
 From and To dates required,起始和结束时间都是必须的
@@ -1141,7 +1141,7 @@ Fulfilled,适合
 Full Name,全名
 Full-time,全日制
 Fully Billed,全额支付
-Fully Completed,全面完成
+Fully Completed,完成
 Fully Delivered,完全交付
 Furniture and Fixture,家具及固定装置
 Further accounts can be made under Groups but entries can be made against Ledger,可以在组下继续创建账号但录入必须在分类账上
@@ -1249,7 +1249,7 @@ Identification of the package for the delivery (for print),鉴定发货包(用�
 If Income or Expense,如果收入或支出
 If Monthly Budget Exceeded,如果每月超出预算
 "If Sale BOM is defined, the actual BOM of the Pack is displayed as table. Available in Delivery Note and Sales Order",如果定义了销售物料清单(BOM)，那么该包的实际物料清单(BOM)显示为表格并且送货单和销售订单上可见
-"If Supplier Part Number exists for given Item, it gets stored here",如果供应商零件编号存在则它被保存在这里
+"If Supplier Part Number exists for given Item, it gets stored here",如果供应商料号存在则它被保存在这里
 If Yearly Budget Exceeded,如果年度预算超出
 "If checked, BOM for sub-assembly items will be considered for getting raw materials. Otherwise, all sub-assembly items will be treated as a raw material.",如果选中，则物料清单(BOM)的子装配项将被视为需要获取原材料。否则，所有的子装配项，将被视为一个原材料。
 "If checked, Total no. of Working Days will include holidays, and this will reduce the value of Salary Per Day",如果选中，则总工作日将包括节假日;那么这将缩短每天的工资的价值
@@ -1262,7 +1262,7 @@ If more than one package of the same type (for print),如果同一类型不止�
 "If no change in either Quantity or Valuation Rate, leave the cell blank.",如果数量或估价率没有变化，则这一列留空
 If not applicable please enter: NA,如果不适用，请输入: NA
 "If not checked, the list will have to be added to each Department where it has to be applied.",如果未勾选则应用到所有的部门
-"If selected Pricing Rule is made for 'Price', it will overwrite Price List. Pricing Rule price is the final price, so no further discount should be applied. Hence, in transactions like Sales Order, Purchase Order etc, it will be fetched in 'Rate' field, rather than 'Price List Rate' field.",如果是'价格'的定价规则，它会将规则应用到价目表并且定价规则价格是最终价格，所以没有进一步的折扣会被适用。因此，在像销售订单，采购订单等交易中，将使用“比率”字段，而不是使用'价格表比率'字段。
+"If selected Pricing Rule is made for 'Price', it will overwrite Price List. Pricing Rule price is the final price, so no further discount should be applied. Hence, in transactions like Sales Order, Purchase Order etc, it will be fetched in 'Rate' field, rather than 'Price List Rate' field.",如果是'价格'的定价规则，它会将规则应用到价目表并且定价规则价格是最终价格，所以没有进一步的折扣会被适用。因此，在像销售订单，采购订单等交易中，将使用“比率”字段，而不是使用'价目表比率'字段。
 "If specified, send the newsletter using this email address",如果指定了，使用此邮件地址来发送简讯
 "If the account is frozen, entries are allowed to restricted users.",如果帐户被冻结，那么只有少数被授权的用户能够操作
 "If this Account represents a Customer, Supplier or Employee, set it here.",如果该帐户代表一个客户，供应商或员工，请在这里设置
@@ -1272,7 +1272,7 @@ If you have Sales Team and Sale Partners (Channel Partners)  they can be tagged 
 "If you have created a standard template in Purchase Taxes and Charges Master, select one and click on the button below.",如果你已经在“采购税和费用主数据“中创建了标准模板，选择一个并点击下面的按钮。
 "If you have created a standard template in Sales Taxes and Charges Master, select one and click on the button below.",如果您为购置税和费用主数据创建一个标准的模板，请选择一个然后点击下面的按钮
 "If you have long print formats, this feature can be used to split the page to be printed on multiple pages with all headers and footers on each page",如果你有很长的需要打印，这个功能可以被用来分割要打印多个页面，每个页面上的都有页眉和页脚
-If you involve in manufacturing activity. Enables Item 'Is Manufactured',如果涉及到生产制造请启用'是被生产的'选型
+If you involve in manufacturing activity. Enables Item 'Is Manufactured',如果涉及到生产生产请启用'是被生产的'选型
 Ignore,忽略
 Ignore Pricing Rule,忽略定价规则
 Ignored: ,已忽略:
@@ -1288,7 +1288,7 @@ In Hours,以小时为单位
 In Process,进行中
 In Qty,数量上
 In Value,价值
-In Words,总额文字描述（只读）
+In Words,大写金额
 In Words (Company Currency),总额文字描述(公司货币)
 In Words (Export) will be visible once you save the Delivery Note.,保存送货单后如果在的话将可见
 In Words will be visible once you save the Delivery Note.,保存送货单后如果在的话将可见
@@ -1378,9 +1378,9 @@ Is Stock Item,是库存项
 Is Sub Contracted Item,是分包商品
 Is Subcontracted,是分包合同
 Is this Tax included in Basic Rate?,此税已包含在基本税中吗？
-Issue,Issue
-Issue Date,Issue Date
-Issue Details,Issue Details
+Issue,问题
+Issue Date,报修日期
+Issue Details,问题详情
 Issued Items Against Production Order,针对此生产订单发货
 It can also be used to create opening stock entries and to fix stock value.,它也可以用来创建期初存货和库存值
 Item,商品
@@ -1419,7 +1419,7 @@ Item Tax Amount,产品税额
 Item Tax Rate,产品税率
 Item Tax Row {0} must have account of type Tax or Income or Expense or Chargeable,商品税的第{0}行的账户类型必须是税;收入;支出或是可记账的
 Item Tax1,商品税
-Item To Manufacture,产品制造
+Item To Manufacture,产品生产
 Item UOM,商品计量单位
 Item Website Specification,商品网站规格描述
 Item Website Specifications,商品网站规格描述
@@ -1434,7 +1434,7 @@ Item table can not be blank,商品表不能为空
 Item to be manufactured or repacked,产品将被生产或重新包装
 Item valuation updated,商品估价已更新
 Item will be saved by this name in the data base.,商品将以此名称存入数据库
-Item {0} appears multiple times in Price List {1},商品{0}在价格表{1}中出现了多次
+Item {0} appears multiple times in Price List {1},商品{0}在价目表{1}中出现了多次
 Item {0} does not exist,商品{0}不存在
 Item {0} does not exist in the system or has expired,商品{0}不存在或已过期
 Item {0} does not exist in {1} {2},商品{0}不存在于{1} {2}
@@ -1464,10 +1464,10 @@ Item {0} must be manufactured or sub-contracted,商品{0}必须是生产或分�
 Item {0} not found,商品{0}未找到
 Item {0} with Serial No {1} is already installed,序列号{1}的商品{0}已经安装
 Item {0} with same description entered twice,商品{0}相同的描述已输入两次
-"Item, Warranty, AMC (Annual Maintenance Contract) details will be automatically fetched when Serial Number is selected.",当选择序号后商品以及商品的质保维护信息等都将被自动的提取出来
+"Item, Warranty, AMC (Annual Maintenance Contract) details will be automatically fetched when Serial Number is selected.",当选择序号后商品、保修期、年度维护合同等信息都将被自动的提取出来
 Item-wise Price List Rate,商品价格单率
-Item-wise Purchase History,商品购买历史
-Item-wise Purchase Register,商品购买登记
+Item-wise Purchase History,商品采购历史
+Item-wise Purchase Register,商品采购登记
 Item-wise Sales History,商品销售历史
 Item-wise Sales Register,商品销售登记
 "Item: {0} managed batch-wise, can not be reconciled using \
@@ -1482,7 +1482,7 @@ Items which do not exist in Item master can also be entered on customer's reques
 Itemwise Discount,商品折扣
 Itemwise Recommended Reorder Level,商品推荐的记录层次
 Job Applicant,求职者
-Job Opening,招聘中的职位
+Job Opening,招聘职位
 Job Profile,工作简介
 Job Title,职位
 "Job profile, qualifications required etc.",工作概要、资格要求等
@@ -1517,8 +1517,8 @@ Lead Details,潜在客户详情
 Lead Id,销售引子Id
 Lead Name,潜在客户名称
 Lead Owner,销售引子所有者
-Lead Source,销售引子销售引子源
-Lead Status,销售引子状态
+Lead Source,潜在客户来源
+Lead Status,潜在客户状态
 Lead Time Date,交货日期
 Lead Time Days,交货期(天数)
 Lead Time days is number of days by which this item is expected in your warehouse. This days is fetched in Material Request when you select this item.,交货期天数是商品从订货到进入您仓库的天数。这个天数在物料请求中选择这个商品时会被使用
@@ -1640,14 +1640,14 @@ Manage cost of operations,管理运营成本
 Management,管理
 Manager,经理
 "Mandatory if Stock Item is ""Yes"". Also the default warehouse where reserved quantity is set from Sales Order.",如果是库存项目则必填并且默认的仓库由销售订单指明
-Manufacture against Sales Order,制造销售订单中的商品
-Manufacture/Repack,制造/重新打包
+Manufacture against Sales Order,生产销售订单中的商品
+Manufacture/Repack,生产/重新打包
 Manufactured Qty,生产数量
 Manufactured quantity will be updated in this warehouse,这个仓库生产数量将被更新
 Manufactured quantity {0} cannot be greater than planned quanitity {1} in Production Order {2},生产订单{2}的制作的数量{0}不能大于计划的数量{1}
 Manufacturer,生产厂家
-Manufacturer Part Number,制造商零件编号
-Manufacturing,制造
+Manufacturer Part Number,厂家料号
+Manufacturing,生产
 Manufacturing Quantity,生产数量
 Manufacturing Quantity is mandatory,生产数量是必填的
 Margin,Margin
@@ -1674,7 +1674,7 @@ Material Request Type,物料需求类型
 Material Request of maximum {0} can be made for Item {1} against Sales Order {2},销售订单{2}的商品{1}的最大请求物料数是{0}
 Material Request used to make this Stock Entry,用以创建库存记录的物料请求
 Material Request {0} is cancelled or stopped,物料请求{0}已被取消或停止
-Material Requests for which Supplier Quotations are not created,物料请求的供应商报价单未被创建
+Material Requests for which Supplier Quotations are not created,供应商未报价的物料需求
 Material Requests {0} created,物料请求{0}已被创建
 Material Requirement,物料需求
 Material Transfer,物料转移
@@ -2007,7 +2007,7 @@ Pending,等待
 Pending Amount,未付金额
 Pending Items {0} updated,商品{0}已更新
 Pending Review,等待审核
-Pending SO Items For Purchase Request,Pending SO Items For Purchase Request
+Pending SO Items For Purchase Request,销售订单中等待采购的商品
 Pension Funds,养老金
 Percent Complete,完成百分比
 Percentage Allocation,分配的百分比
@@ -2033,7 +2033,7 @@ Pincode,邮政编码
 Place of Issue,签发地
 Plan for maintenance visits.,维保访问计划
 Planned Qty,计划的数量
-"Planned Qty: Quantity, for which, Production Order has been raised, but is pending to be manufactured.",计划的数量:生产订单的数量正在等待被制造
+"Planned Qty: Quantity, for which, Production Order has been raised, but is pending to be manufactured.",计划的数量:生产订单的数量正在等待被生产
 Planned Quantity,计划的数量
 Planning,计划
 Plant,厂
@@ -2094,7 +2094,7 @@ Please install dropbox python module,请安装Dropbox的Python模块
 Please mention no of visits required,请注明需要访问次数
 Please pull items from Delivery Note,请从发货单中提取商品信息
 Please save the Newsletter before sending,请在发送之前保存简讯
-Please save the document before generating maintenance schedule,在产生维护计划之前请保存文档
+Please save the document before generating maintenance schedule,在产生维护计划之前请保存档案
 Please see attachment,请参阅附件
 Please select Bank Account,请选择银行帐户
 Please select Carry Forward if you also want to include previous fiscal year's balance leaves to this fiscal year,如果您想让上一年剩余的假期累加到今年，请勾选“假期累计”
@@ -2105,7 +2105,7 @@ Please select Group or Ledger value,请选择组或分类账
 Please select Incharge Person's name,请选择Incharge人的名字
 Please select Invoice Type and Invoice Number in atleast one row,请至少在其中一行选择发票类型和发票号码
 "Please select Item where ""Is Stock Item"" is ""No"" and ""Is Sales Item"" is ""Yes"" and there is no other Sales BOM",请将商品'是库存中商品'选择为否并将'是可销售商品'选择为是;并且没有其它销售的物料清单
-Please select Price List,请选择价格表
+Please select Price List,请选择价目表
 Please select Start Date and End Date for Item {0},请选择商品{0}开始日期和结束日期
 Please select Time Logs.,请选择时间记录。
 Please select a csv file,请选择一个csv文件
@@ -2118,7 +2118,7 @@ Please select company first.,请先选择一个公司
 Please select item code,请先选择商品编码
 Please select month and year,请先选择年份和月份
 Please select prefix first,请先选择前缀
-Please select the document type first,请先选择文档类型
+Please select the document type first,请先选择档案类型
 Please select weekly off day,请选择每周休息日
 Please select {0},请选择{0}
 Please select {0} first,请先选择{0}
@@ -2163,22 +2163,22 @@ Previous,之前
 Previous Work Experience,以前的工作经验
 Price,价格
 Price / Discount,价格/折扣
-Price List,价格表
-Price List Currency,价格表货币
-Price List Currency not selected,价格表货币没有选择
-Price List Exchange Rate,价格表汇率
-Price List Name,价格表名称
-Price List Rate,价格表费率
-Price List Rate (Company Currency),价格表费率（公司货币）
-Price List master.,价格表主数据
-Price List must be applicable for Buying or Selling,价格表必须适用于购买或者销售
-Price List not selected,没有选择价格列表
-Price List {0} is disabled,价格表{0}被禁用
+Price List,价目表
+Price List Currency,价目表货币
+Price List Currency not selected,价目表货币没有选择
+Price List Exchange Rate,价目表汇率
+Price List Name,价目表名称
+Price List Rate,价目表价格
+Price List Rate (Company Currency),价目表费率（公司货币）
+Price List master.,价目表主数据
+Price List must be applicable for Buying or Selling,价目表必须适用于购买或者销售
+Price List not selected,没有选择价目表
+Price List {0} is disabled,价目表{0}被禁用
 Price or Discount,价格或折扣
 Pricing Rule,价格规则
 Pricing Rule Help,定价规则说明
 "Pricing Rule is first selected based on 'Apply On' field, which can be Item, Item Group or Brand.",定价规则是基于“应用于”字段被先选择，其可以是商品，商品组或品牌。
-"Pricing Rule is made to overwrite Price List / define discount percentage, based on some criteria.",定价规则是基于某些条筛选件由此来覆盖价格表/定义折扣百分比。
+"Pricing Rule is made to overwrite Price List / define discount percentage, based on some criteria.",定价规则是基于某些条筛选件由此来覆盖价目表/定义折扣百分比。
 Pricing Rules are further filtered based on quantity.,定价规则进一步基于数量过滤。
 Print Format Style,打印格式样式
 Print Heading,打印信头
@@ -2238,7 +2238,7 @@ Published on website at: {0},于{0}发表于网站
 Publishing,出版
 Pull sales orders (pending to deliver) based on the above criteria,基于上述条件获取销售订单(等待交付)
 Purchase,采购
-Purchase / Manufacture Details,采购/制造详情
+Purchase / Manufacture Details,采购/生产详情
 Purchase Analytics,采购分析
 Purchase Common,Purchase Common
 Purchase Details,采购详情
@@ -2286,8 +2286,8 @@ Purpose must be one of {0},目的必须是{0}中的一个
 QA Inspection,质检
 Qty,数量
 Qty Consumed Per Unit,Qty Consumed Per Unit
-Qty To Manufacture,制造数量
-Qty as per Stock UOM,基于仓库商品计量单位的数量
+Qty To Manufacture,生产数量
+Qty as per Stock UOM,数量（此仓库计量单位）
 Qty to Deliver,交付数量
 Qty to Order,订单数量
 Qty to Receive,接收数量
@@ -2321,10 +2321,10 @@ Quotation To,报价对象
 Quotation Trends,报价趋势
 Quotation {0} is cancelled,报价{0}将被取消
 Quotation {0} not of type {1},Quotation {0} not of type {1}
-Quotations received from Suppliers.,从供应商收到的报价。
-Quotes to Leads or Customers.,报价给领导或客户。
+Quotations received from Suppliers.,从供应商收到的报价
+Quotes to Leads or Customers.,报价给客户或潜在客户
 Raise Material Request when stock reaches re-order level,当库存到再下单的条件时自动发起物料申请
-Raised By,Raised By
+Raised By,发起人
 Raised By (Email),Raised By (Email)
 Random,随机
 Range,范围
@@ -2465,7 +2465,7 @@ Resignation Letter Date,辞职信日期
 Resolution,决议
 Resolution Date,决议日期
 Resolution Details,决议详情
-Resolved By,决议人：
+Resolved By,决议人
 Rest Of The World,世界其余地区
 Retail,零售
 Retail & Wholesale,零售及批发
@@ -2480,8 +2480,8 @@ Root account can not be deleted,根帐号不能被删除
 Root cannot be edited.,根不能被编辑。
 Root cannot have a parent cost center,根不能有一个父成本中心
 Rounded Off,四舍五入
-Rounded Total,Rounded Total
-Rounded Total (Company Currency),Rounded Total (Company Currency)
+Rounded Total,总额（四舍五入）
+Rounded Total (Company Currency),总额（四舍五入，公司货币）
 Row # ,行 #
 Row # {0}: , 行 # {0}
 Row #{0}: Ordered qty can not less than item's minimum order qty (defined in item master).,行#{0}：订购数量不能少于商品的最低订单数量(在商品主数据中定义)
@@ -2549,7 +2549,7 @@ Sales Expenses,销售费用
 Sales Extras,额外附加费用
 Sales Funnel,销售漏斗
 Sales Invoice,销售发票
-Sales Invoice Advance,Sales Invoice Advance
+Sales Invoice Advance,预付款发票
 Sales Invoice Item,销售发票项
 Sales Invoice Items,销售发票所有项
 Sales Invoice Message,销售发票信息
@@ -2575,9 +2575,9 @@ Sales Partner Target,销售伙伴目标
 Sales Partners Commission,销售伙伴佣金
 Sales Person,销售人员
 Sales Person Name,销售人员的姓名
-Sales Person Target Variance Item Group-Wise,Sales Person Target Variance Item Group-Wise
+Sales Person Target Variance Item Group-Wise,销人员目标与实销
 Sales Person Targets,销售人员目标
-Sales Person-wise Transaction Summary,Sales Person-wise Transaction Summary
+Sales Person-wise Transaction Summary,销售人员业绩汇总
 Sales Register,销售登记
 Sales Return,销售退回
 Sales Returned,Sales Returned
@@ -2602,7 +2602,7 @@ Scheduled to send to {0} recipients,将发送到收件人{0}
 Scheduler Failed Events,Scheduler Failed Events
 School/University,学校/大学
 Score (0-5),得分（0-5）
-Score Earned,Score Earned
+Score Earned,评分
 Score must be less than or equal to 5,分数必须小于或等于5
 Scrap %,Scrap %
 Seasonality for setting budgets.,季度设定预算。
@@ -2615,12 +2615,12 @@ Securities and Deposits,证券及存款
 "Select ""Yes"" if this item is used for some internal purpose in your company.",选择“是”，如果该产品是用于公司内部
 "Select ""Yes"" if this item represents some work like training, designing, consulting etc.",选择“是”，如果该产品代表一些服务类型的工作，例如培训、设计、咨询等服务产品。
 "Select ""Yes"" if you are maintaining stock of this item in your Inventory.",如果您想在库存中维护这个产品的库存请选择“是”
-"Select ""Yes"" if you supply raw materials to your supplier to manufacture this item.",选择“是”，如果您提供原料给供应商来制造该产品。
+"Select ""Yes"" if you supply raw materials to your supplier to manufacture this item.",选择“是”，如果您提供原料给供应商来生产该产品。
 Select Brand...,请选择品牌...
 Select Budget Distribution to unevenly distribute targets across months.,请选择每月预算分配方案。
 "Select Budget Distribution, if you want to track based on seasonality.",选择预算分配，如果你想要基于季度来跟踪。
 Select Company...,选择公司...
-Select DocType,选择文档类型
+Select DocType,选择档案类型
 Select Fiscal Year...,选择会计年度...
 Select Items,选择产品
 Select Project...,选择项目...
@@ -2745,7 +2745,7 @@ Sick Leave,病假
 Signature,签名
 Signature to be appended at the end of every email,签名在每封电子邮件的末尾追加
 Single,单身
-Single unit of an Item.,Single unit of an Item.
+Single unit of an Item.,产品唯一编号
 Sit tight while your system is being setup. This may take a few moments.,系统正在安装。这可能需要一些时间。
 Slideshow,连续播放
 Soap & Detergent,肥皂和洗涤剂
@@ -2763,7 +2763,7 @@ Spartan,Spartan
 "Special Characters except ""-"" and ""/"" not allowed in naming series",除了特殊字符“ - ”和“/”未命名中不允许系列
 Specification Details,规格详细
 Specifications,产品规格
-"Specify a list of Territories, for which, this Price List is valid",指定的区域列表，其中，价格列表是有效的
+"Specify a list of Territories, for which, this Price List is valid",指定的区域列表，其中，价目表是有效的
 "Specify a list of Territories, for which, this Shipping Rule is valid",指定的区域列表，其中，运送规则是有效的
 "Specify a list of Territories, for which, this Taxes Master is valid",请指明在哪些区域中此定义有效
 "Specify the operations, operating cost and give a unique Operation no to your operations.","Specify the operations, operating cost and give a unique Operation no to your operations."
@@ -2839,7 +2839,7 @@ Subject,主题
 Submit Salary Slip,提交工资单
 Submit all salary slips for the above selected criteria,根据以上选择条件提交所有工资单
 Submit this Production Order for further processing.,提交此生产订单进行进一步的处理。
-Submitted,提交
+Submitted,已提交
 Subsidiary,附属的
 Successful: ,成功：
 Successfully Reconciled,操作成功
@@ -2847,7 +2847,7 @@ Suggestions,建议
 Sunday,星期天
 Supplier,供应商
 Supplier (Payable) Account,供应商（应付）账户
-Supplier (vendor) name as entered in supplier master,供应商名称，在供应商主数据中已输出过的
+Supplier (vendor) name as entered in supplier master,供应商名称，已录入到供应商主数据中
 Supplier > Supplier Type,供应商>供应商类型
 Supplier Account Head,供应商户头
 Supplier Address,供应商地址
@@ -2858,7 +2858,7 @@ Supplier Invoice Date,供应商发票日期
 Supplier Invoice No,供应商发票号码
 Supplier Name,供应商名称
 Supplier Naming By,供应商命名规则
-Supplier Part Number,Supplier Part Number
+Supplier Part Number,供应商料号
 Supplier Quotation,供应商报价
 Supplier Quotation Item,供应商报价
 Supplier Reference,供应商参考
@@ -2871,14 +2871,14 @@ Supplier database.,供应商数据库。
 Supplier master.,供应商主数据。
 Supplier warehouse where you have issued raw materials for sub - contracting,原材料需要发给供应商的仓库(分包合同)
 Supplier-Wise Sales Analytics,供应商层面销售分析
-Support,支持
+Support,客户支持
 Support Analtyics,支持分析
 Support Analytics,支持分析
 Support Email,电子邮件支持
 Support Email Settings,支持电子邮件设置
 Support Password,支持密码
-Support Ticket,支持票
-Support queries from customers.,支持客户查询。
+Support Ticket,客户咨询
+Support queries from customers.,客户通过邮件、网站发起的问题咨询
 Symbol,符号
 Sync Support Mails,同步支持邮件
 Sync with Dropbox,同步Dropbox
@@ -2949,7 +2949,7 @@ Territory,区域
 Territory / Customer,区域/客户
 Territory Manager,区域经理
 Territory Name,区域名称
-Territory Target Variance Item Group-Wise,Territory Target Variance Item Group-Wise
+Territory Target Variance Item Group-Wise,区域产品销售目标与实销
 Territory Targets,区域目标
 Test,测试
 Test Email Id,测试电子邮件Id
@@ -3081,7 +3081,7 @@ Total amount of invoices sent to the customer during the digest period,在摘要
 Total cannot be zero,总数不能为零
 Total in words,总金额
 Total points for all goals should be 100. It is {0},所有的目标总分应该是100 ，它是{0}
-Total valuation for manufactured or repacked item(s) can not be less than total valuation of raw materials,制造出来的产品或重新打包的产品的估值不能低于原料的估值
+Total valuation for manufactured or repacked item(s) can not be less than total valuation of raw materials,生产出来的产品或重新打包的产品的估值不能低于原料的估值
 Total weightage assigned should be 100%. It is {0},分配的总权重应为100 ％ ，它是{0}
 Totals,总计
 Track Leads by Industry Type.,通过行业类型跟踪潜在客户。
@@ -3107,7 +3107,7 @@ Tree of finanial accounts.,财务账目管理。
 Trial Balance,试算表
 Tuesday,星期二
 Type,类型
-Type of document to rename.,文档类型重命名。
+Type of document to rename.,档案类型重命名。
 "Type of leaves like casual, sick etc.",请假类型，例如：事假，病假。
 Types of Expense Claim.,报销类型。
 Types of activities for Time Sheets,时间表中任务类型
@@ -3258,7 +3258,7 @@ What does it do?,它有什么作用？
 "When any of the checked transactions are ""Submitted"", an email pop-up automatically opened to send an email to the associated ""Contact"" in that transaction, with the transaction as an attachment. The user may or may not send the email.","When any of the checked transactions are ""Submitted"", an email pop-up automatically opened to send an email to the associated ""Contact"" in that transaction, with the transaction as an attachment. The user may or may not send the email."
 "When submitted, the system creates difference entries to set the given stock and valuation on this date.",提交时，系统会在该日期上创建不同的条目来设置给定的库存和估值。
 Where items are stored.,产品在哪里存放。
-Where manufacturing operations are carried out.,制造业务在哪里进行。
+Where manufacturing operations are carried out.,生产业务在哪里进行。
 Widowed,丧偶
 Will be calculated automatically when you enter the details,当你输入详细信息将自动计算
 Will be updated after Sales Invoice is Submitted.,将在销售发票提交后更新。
@@ -3377,46 +3377,3 @@ website page link,网站页面链接
 {0} {1} status is Unstopped,{0} {1}状态为取消停止
 {0} {1}: Cost Center is mandatory for Item {2},{0} {1}：{2}的成本中心是必须的
 {0}: {1} not found in Invoice Details table,{0}：在发票明细表中不能找到{1}
-###########################,###########################
-Select User,选择用户
-Select DocType,选择文档类型
-Add Filter,添加过滤
-Accounts Manager,财务经理
-Accounts User,财务人员
-Administrator,超级管理员
-Analytics,分析人员
-Auditor,审计人员
-Expense Approver,费用审批人员
-Guest,来宾
-HR Manager,人力资源经理
-HR User,人力资源人员
-Leave Approver,休假审批
-Maintenance Manager,维保经理
-Maintenance User,维保人员
-Manufacturing User,生产人员
-Manufacturing Manager,生产经理
-Material Manager,原材料经理
-Material Master Manager,原材料数据管理员
-Material User,原材料人员
-Projects Manager,项目经理
-Projects User,项目人员
-Purchase Manager,采购经理
-Purchase Master Manager,采购主数据管理员
-Purchase User,采购人员
-Quality Manager,质检经理
-Report Manager,报表管理员
-Sales Manager,销售经理
-Sales Master Manager,销售主数据管理员
-Sales User,销售人员
-Supplier,供应商
-Support Manager,客户支持经理
-Support Team,客户支持团队
-System Manager,系统管理员
-Website Manager,网站管理员
-All,任何人
-Role Permission Manager,角色权限管理
-Restore Original Permissions,恢复初始权限
-Doctypes,文档类型
-Show User Permission,显示用户权限
-read,读
-write,写
