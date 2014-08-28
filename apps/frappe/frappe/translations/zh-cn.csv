@@ -1537,6 +1537,3 @@ Overwrite,覆盖
 "If you are uploading a child table (for example Item Price), the all the entries of that table will be deleted (for that parent record) and new entries will be made.",如果上传字表的数据，则其主键父表对应的子记录将被删除并重新被创建
 Import Successful!,导入成功
 Import Failed!,导入失败
-"File Name: &lt;your filename&gt;.csv<br />\
-						Save as type: Text Documents (*.txt)<br />\
-						Encoding: UTF-8",文件编码是UTF-8
