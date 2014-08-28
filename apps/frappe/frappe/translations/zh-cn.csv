@@ -57,7 +57,7 @@ Add to To Do,添加到待办事项
 Add to To Do List Of,添加到待办事项列表
 Added {0} ({1}),{0}({1})已添加
 Adding System Manager to this User as there must be atleast one System Manager,将用户设置为系统管理员，因为必须至少有一个系统管理员
-Additional Info,额外的信息
+Additional Info,附加信息
 Additional Permissions,额外的权限
 Address,地址
 Address Line 1,地址第一行
@@ -450,7 +450,7 @@ Gantt Chart,甘特图
 Gender,性别
 Generator,产生器
 Georgia,Georgia
-Get,得到
+Get,获取
 Get From ,获取
 "Get your globally recognized avatar from <a href=""https://gravatar.com/"">Gravatar.com</a>",从<a href='https://gravatar.com/'> Gravatar.com </a>得到一个头像
 GitHub,GitHub
@@ -590,7 +590,7 @@ Link to the page you want to open,链接到你想打开的网页
 Linked In Share,Linked In 分享
 Linked With,与网站链接
 List,列表
-List a document type,列出一个文件类型
+List a document type,列出一个文档类型
 List of Web Site Forum's Posts.,网站论坛的帖子列表。
 Loading,载入中
 Loading Report,加载报表
@@ -791,7 +791,7 @@ Permission already set,权限已经设置
 Permissions,权限
 Permissions Settings,权限设置
 Permissions are automatically translated to Standard Reports and Searches.,权限设置会自动应用到标准报表和搜索中。
-"Permissions are set on Roles and Document Types (called DocTypes) by setting rights like Read, Write, Create, Delete, Submit, Cancel, Amend, Report, Import, Export, Print, Email and Set User Permissions.",通过设置读，写，创建，删除，提交，取消，修改，报表，导入，导出，打印，邮件权限并将其应用到用户权限的角色和文件类型（称为文档类型）。
+"Permissions are set on Roles and Document Types (called DocTypes) by setting rights like Read, Write, Create, Delete, Submit, Cancel, Amend, Report, Import, Export, Print, Email and Set User Permissions.",通过设置读，写，创建，删除，提交，取消，修改，报表，导入，导出，打印，邮件权限并将其应用到用户权限的角色文档类型（称为文档类型）。
 Permissions at higher levels are 'Field Level' permissions. All Fields have a 'Permission Level' set against them and the rules defined at that permissions apply to the field. This is useful in case you want to hide or make certain field read-only for certain Roles.,字段权限是更高级别的权限;所有的字段都可以应用权限以及权限规则;这样你可以针对特定的角色隐藏或设置为只读
 "Permissions at level 0 are 'Document Level' permissions, i.e. they are primary for access to the document.",0级权限是“文档级”的权限，也就是说，它们是主要用于访问文档。
 Permissions get applied on Users based on what Roles they are assigned.,用户的权限是由他所在的角色的权限集合决定的。
@@ -1539,4 +1539,4 @@ Import Successful!,导入成功
 Import Failed!,导入失败
 "File Name: &lt;your filename&gt;.csv<br />\
 						Save as type: Text Documents (*.txt)<br />\
-						Encoding: UTF-8" 文件编码是UTF-8
+						Encoding: UTF-8",文件编码是UTF-8
