@@ -3377,3 +3377,5 @@ website page link,网站页面链接
 {0} {1} status is Unstopped,{0} {1}状态为取消停止
 {0} {1}: Cost Center is mandatory for Item {2},{0} {1}：{2}的成本中心是必须的
 {0}: {1} not found in Invoice Details table,{0}：在发票明细表中不能找到{1}
+##############,##############
+View Details,查看详情

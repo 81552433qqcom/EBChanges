@@ -1540,4 +1540,4 @@ Import Failed!,导入失败
 "File Name: &lt;your filename&gt;.csv<br />\
 						Save as type: Text Documents (*.txt)<br />\
 						Encoding: UTF-8",文件编码是UTF-8
-Make a new {0},新创建一条{0}的记录
+Make a new {0},创建一条{0}的记录
