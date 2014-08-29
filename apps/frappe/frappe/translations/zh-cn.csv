@@ -1017,7 +1017,7 @@ Setup of fonts and background.,设置字体和背景
 "Setup of top navigation bar, footer and logo.",设置顶部导航栏，页脚和徽标。
 Short Bio,个人简介
 Short Name,简称
-Shortcut,捷径方式
+Shortcut,快捷方式
 Show / Hide Modules,显示/隐藏模块
 Show Print First,首先显示打印
 Show Tags,显示标签
@@ -1541,3 +1541,5 @@ Import Failed!,导入失败
 						Save as type: Text Documents (*.txt)<br />\
 						Encoding: UTF-8",文件编码是UTF-8
 Make a new {0},创建一条{0}的记录
+Editing Row,编辑行
+Shortcuts,快捷方式
