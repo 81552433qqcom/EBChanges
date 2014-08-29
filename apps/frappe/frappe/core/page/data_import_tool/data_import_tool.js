@@ -239,3 +239,4 @@ frappe.pages['data-import-tool'].onload = function(wrapper) {
 
 frappe.pages['data-import-tool'].onshow = function(wrapper) {
 	wrapper.set_route_options && wrapper.set_route_options();
+}
