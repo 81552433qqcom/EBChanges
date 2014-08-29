@@ -181,7 +181,7 @@ Check / Uncheck roles assigned to the User. Click on the Role to find out what p
 Check this if you want to send emails as this id only (in case of restriction by your email provider).,如果您要以这个Email ID作为标识发送邮件，请勾选这个选项。
 Check this to make this the default letter head in all prints,勾选让此抬头默认出现在所有打印中 
 Check which Documents are readable by a User,勾选用户只读的文档
-Checked items shown on desktop,在桌面上显示检查的项目
+Checked items shown on desktop,在桌面上显示勾选的应用
 Child Tables are shown as a Grid in other DocTypes.,子表中会显示在一个表格中。
 City,城市
 Classic,经典
@@ -1531,7 +1531,7 @@ Performing hardcore import process....,导入进行中....
 All Tables (Main + Child Tables),所有的主表与字表
 Ignore Encoding Errors,忽略编码错误
 "If you are inserting new records (overwrite not checked) \
-			and if you have submit permission, the record will be submitted.","如果插入新数据(覆盖没有勾选)\
+and if you have submit permission, the record will be submitted.","如果插入新数据(覆盖没有勾选)\
 在有权限的情况下数据将被提交进数据库"
 Overwrite,覆盖
 "If you are uploading a child table (for example Item Price), the all the entries of that table will be deleted (for that parent record) and new entries will be made.",如果上传字表的数据，则其主键父表对应的子记录将被删除并重新被创建
