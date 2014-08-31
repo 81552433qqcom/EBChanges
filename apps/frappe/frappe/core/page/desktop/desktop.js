@@ -144,7 +144,7 @@ frappe.desktop.show_all_modules = function() {
 						<input class="pull-right" type="checkbox" data-name="%(name)s" />\
 					</div>\
 				</div>\
-				</div>', module)).appendTo($wrapper);
+				</div>', __(module))).appendTo($wrapper);
 			}
 		});
 
