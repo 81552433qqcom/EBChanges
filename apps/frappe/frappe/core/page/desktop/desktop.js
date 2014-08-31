@@ -136,6 +136,8 @@ frappe.desktop.show_all_modules = function() {
 			var module = frappe.get_module(m);
 			if(module.link && desktop_items.indexOf(m)!==-1) {
 				module.app_icon = frappe.ui.app_icon.get_html(m, true);
+				module.label = __(module.label);
+				console.log(module.lable + __(module.lable));
 				$(repl('<div class="list-group-item" data-label="%(name)s">\
 				<div class="row">\
 					<div class="col-xs-2"><a href="#%(link)s">%(app_icon)s</a></div>\
@@ -144,7 +146,7 @@ frappe.desktop.show_all_modules = function() {
 						<input class="pull-right" type="checkbox" data-name="%(name)s" />\
 					</div>\
 				</div>\
-				</div>', __(module))).appendTo($wrapper);
+				</div>', module)).appendTo($wrapper);
 			}
 		});
 
