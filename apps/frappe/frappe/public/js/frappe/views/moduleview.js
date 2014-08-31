@@ -196,6 +196,7 @@ frappe.views.moduleview.ModuleView = Class.extend({
 
 				item.description = cstr(item.description);
 				item.description = __(item.description);
+				console.log(item.description);
 
 				$list_item = $($r('<li class="list-group-item">\
 					<div class="row">\
