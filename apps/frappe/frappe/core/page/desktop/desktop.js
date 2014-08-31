@@ -137,7 +137,6 @@ frappe.desktop.show_all_modules = function() {
 			if(module.link && desktop_items.indexOf(m)!==-1) {
 				module.app_icon = frappe.ui.app_icon.get_html(m, true);
 				module.label = __(module.label);
-				console.log(module.lable + __(module.lable));
 				$(repl('<div class="list-group-item" data-label="%(name)s">\
 				<div class="row">\
 					<div class="col-xs-2"><a href="#%(link)s">%(app_icon)s</a></div>\
