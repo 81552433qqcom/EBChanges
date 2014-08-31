@@ -118,7 +118,7 @@ frappe.desktop.show_all_modules = function() {
 		var user_desktop_items = frappe.user.get_user_desktop_items();
 
 		$('<input class="form-control desktop-app-search" \
-			type="text" placeholder="' + __("Search Filter") + '>')
+			type="text" placeholder="' + __("Search Filter") +'>')
 			.appendTo(d.body)
 			.on("keyup", function() {
 				var val = $(this).val();
@@ -140,7 +140,7 @@ frappe.desktop.show_all_modules = function() {
 				<div class="row">\
 					<div class="col-xs-2"><a href="#%(link)s">%(app_icon)s</a></div>\
 					<div class="col-xs-10" style="padding-top: 14px;">\
-						<a href="#%(link)s">%(' + __(label) + 's</a>\
+						<a href="#%(link)s">%(label)s</a>\
 						<input class="pull-right" type="checkbox" data-name="%(name)s" />\
 					</div>\
 				</div>\
