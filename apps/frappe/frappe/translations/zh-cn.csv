@@ -1573,3 +1573,8 @@ Make New,新建
 Qty,数量
 Document Status,文档状态
 Created On,创建于
+Document Types,文档类型
+Select Document Types,选择文档类型
+Show User Permissions,显示用户权限
+Apply User Permissions of these Document Types,对以下文档应用用户权限
+Select ,选择
