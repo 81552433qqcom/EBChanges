@@ -1062,7 +1062,7 @@ Feed,Feed
 Feed Type,Feed类型
 Feedback,反馈
 Female,女
-Fetch exploded BOM (including sub-assemblies),Fetch exploded BOM (including sub-assemblies)
+Fetch exploded BOM (including sub-assemblies),提取已使用的物料(BOM)以及其子组件
 "Field available in Delivery Note, Quotation, Sales Invoice, Sales Order",字段在送货单，报价单，销售发票，销售订单可用
 Files Folder ID,文件夹的ID
 Fill the form and save it,填写表格并保存
@@ -3382,3 +3382,5 @@ View Details,查看详情
 Hide Details,隐藏详情
 % Milestones Completed,完成百分比(%)
 % Tasks Completed,任务完成百分比(%)
+BOM,物料清单(BOM)
+Created On,创建于
