@@ -2285,7 +2285,7 @@ Purpose,用途
 Purpose must be one of {0},目的必须是{0}中的一个
 QA Inspection,质检
 Qty,数量
-Qty Consumed Per Unit,Qty Consumed Per Unit
+Qty Consumed Per Unit,每单位消耗的数量
 Qty To Manufacture,生产数量
 Qty as per Stock UOM,数量（此仓库计量单位）
 Qty to Deliver,交付数量
@@ -2518,8 +2518,8 @@ SMS Parameter,短信参数
 SMS Sender Name,短信发送者名称
 SMS Settings,短信设置
 SO Date,销售订单日期
-SO Pending Qty,SO Pending Qty
-SO Qty,SO Qty
+SO Pending Qty,销售订单中等待的数量
+SO Qty,销售订单数量
 Salary,薪水
 Salary Information,薪资信息
 Salary Manager,薪资管理
@@ -3380,6 +3380,5 @@ website page link,网站页面链接
 ##############,##############
 View Details,查看详情
 Hide Details,隐藏详情
-Qty,数量
 % Milestones Completed,完成百分比(%)
 % Tasks Completed,任务完成百分比(%)
