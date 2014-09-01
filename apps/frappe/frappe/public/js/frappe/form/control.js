@@ -937,9 +937,9 @@ frappe.ui.form.ControlLink = frappe.ui.form.ControlData.extend({
 				}
 			}
 		}).data('ui-autocomplete')._renderItem = function(ul, d) {
-			var html = "<strong>" + d.value + "</strong>";
+			var html = "<strong>" + __(d.value) + "</strong>";
 			if(d.description && d.value!==d.description) {
-				html += '<br><span class="small">' + d.description + '</span>';
+				html += '<br><span class="small">' + __(d.description) + '</span>';
 			}
 			return $('<li></li>')
 				.data('item.autocomplete', d)
