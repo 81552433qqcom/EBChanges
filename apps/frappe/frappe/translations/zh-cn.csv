@@ -672,7 +672,7 @@ Next State,下一状态
 Next actions,下一步操作
 No,没有
 No Action,没有操作
-No Communication tagged with this ,没有找到此标签相关的沟通记录
+No Communication tagged with this ,没有找到此标签相关的沟通记录:
 No Copy,没有复制
 No Permissions set for this criteria.,没有权限设置此条件。
 No Report Loaded. Please use query-report/[Report Name] to run a report.,无报告被加载。请使用报告查询器/ [报告名称]运行报告。
@@ -1543,7 +1543,6 @@ Import Failed!,导入失败
 Make a new {0},创建一条{0}的记录
 Editing Row,编辑行
 Shortcuts,快捷方式
-Qty,数量
 just now,刚刚
 Users,用户
 Messages from everyone,用户发来的消息
@@ -1567,3 +1566,8 @@ Scheduler Failed Events,定时器失败事件
 Search Link,搜索
 Open Link,打开
 Make New,新建
+[No Subject],[无主题]
+[no content],[无内容]
+[unknown sender],[未知发件人]
+ yet.,.
+Qty,数量
