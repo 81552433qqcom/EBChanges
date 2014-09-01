@@ -569,7 +569,7 @@ Language preference for user interface (only if available).,用户界面的语�
 Last IP,最后一个IP
 Last Login,上次登录
 Last Name,名
-Last updated by,最后由谁更新
+Last updated by,最后更新人
 Lastmod,上一个更改人
 Lato,Lato
 Leave blank to repeat always,留空来设置总是重复
@@ -1572,7 +1572,7 @@ Make New,新建
  yet.,.
 Qty,数量
 Document Status,文档状态
-Created On,创建于
+Created On,创建时间
 Document Types,文档类型
 Select Document Types,选择文档类型
 Show User Permissions,显示用户权限
@@ -1581,3 +1581,5 @@ Select ,选择
 Dialog box to select a Link Value,从弹出框选择链接到的值
 Print Heading,打印抬头
 Letter Head,抬头
+Last Updated On,上次更新时间
+Created By,创建人
