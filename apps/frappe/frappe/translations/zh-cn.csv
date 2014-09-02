@@ -1527,7 +1527,7 @@ While uploading non English files ensure that the encoding is UTF-8.,请确保�
 Open this saved file in Notepad,在Notepad里面打开保存的文件
 Click on File -&gt; Save As,点击文件另存为
 Click on Save,点击保存
-Performing hardcore import process....,导入进行中....
+Performing hardcore import process,导入进行中
 All Tables (Main + Child Tables),所有的主表与字表
 Ignore Encoding Errors,忽略编码错误
 "If you are inserting new records (overwrite not checked) \
@@ -1588,3 +1588,13 @@ This form does not have any input,表单未有任何输入
 Landed Cost Voucher,到岸成本凭证
 Check how the newsletter looks in an email by sending it to your email.,发送至你的邮箱来检查用户收到简讯的样子
 Select who you want to send this newsletter to,选择你想发送此简讯的人
+Defines workflow states and rules for a document.,定义文档的工作流状态和规则
+Keep a track of all communications,记录所有沟通
+Represents a User in the system.,系统中的用户
+Workflow state represents the current state of a document.,文档工作流程状态设置
+Adds a custom field to a DocType,为文档类型添加自定义字段
+Adds a custom script (client or server) to a DocType,文文档类型添加自定义脚本
+DocType is a Table / Form in the application.,文档类型类似于应用程序的数据表或者是表单
+Email Settings for Outgoing and Incoming Emails.,接发邮件服务器设置
+Property Setter overrides a standard DocType or Field property,属性设置器用来重载标准文档类型或者字段属性
+Workflow Action Master,工作流行为主数据

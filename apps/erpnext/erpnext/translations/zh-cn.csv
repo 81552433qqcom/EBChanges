@@ -110,7 +110,7 @@ Accountant,会计人员
 Accounting,会计账目
 "Accounting Entries can be made against leaf nodes, called",组节点是不能进行录入的
 "Accounting entry frozen up to this date, nobody can do / modify entry except role specified below.",会计分录冻结截至此时间;除以下指定角色外没有人可以操作/修改条目。
-Accounting journal entries.,会计记账分录
+Accounting journal entries.,会计分类账
 Accounts,财会
 Accounts Browser,帐户浏览
 Accounts Frozen Upto,账户被冻结到
@@ -122,7 +122,7 @@ Active: Will extract emails from ,有效的:将从邮件中提取
 Activity,活跃
 Activity Log,活动日志
 Activity Log:, 活动日志:
-Activity Type,活动类型
+Activity Type,作业类型
 Actual,实际的
 Actual Budget,实际预算
 Actual Completion Date,实际完成日期
@@ -215,11 +215,11 @@ All these items have already been invoiced,所有这些项均已开具发票
 Allocate,分配
 Allocate leaves for a period.,休假时间分配
 Allocate leaves for the year.,分配当前年的假期
-Allocated Amount,分配的金额
-Allocated Budget,分配的预算
-Allocated amount,分配量
-Allocated amount can not be negative,分配的数量不能为负
-Allocated amount can not greater than unadusted amount,分配的数量不能超过未被分配的数量
+Allocated Amount,应付款
+Allocated Budget,预算配额
+Allocated amount,应付款
+Allocated amount can not be negative,应付款不能为负
+Allocated amount can not greater than unadusted amount,应付款不能超过预付款
 Allow Bill of Materials,允许物料清单
 Allow Bill of Materials should be 'Yes'. Because one or many active BOMs present for this item,允许物料清单应该设置为'是'.因此此项有一个或者多个有效的BOMs存在
 Allow Children,允许儿童
@@ -259,7 +259,7 @@ Applicable To (Employee),适用于(员工)
 Applicable To (Role),适用于(角色)
 Applicable To (User),适用于(用户)
 Applicant Name,申请人名称
-Applicant for a Job.,申请人的工作
+Applicant for a Job.,工作申请人
 Application of Funds (Assets),资产类科目
 Applications for leave.,申请休假
 Applies to Company,应用到公司
@@ -373,7 +373,7 @@ Basic Information,基本信息
 Basic Rate,基础比率
 Basic Rate (Company Currency),基础比率(公司货币)
 Batch,批次
-Batch (lot) of an Item.,一批（大量）某产品，分批次接收
+Batch (lot) of an Item.,一批某（大量）产品
 Batch Finished Date,批次结束日期
 Batch ID,批次ID
 Batch No,批号
@@ -387,7 +387,7 @@ Bill No,账单号码
 Bill No {0} already booked in Purchase Invoice {1},账单号码{0}已经在采购发票{1}中入账
 Bill of Material,物料清单
 Bill of Material to be considered for manufacturing,物料清单将被用于生产
-Bill of Materials (BOM),材料清单(BOM)
+Bill of Materials (BOM),物料清单(BOM)
 Billable,可收取费用
 Billed,已结算
 Billed Amount,账单金额
@@ -509,7 +509,7 @@ Chargeable,可记账的
 Charity and Donations,慈善和捐款
 Chart Name,图表名称
 Chart of Accounts,会计科目表
-Chart of Cost Centers,成本中心图
+Chart of Cost Centers,成本中心表
 Check how the newsletter looks in an email by sending it to your email.,发送至你的邮箱来检查用户收到简讯的样子
 "Check if recurring invoice, uncheck to stop recurring or put proper End Date",是经常性发票的话请勾选;取消勾选或设置适当的结束日期
 "Check if you need automatic recurring invoices. After submitting any sales invoice, Recurring section will be visible.",需要自动经常性发票的话请勾选;提交销售发票后;经常性部分将可见
@@ -1029,9 +1029,9 @@ Expense,费用
 Expense / Difference account ({0}) must be a 'Profit or Loss' account,费用/差异帐户({0})必须是一个'利润或亏损'的账户
 Expense Account,支出帐户
 Expense Account is mandatory,支出帐户是必需的
-Expense Claim,报销
-Expense Claim Approved,报销批准
-Expense Claim Approved Message,报销批准的消息
+Expense Claim,费用报销
+Expense Claim Approved,报销已批准
+Expense Claim Approved Message,报销已批准消息
 Expense Claim Detail,报销明细
 Expense Claim Details,报销明细
 Expense Claim Rejected,报销被拒绝
@@ -1096,7 +1096,7 @@ For Reference Only.,仅供参考
 For Sales Invoice,销售发票
 For Server Side Print Formats,对于服务器端打印的格式
 For Supplier,从供应商提取
-For Warehouse,对于仓库
+For Warehouse,仓库
 For Warehouse is required before Submit,提交需要选择仓库
 "For e.g. 2012, 2012-13",例如2012以及2012-13
 For reference,供参考
@@ -1127,7 +1127,7 @@ From Material Request,从物料需求获取
 From Opportunity,从机会获取产品
 From Package No.,从包装号
 From Purchase Order,从采购单获取
-From Purchase Receipt,从采购收货单获取
+From Purchase Receipt,从收货单获取
 From Quotation,从报价单
 From Sales Order,从销售订单获取
 From Supplier Quotation,从供应商报价单获取
@@ -1238,8 +1238,8 @@ Home,主页
 Host,主机
 "Host, Email and Password required if emails are to be pulled",主机，电子邮件和密码必需的
 Hour,小时
-Hour Rate,计时工资
-Hour Rate Labour,工时率
+Hour Rate, 总费用（小时）
+Hour Rate Labour,人工费用（小时）
 Hours,小时
 How Pricing Rule is applied?,定价规则如何被应用？
 How frequently?,多久？
@@ -1381,7 +1381,7 @@ Is this Tax included in Basic Rate?,此税已包含在基本税中吗？
 Issue,问题
 Issue Date,报修日期
 Issue Details,问题详情
-Issued Items Against Production Order,针对此生产订单发货
+Issued Items Against Production Order,未完成的生产订单
 It can also be used to create opening stock entries and to fix stock value.,它也可以用来创建期初存货和库存值
 Item,商品
 Item Advanced,商品高级选项
@@ -1481,7 +1481,7 @@ Items required,所需商品
 Items which do not exist in Item master can also be entered on customer's request,在商品主数据不存在的商品页可以基于用户的需求进行输入
 Itemwise Discount,商品折扣
 Itemwise Recommended Reorder Level,商品推荐的记录层次
-Job Applicant,求职者
+Job Applicant,职位申请
 Job Opening,招聘职位
 Job Profile,工作简介
 Job Title,职位
@@ -1643,7 +1643,7 @@ Manager,经理
 Manufacture against Sales Order,生产销售订单中的商品
 Manufacture/Repack,生产/重新打包
 Manufactured Qty,生产数量
-Manufactured quantity will be updated in this warehouse,这个仓库生产数量将被更新
+Manufactured quantity will be updated in this warehouse,生产数量将更新到此仓库
 Manufactured quantity {0} cannot be greater than planned quanitity {1} in Production Order {2},生产订单{2}的制作的数量{0}不能大于计划的数量{1}
 Manufacturer,生产厂家
 Manufacturer Part Number,厂家料号
@@ -1774,7 +1774,7 @@ New Leaves Allocated (In Days),新假期分配（天数）
 New Material Requests,新建的物料需求
 New Projects,新建的项目
 New Purchase Orders,新建的采购订单
-New Purchase Receipts,新建采购收货单
+New Purchase Receipts,新建收货单
 New Quotations,新建的报价单
 New Sales Orders,新建的销售订单
 New Serial No cannot have Warehouse. Warehouse must be set by Stock Entry or Purchase Receipt,New Serial No cannot have Warehouse. Warehouse must be set by Stock Entry or Purchase Receipt
@@ -1783,7 +1783,7 @@ New Stock UOM,新库存度量单位
 New Stock UOM is required,库存计量单位是必需的
 New Stock UOM must be different from current stock UOM,新的库存计量单位必须和目前的库存计量单位不同
 New Supplier Quotations,新建的供应商报价
-New Support Tickets,新建的客户支持单
+New Support Tickets,新建的客户咨询
 New UOM must NOT be of type Whole Number,新的计量单位不能是整数类型
 New Workplace,新单位
 Newsletter,简讯
@@ -1871,8 +1871,8 @@ Only Leave Applications with status 'Approved' can be submitted,仅仅是状态�
 Only leaf nodes are allowed in transaction,只有叶节点才允许出现在交易中
 Only the selected Leave Approver can submit this Leave Application,只有选定的休假申请审批人才能提交这个休假申请
 Open,打开
-Open Production Orders,未完成的生产订单
-Open Tickets,未关闭的客户支持单
+Open Production Orders,未开始的生产订单
+Open Tickets,未关闭的客户咨询
 Opening (Cr),开放(CR)
 Opening (Dr),开放(Dr)
 Opening Date,开放日期
@@ -1904,7 +1904,7 @@ Ordered Items To Be Delivered,需要交付的订购商品
 Ordered Qty,订购数量
 "Ordered Qty: Quantity ordered for purchase, but not received.",订购数量:订购的数量已采购但还没有接收到
 Ordered Quantity,订购数量
-Orders released for production.,开放给生产的订单
+Orders released for production.,生产订单发布
 Organization Name,组织名称
 Organization Profile,组织简介
 Organization branch master.,组织分支主数据
@@ -2203,7 +2203,7 @@ Production Orders in Progress,生产进行中的订单
 Production Plan Item,生产计划产品
 Production Plan Items,生产计划产品
 Production Plan Sales Order,生产计划相关的销售订单
-Production Plan Sales Orders,生产计划销售订单
+Production Plan Sales Orders,销售订单生产计划
 Production Planning Tool,生产计划工具
 Products,产品
 "Products will be sorted by weight-age in default searches. More the weight-age, higher the product will appear in the list.",默认的搜索排序是产品将按照重量进行排序;越重越排在前面
@@ -2264,7 +2264,7 @@ Purchase Order number required for Item {0},商品{0}需要采购订单号
 Purchase Order {0} is 'Stopped',采购订单{0}状态为'已停止'
 Purchase Order {0} is not submitted,采购订单{0}状态为未提交
 Purchase Orders given to Suppliers.,给供应商的采购订单。
-Purchase Receipt,采购收货单
+Purchase Receipt,收货单
 Purchase Receipt Item,采购入库商品
 Purchase Receipt Item Supplied,Purchase Receipt Item Supplied
 Purchase Receipt Item Supplieds,Purchase Receipt Item Supplieds
@@ -2595,8 +2595,8 @@ Saturday,星期六
 Schedule,时间表
 Schedule Date,计划日期
 Schedule Details,计划详细信息
-Scheduled,预定
-Scheduled Date,指定日期
+Scheduled,计划内的
+Scheduled Date,计划日期
 Scheduled to send to {0},将发送到{0}
 Scheduled to send to {0} recipients,将发送到收件人{0}
 Scheduler Failed Events,Scheduler Failed Events
@@ -2626,7 +2626,7 @@ Select Items,选择产品
 Select Project...,选择项目...
 Select Purchase Receipts,选择采购入库单
 Select Sales Orders,选择销售订单
-Select Sales Orders from which you want to create Production Orders.,选择需要基于一个销售订单，基于其你可以创建生产订单。
+Select Sales Orders from which you want to create Production Orders.,选择你想创建为生产订单的销售订单
 Select Time Logs and Submit to create a new Sales Invoice.,选择时间日志提交创建一个新的销售发票。
 Select Transaction,选择交易
 Select Warehouse...,选择仓库...
@@ -2640,7 +2640,7 @@ Select the relevant company name if you have multiple companies,选择相关的�
 Select the relevant company name if you have multiple companies.,选择相关的公司名称如果您有多个公司。
 Select who you want to send this newsletter to,选择你想发送此简讯的人
 Select your home country and check the timezone and currency.,选择您的国家并检查时区和货币。
-"Selecting ""Yes"" will allow this item to appear in Purchase Order , Purchase Receipt.",选择“是”，将允许该产品出现在采购订单和采购收货单中。
+"Selecting ""Yes"" will allow this item to appear in Purchase Order , Purchase Receipt.",选择“是”，将允许该产品出现在采购订单和收货单中。
 "Selecting ""Yes"" will allow this item to figure in Sales Order, Delivery Note",选择“是”，将允许该产品出现在销售单和发货单中。
 "Selecting ""Yes"" will allow you to create Bill of Material showing raw material and operational costs incurred to manufacture this item.",如果选择“是”的话，将允许你创建生产此商品时使用的原材料以及操作费用的物料清单(BOM)
 "Selecting ""Yes"" will allow you to make a Production Order for this item.",选择“是”将允许你为该产品创建一个生产订单。
@@ -2956,7 +2956,7 @@ Test Email Id,测试电子邮件Id
 Test the Newsletter,测试新闻通讯
 The BOM which will be replaced,该物料清单将被替换
 The First User: You,您是第一个用户
-"The Item that represents the Package. This Item must have ""Is Stock Item"" as ""No"" and ""Is Sales Item"" as ""Yes""",这个商品是一个套餐或者包;它必须设置为非库存项目并且是可销售项目
+"The Item that represents the Package. This Item must have ""Is Stock Item"" as ""No"" and ""Is Sales Item"" as ""Yes""",此产品是一个套餐，包含若干实体产品或服务，它必须设置为非库存项目并且是可销售的状态。
 The Organization,本组织
 "The account head under Liability, in which Profit/Loss will be booked",负债下的户头损益将被Booked
 "The date on which next invoice will be generated. It is generated on submit.
@@ -3002,7 +3002,7 @@ Time Log Batch Detail,批量时间记录详情
 Time Log Batch Details,批量时间记录详情
 Time Log Batch {0} must be 'Submitted',批时间日志{0}必须'提交'
 Time Log Status must be Submitted.,时间日志状态必须会提交状态。
-Time Log for tasks.,任务时间记录。
+Time Log for tasks.,任务耗时记录
 Time Log is not billable,时间日志不计费
 Time Log {0} must be 'Submitted',时间日志{0}必须'提交'
 Time Zone,时区
@@ -3102,15 +3102,15 @@ Travel,出差
 Travel Expenses,差旅费
 Tree Type,树类型
 Tree of Item Groups.,产品树形结构。
-Tree of finanial Cost Centers.,财务成本中心。
-Tree of finanial accounts.,财务账目管理。
+Tree of finanial Cost Centers.,财务成本中心
+Tree of finanial accounts.,财务账目管理
 Trial Balance,试算表
 Tuesday,星期二
 Type,类型
 Type of document to rename.,档案类型重命名。
 "Type of leaves like casual, sick etc.",请假类型，例如：事假，病假。
 Types of Expense Claim.,报销类型。
-Types of activities for Time Sheets,时间表中任务类型
+Types of activities for Time Sheets,时间记录中的作业类型
 "Types of employment (permanent, contract, intern etc.).",雇佣类型（永久，合同，实习生等）。
 UOM Conversion Detail,单位换算详细
 UOM Conversion Details,单位换算详情
@@ -3129,7 +3129,7 @@ Units/Hour,单位/小时
 Units/Shifts,Units/Shifts
 Unpaid,未付款的
 Unreconciled Payment Details,不一致支付详情
-Unscheduled,未计划的
+Unscheduled,计划外的
 Unsecured Loans,无抵押贷款
 Unstop,Unstop
 Unstop Material Request,Unstop Material Request
@@ -3210,7 +3210,7 @@ Warehouse Detail,仓库详情
 Warehouse Name,仓库名称
 Warehouse and Reference,仓库及相关信息
 Warehouse can not be deleted as stock ledger entry exists for this warehouse.,Warehouse can not be deleted as stock ledger entry exists for this warehouse.
-Warehouse can only be changed via Stock Entry / Delivery Note / Purchase Receipt,仓库只能通过库存条目、发货单、采购收货单来修改
+Warehouse can only be changed via Stock Entry / Delivery Note / Purchase Receipt,仓库只能通过库存条目、发货单、收货单来修改
 Warehouse cannot be changed for Serial No.,仓库不能更改序​​列号
 Warehouse is mandatory for stock Item {0} in row {1},Warehouse is mandatory for stock Item {0} in row {1}
 Warehouse is missing in Purchase Order,采购订单中缺少仓库
@@ -3274,8 +3274,8 @@ Work-in-Progress Warehouse,半成品仓库
 Work-in-Progress Warehouse is required before Submit,提交前请选择半成品仓库
 Working,工作中
 Working Days,工作天数
-Workstation,工作站
-Workstation Name,工作站名称
+Workstation,工厂
+Workstation Name,工厂名称
 Write Off Account,Write Off Account
 Write Off Amount,注销金额
 Write Off Amount <=,Write Off Amount &lt;=
