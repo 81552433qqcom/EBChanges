@@ -19,7 +19,8 @@ def get_pdf(html, options=None):
 		'margin-bottom': '15mm',
 		'margin-left': '15mm',
 		'encoding': "UTF-8",
-		'no-outline': None
+		'no-outline': None,
+		'quiet': ''
 	})
 
 	if not options.get("page-size"):
