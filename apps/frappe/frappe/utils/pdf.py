@@ -30,7 +30,7 @@ def get_pdf(html, options=None):
 
 	try:
 		pdfkit.from_string(html, fname, options=options or {})
-	except
+	except:
 		logger.error("Generated Issue while creating pdf")
 
 	with open(fname, "rb") as fileobj:
