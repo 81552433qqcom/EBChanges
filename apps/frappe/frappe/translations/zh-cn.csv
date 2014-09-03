@@ -1598,3 +1598,6 @@ DocType is a Table / Form in the application.,文档类型类似于应用程序�
 Email Settings for Outgoing and Incoming Emails.,接发邮件服务器设置
 Property Setter overrides a standard DocType or Field property,属性设置器用来重载标准文档类型或者字段属性
 Workflow Action Master,工作流行为主数据
+Select {0},选择{0}
+No Communication tagged with this {0} yet.,未发现有此标签的沟通记录
+Rename {0},重命名{0}
