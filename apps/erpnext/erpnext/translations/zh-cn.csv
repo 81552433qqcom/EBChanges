@@ -2325,7 +2325,7 @@ Quotations received from Suppliers.,从供应商收到的报价
 Quotes to Leads or Customers.,报价给客户或潜在客户
 Raise Material Request when stock reaches re-order level,当库存到再下单的条件时自动发起物料申请
 Raised By,发起人
-Raised By (Email),Raised By (Email)
+Raised By (Email),发起人(邮箱)
 Random,随机
 Range,范围
 Rate,价格或比例
@@ -3387,3 +3387,4 @@ Created On,创建于
 Select ,选择
 Search,搜索
 Bulk Email records.,群发邮件日志
+"<h4 class=""text-muted"">Emergency Contact Details</h4>","<h4 class=""text-muted"">紧急联系人信息</h4>"
