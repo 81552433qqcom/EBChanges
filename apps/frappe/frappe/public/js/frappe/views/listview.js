@@ -314,6 +314,7 @@ frappe.views.ListView = Class.extend({
 		this.title_offset_left += 30 + 5;
 
 		data['docstatus_title'] = __(data['docstatus_title']);
+		console.log('docstatus:' + data['docstatus_title']);
 		// docstatus lock
 		if(frappe.model.is_submittable(this.doctype)) {
 			html += repl('<span class="docstatus filterable" style="margin-right: 3px;"\
@@ -344,7 +345,7 @@ frappe.views.ListView = Class.extend({
 				%(display)s</span>', {
 					fieldname: this.workflow_state_fieldname,
 					value: data[this.workflow_state_fieldname],
-					display: __(data[this.workflow_state_fieldname]),
+					display: __(data['docstatus_title']),
 					style: frappe.utils.guess_style(data[this.workflow_state_fieldname])
 				});
 		}
