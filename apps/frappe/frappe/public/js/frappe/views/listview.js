@@ -340,9 +340,10 @@ frappe.views.ListView = Class.extend({
 
 		if(!without_workflow && this.workflow_state_fieldname) {
 			html+= repl('<span class="label label-%(style)s filterable" data-filter="%(fieldname)s,=,%(value)s">\
-				%(value)s</span>', {
+				%(display)s</span>', {
 					fieldname: this.workflow_state_fieldname,
 					value: data[this.workflow_state_fieldname],
+					display: __(data[this.workflow_state_fieldname]),
 					style: frappe.utils.guess_style(data[this.workflow_state_fieldname])
 				});
 		}
@@ -441,7 +442,7 @@ frappe.views.ListView = Class.extend({
 		if(!in_list(["avatar", "_user_tags", "check"], opts.content)) {
 			if($(parent).attr("title")==undefined) {
 				$(parent).attr("title", (opts.title || opts.content) + ": "
-					+ (data[opts.content] || "Not Set"))
+					+ (data[opts.content] || __("Not Set"))
 			}
 			$(parent).tooltip();
 		}
@@ -500,7 +501,7 @@ frappe.views.ListView = Class.extend({
 	render_bar_graph: function(parent, data, field, label) {
 		var args = {
 			percent: data[field],
-			label: label
+			label: __(label)
 		}
 		$(parent).append(repl('<span class="progress" style="width: 100%; float: left; margin: 5px 0px;"> \
 			<span class="progress-bar" title="%(percent)s% %(label)s" \
