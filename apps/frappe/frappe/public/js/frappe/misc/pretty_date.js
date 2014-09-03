@@ -23,7 +23,7 @@ function prettyDate(time){
 		if ( isNaN(day_diff) || day_diff < 0 )
 			return '';
 
-		console.log("day_diff:" + dau_diff);
+		console.log("day_diff:" + day_diff);
 
 		return when = day_diff == 0 && (
 				diff < 60 && __("just now") ||
