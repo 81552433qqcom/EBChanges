@@ -1,5 +1,5 @@
 function prettyDate(time){
-	if(moment) {
+	if(moment && 1 == 2) {
 		if(frappe.boot) {
 			var user_timezone = frappe.boot.user.time_zone;
 			var system_timezone = sys_defaults.time_zone;
@@ -22,6 +22,8 @@ function prettyDate(time){
 
 		if ( isNaN(day_diff) || day_diff < 0 )
 			return '';
+
+		console.log("day_diff:" + dau_diff);
 
 		return when = day_diff == 0 && (
 				diff < 60 && __("just now") ||
