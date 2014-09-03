@@ -1604,3 +1604,8 @@ Rename {0},重命名{0}
 Not Set,未设置
 Pending,未完成
 Ordered,已下单
+Created,已创建
+Assigned,已分配
+Assignment Completed,分配完成
+Attachment,附件
+Attachment Removed,附件移除
