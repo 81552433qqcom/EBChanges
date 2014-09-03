@@ -442,7 +442,7 @@ frappe.views.ListView = Class.extend({
 		if(!in_list(["avatar", "_user_tags", "check"], opts.content)) {
 			if($(parent).attr("title")==undefined) {
 				$(parent).attr("title", (opts.title || opts.content) + ": "
-					+ (data[opts.content] || __("Not Set"))
+					+ (data[opts.content] || __("Not Set")))
 			}
 			$(parent).tooltip();
 		}
