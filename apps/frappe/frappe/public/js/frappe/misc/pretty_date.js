@@ -33,7 +33,7 @@ function prettyDate(time){
 			day_diff < 7 && __("{0} days ago",[day_diff]) ||
 			day_diff < 31 && __("{0} weeks ago",[Math.ceil( day_diff / 7 )]) ||
 			day_diff < 365 && __("{0} months ago", [Math.ceil(day_diff / 30)]) ||
-			"> " + __("{0} year(s) ago",[Math.floor( day_diff / 365 )]);
+			"> " + __("{0} year(s) ago",[Math.floor( day_diff / 365 )]));
 	}
 }
 
