@@ -96,7 +96,7 @@ frappe.ui.form.Comments = Class.extend({
 					text: __(c.comment)
 				});
 			} else {
-				c.comment_html = frappe.markdown(c.comment);
+				c.comment_html = frappe.markdown(__(c.comment));
 			}
 
 			// icon centering -- pixed perfect
