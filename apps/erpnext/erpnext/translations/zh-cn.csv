@@ -379,7 +379,7 @@ Batch ID,批次ID
 Batch No,批号
 Batch Started Date,批次开始日期
 Batch Time Logs for billing.,批量时间记录（计费）
-Batch-Wise Balance History,Batch-Wise Balance History
+Batch-Wise Balance History,商品批次余量历史记录
 Batched for Billing,批量计费
 Better Prospects,更好的前景
 Bill Date,账单日期
@@ -1480,7 +1480,7 @@ Items required,所需商品
 "Items to be requested which are ""Out of Stock"" considering all warehouses based on projected qty and minimum order qty",所有仓库的“缺货”商品的补货将基于预订数量以及最小订货量进行计算
 Items which do not exist in Item master can also be entered on customer's request,在商品主数据不存在的商品页可以基于用户的需求进行输入
 Itemwise Discount,商品折扣
-Itemwise Recommended Reorder Level,商品推荐的记录层次
+Itemwise Recommended Reorder Level,商品建议再订购级别
 Job Applicant,职位申请
 Job Opening,招聘职位
 Job Profile,工作简介
@@ -1554,7 +1554,7 @@ Leave blank if considered for all employee types,如果应用于员工类型请�
 Leave of type {0} cannot be longer than {1},休假类型{0}不能长于{1}
 Leaves Allocated Successfully for {0},{0}已被成功分配休假类别
 Leaves for type {0} already allocated for Employee {1} for Fiscal Year {0},财政年度{0}员工{1}已分配允许的休假类别{0}
-Leaves must be allocated in multiples of 0.5,Leaves must be allocated in multiples of 0.5
+Leaves must be allocated in multiples of 0.5,休假时间必须是0.5的倍数
 Ledger,分类账
 Ledgers,分类账
 Left,离开
@@ -1660,7 +1660,7 @@ Mass Mailing,邮件群发
 Master Name,主数据名称
 Master Name is mandatory if account type is Warehouse,如果帐户类型为仓库则主数据名称是强制性的
 Master Type,主数据类型
-Masters,Masters
+Masters,主数据
 Match non-linked Invoices and Payments.,匹配非联的发票和付款
 Material Issue,物料发放
 Material Receipt,物料收入
@@ -1777,7 +1777,7 @@ New Purchase Orders,新建的采购订单
 New Purchase Receipts,新建收货单
 New Quotations,新建的报价单
 New Sales Orders,新建的销售订单
-New Serial No cannot have Warehouse. Warehouse must be set by Stock Entry or Purchase Receipt,New Serial No cannot have Warehouse. Warehouse must be set by Stock Entry or Purchase Receipt
+New Serial No cannot have Warehouse. Warehouse must be set by Stock Entry or Purchase Receipt,新的串号不能设置仓库. 仓库必须在库存条目或收货单中进行设置
 New Stock Entries,新建的库存条目
 New Stock UOM,新库存度量单位
 New Stock UOM is required,库存计量单位是必需的
@@ -1916,7 +1916,7 @@ Out Qty,输出数量
 Out Value,Out Value
 Out of AMC,维护过期
 Out of Warranty,超出保修期
-Outgoing,Outgoing
+Outgoing,发出
 Outstanding Amount,债务总额
 Outstanding for {0} cannot be less than zero ({1}),Outstanding for {0} cannot be less than zero ({1})
 Overhead,开销
@@ -1961,7 +1961,7 @@ Parent Customer Group,客户组父节点
 Parent Detail docname,Parent Detail docname家长可采用DocName细节
 Parent Item,父商品
 Parent Item Group,父产品组节点
-Parent Item {0} must be not Stock Item and must be a Sales Item,Parent Item {0} must be not Stock Item and must be a Sales Item
+Parent Item {0} must be not Stock Item and must be a Sales Item,父节点 {0} 不能是库存商品而且必须是可销售商品
 Parent Party Type,Parent Party Type
 Parent Sales Person,父销售节点
 Parent Territory,母公司区域
@@ -2244,8 +2244,8 @@ Purchase Common,Purchase Common
 Purchase Details,采购详情
 Purchase Discounts,采购折扣
 Purchase Invoice,采购发票
-Purchase Invoice Advance,Purchase Invoice Advance
-Purchase Invoice Advances,Purchase Invoice Advances
+Purchase Invoice Advance,采购预付款发票
+Purchase Invoice Advances,采购预付款发票
 Purchase Invoice Item,采购发票的商品
 Purchase Invoice Trends,采购发票趋势
 Purchase Invoice {0} is already submitted,采购发票{0}已经提交
@@ -2254,7 +2254,7 @@ Purchase Order Item,采购订单商品
 Purchase Order Item No,采购订单商品编号
 Purchase Order Item Supplied,采购订单
 Purchase Order Items,采购订单商品
-Purchase Order Items Supplied,Purchase Order Items Supplied
+Purchase Order Items Supplied,已提供的采购订单商品
 Purchase Order Items To Be Billed,待付款的采购订单
 Purchase Order Items To Be Received,待接收的采购订单
 Purchase Order Message,采购订单信息
@@ -2265,16 +2265,16 @@ Purchase Order {0} is 'Stopped',采购订单{0}状态为'已停止'
 Purchase Order {0} is not submitted,采购订单{0}状态为未提交
 Purchase Orders given to Suppliers.,给供应商的采购订单。
 Purchase Receipt,收货单
-Purchase Receipt Item,采购入库商品
-Purchase Receipt Item Supplied,Purchase Receipt Item Supplied
-Purchase Receipt Item Supplieds,Purchase Receipt Item Supplieds
-Purchase Receipt Items,采购入库商品
-Purchase Receipt Message,采购入库单信息
-Purchase Receipt No,采购入库单编号
-Purchase Receipt Required,需要采购入库单
-Purchase Receipt Trends,采购入库单趋势
-Purchase Receipt number required for Item {0},商品{0}需要采购入库单编号
-Purchase Receipt {0} is not submitted,采购入库单{0}状态为未提交
+Purchase Receipt Item,采购商品
+Purchase Receipt Item Supplied,已提供的采购商品
+Purchase Receipt Item Supplieds,已提供的采购商品
+Purchase Receipt Items,采购商品
+Purchase Receipt Message,收货单信息
+Purchase Receipt No,收货单单编号
+Purchase Receipt Required,需要收货单
+Purchase Receipt Trends,收货单趋势
+Purchase Receipt number required for Item {0},商品{0}需要收货单编号
+Purchase Receipt {0} is not submitted,收货单{0}状态为未提交
 Purchase Register,登记购买
 Purchase Return,采购退回
 Purchase Returned,Purchase Returned
@@ -2306,8 +2306,8 @@ Quantity and Rate,数量及价格
 Quantity and Warehouse,数量和仓库
 Quantity cannot be a fraction in row {0},行{0}中的数量不能是小数
 Quantity for Item {0} must be less than {1},产品{0}的数量必须小于{1}
-Quantity in row {0} ({1}) must be same as manufactured quantity {2},Quantity in row {0} ({1}) must be same as manufactured quantity {2}
-Quantity of item obtained after manufacturing / repacking from given quantities of raw materials,Quantity of item obtained after manufacturing / repacking from given quantities of raw materials
+Quantity in row {0} ({1}) must be same as manufactured quantity {2},行 {0} ({1}) 必须与生产出来的数量一致 {2}
+Quantity of item obtained after manufacturing / repacking from given quantities of raw materials,在给定原材料数量上生产或重新打包后得到的商品的数量
 Quantity required for Item {0} in row {1},行{0}中的产品{1}数量是必须的
 Quarter,季度
 Quarterly,按季度
@@ -2320,7 +2320,7 @@ Quotation Message,报价信息
 Quotation To,报价对象
 Quotation Trends,报价趋势
 Quotation {0} is cancelled,报价{0}将被取消
-Quotation {0} not of type {1},Quotation {0} not of type {1}
+Quotation {0} not of type {1},报价单{0}不是{1}中的一种
 Quotations received from Suppliers.,从供应商收到的报价
 Quotes to Leads or Customers.,报价给客户或潜在客户
 Raise Material Request when stock reaches re-order level,当库存到再下单的条件时自动发起物料申请
@@ -2330,15 +2330,15 @@ Random,随机
 Range,范围
 Rate,价格或比例
 Rate,价格或比例
-Rate (%),Rate (%)
-Rate (Company Currency),Rate (Company Currency)
+Rate (%),比例 (%)
+Rate (Company Currency),汇率 (公司货币)
 Rate Of Materials Based On,材料价格基于
 Rate and Amount,价格及金额
-Rate at which Customer Currency is converted to customer's base currency,Rate at which Customer Currency is converted to customer's base currency
-Rate at which Price list currency is converted to company's base currency,Rate at which Price list currency is converted to company's base currency
-Rate at which Price list currency is converted to customer's base currency,Rate at which Price list currency is converted to customer's base currency
-Rate at which customer's currency is converted to company's base currency,Rate at which customer's currency is converted to company's base currency
-Rate at which supplier's currency is converted to company's base currency,Rate at which supplier's currency is converted to company's base currency
+Rate at which Customer Currency is converted to customer's base currency,客户公司货币转换为本公司货币的比率
+Rate at which Price list currency is converted to company's base currency,价格表货币转换为本公司货币的比率
+Rate at which Price list currency is converted to customer's base currency,价格表货币转换为客户公司货币的比率
+Rate at which customer's currency is converted to company's base currency,客户公司货币转换为本公司货币的比率
+Rate at which supplier's currency is converted to company's base currency,供应商公司货币转换为本公司货币的比率
 Rate at which this tax is applied,Rate at which this tax is applied
 Raw Material,原料
 Raw Material Item Code,原料产品编号
@@ -2368,36 +2368,36 @@ Reason for Resignation,辞职原因
 Reason for losing,丢失原因
 Recd Quantity,收到数量
 Receivable,应收款项
-Receivable / Payable account will be identified based on the field Master Type,Receivable / Payable account will be identified based on the field Master Type
+Receivable / Payable account will be identified based on the field Master Type,收支账户会基于字段主数据类型进行判定
 Receivables,应收款项
 Receivables / Payables,应收/应付账款
 Receivables Group,应收账款组
 Received Date,收到日期
-Received Items To Be Billed,Received Items To Be Billed
+Received Items To Be Billed,已收货但未付款的商品
 Received Qty,已收到数量
 Received and Accepted,已收到并接受
 Receiver List,接收者列表
 Receiver List is empty. Please create Receiver List,接收者列表为空，请创建接收者列表。
 Receiver Parameter,接收者参数
 Recipients,收件人
-Reconcile,Reconcile
-Reconciliation Data,Reconciliation Data
+Reconcile,校正
+Reconciliation Data,校正数据
 Reconciliation HTML,Reconciliation HTML
 Reconciliation JSON,Reconciliation JSON
 Record item movement.,产品移动记录。
-Recurring Id,Recurring Id
-Recurring Invoice,Recurring Invoice
-Recurring Type,Recurring Type
+Recurring Id,ID
+Recurring Invoice,经常性发票
+Recurring Type,类型
 Reduce Deduction for Leave Without Pay (LWP),Reduce Deduction for Leave Without Pay (LWP)
 Reduce Earning for Leave Without Pay (LWP),如果是无薪休假则减少收入
 Ref,参考
 Ref Code,参考代码
 Ref SQ,Ref SQ
 Reference,相关
-Reference #{0} dated {1},Reference #{0} dated {1}
+Reference #{0} dated {1},请参考 #{0} 日期为 {1}
 Reference Date,参考日期
 Reference Name,参考名称
-Reference No & Reference Date is required for {0},Reference No & Reference Date is required for {0}
+Reference No & Reference Date is required for {0},{0}的参考号以及日期必须指定
 Reference No is mandatory if you entered Reference Date,参考编号是强制性的，如果你输入了参考日期
 Reference Number,参考号码
 Reference Row #,参考行＃
@@ -2408,7 +2408,7 @@ Rejected,已拒绝
 Rejected Quantity,不合格数量
 Rejected Serial No,不合格品序列号
 Rejected Warehouse,不合格品存放仓库
-Rejected Warehouse is mandatory against regected item,Rejected Warehouse is mandatory against regected item
+Rejected Warehouse is mandatory against regected item,拒绝收货的商品的库存必须指定
 Relation,关系
 Relieving Date,解约日期
 Relieving Date must be greater than Date of Joining,解除日期必须大于加入的日期
@@ -2421,7 +2421,7 @@ Rename Tool,重命名工具
 Rent Cost,租金成本
 Rent per hour,每小时租金
 Rented,租用
-Repeat on Day of Month,Repeat on Day of Month
+Repeat on Day of Month,每月的同一天重复
 Replace,替换
 Replace Item / BOM in all BOMs,替换所有物料清单中的商品/物料清单
 Replied,已回复
@@ -2436,8 +2436,8 @@ Request for Information,需要信息
 Request for purchase.,所需物料采购。
 Requested,要求
 Requested For,目的
-Requested Items To Be Ordered,Requested Items To Be Ordered
-Requested Items To Be Transferred,Requested Items To Be Transferred
+Requested Items To Be Ordered,等待下单的申请的商品
+Requested Items To Be Transferred,等待转移的申请的商品
 Requested Qty,要求数量
 "Requested Qty: Quantity requested for purchase, but not ordered.",数量要求：采购要求数量，但没有下单。
 Requests for items.,产品所需物料
@@ -2445,7 +2445,7 @@ Required By,需求方
 Required Date,需用日期
 Required Qty,所需数量
 Required only for sample item.,Required only for sample item.
-Required raw materials issued to the supplier for producing a sub - contracted item.,Required raw materials issued to the supplier for producing a sub - contracted item.
+Required raw materials issued to the supplier for producing a sub - contracted item.,需要发到分包商进行生产的原材料
 Research,调查
 Research & Development,研究与发展
 Researcher,研究员
@@ -2787,11 +2787,11 @@ Status must be one of {0},状态必须是{0}中的一个
 Status of {0} {1} is now {2},Status of {0} {1} is now {2}
 Status updated to {0},状态更新为{0}
 Statutory info and other general information about your Supplier,关于供应商的法定信息和其它普通信息
-Stay Updated,Stay Updated
+Stay Updated,保持更新状态
 Stock,库存
 Stock Adjustment,库存调整
 Stock Adjustment Account,库存调整账户
-Stock Ageing,Stock Ageing
+Stock Ageing,库存存放时间分析
 Stock Analytics,库存分析
 Stock Assets,库存资产
 Stock Balance,库存余额
@@ -2805,7 +2805,7 @@ Stock Ledger Entry,库存分类帐条目
 Stock Ledger entries balances updated,库存分类帐条目剩余更新
 Stock Level,库存水平
 Stock Liabilities,库存债务
-Stock Projected Qty,Stock Projected Qty
+Stock Projected Qty,库存预计数量
 Stock Queue (FIFO),库存队列（FIFO）
 Stock Received But Not Billed,已入库但未付款
 Stock Reconciliation Data,库存对账数据
@@ -2944,7 +2944,7 @@ Terms and Conditions Content,条款及条件内容
 Terms and Conditions Details,条款及条件详情
 Terms and Conditions Template,条款及条件模板
 Terms and Conditions,条款条件
-Terretory,Terretory
+Terretory,区域
 Territory,区域
 Territory / Customer,区域/客户
 Territory Manager,区域经理
@@ -3020,7 +3020,7 @@ To Date should be within the Fiscal Year. Assuming To Date = {0},结束日期应
 To Discuss,讨论
 To Do List,待办事项列表
 To Package No.,到包装号
-To Produce,To Produce
+To Produce,待生产
 To Time,结束时间
 To Value,结束值
 To Warehouse,To Warehouse
@@ -3085,15 +3085,15 @@ Total valuation for manufactured or repacked item(s) can not be less than total 
 Total weightage assigned should be 100%. It is {0},分配的总权重应为100 ％ ，它是{0}
 Totals,总计
 Track Leads by Industry Type.,通过行业类型跟踪潜在客户。
-Track this Delivery Note against any Project,Track this Delivery Note against any Project
+Track this Delivery Note against any Project,跟踪此发货单所有相关的项目
 Track this Sales Order against any Project,用项目来跟进此销售订单相关任务
 Transaction,交易
 Transaction Date,交易日期
-Transaction not allowed against stopped Production Order {0},Transaction not allowed against stopped Production Order {0}
+Transaction not allowed against stopped Production Order {0},交易不允许发生在停止的生产订单中 {0}
 Transfer,转移
 Transfer Material,转移材料
 Transfer Raw Materials,转移原材料
-Transferred Qty,Transferred Qty
+Transferred Qty,转移数量
 Transportation,运输
 Transporter Info,运输信息
 Transporter Name,运输名称
@@ -3123,7 +3123,7 @@ Under Graduate,本科
 Under Warranty,在保修期
 Unit,单元
 Unit of Measure,计量单位
-Unit of Measure {0} has been entered more than once in Conversion Factor Table,Unit of Measure {0} has been entered more than once in Conversion Factor Table
+Unit of Measure {0} has been entered more than once in Conversion Factor Table,计量单位{0}在转换系数表中输入了不止一次
 "Unit of measurement of this item (e.g. Kg, Unit, No, Pair).",产品计量单位(如公斤，双等等)。
 Units/Hour,单位/小时
 Units/Shifts,Units/Shifts
@@ -3131,9 +3131,9 @@ Unpaid,未付款的
 Unreconciled Payment Details,不一致支付详情
 Unscheduled,计划外的
 Unsecured Loans,无抵押贷款
-Unstop,Unstop
-Unstop Material Request,Unstop Material Request
-Unstop Purchase Order,Unstop Purchase Order
+Unstop,继续进行
+Unstop Material Request,继续物料申请
+Unstop Purchase Order,继续采购订单
 Unsubscribed,退订
 Update,更新
 Update Clearance Date,更新清算日期
@@ -3143,7 +3143,7 @@ Update Landed Cost,更新到岸成本
 Update Series,Update Series
 Update Series Number,更新序列号
 Update Stock,更新库存
-Update bank payment dates with journals.,Update bank payment dates with journals.
+Update bank payment dates with journals.,银行付款与凭证核对
 Update clearance date of Journal Entries marked as 'Bank Vouchers',更新分类账为“银行凭证”的结算日期
 Updated,更新
 Updated Birthday Reminders,更新生日提醒
@@ -3196,7 +3196,7 @@ Verified By,验证
 View Ledger,查看分类帐
 View Now,立即查看
 Visit report for maintenance call.,报修访问记录。
-Voucher #,Voucher #
+Voucher #,凭证号
 Voucher Detail No,凭单明细号
 Voucher Detail Number,凭单明细号
 Voucher ID,凭证编号
@@ -3222,8 +3222,8 @@ Warehouse {0} does not belong to company {1},仓库{0}不属于公司{1}
 Warehouse {0} does not exist,仓库{0}不存在
 Warehouse {0}: Company is mandatory,仓库{0}：公司是必须的
 Warehouse {0}: Parent account {1} does not bolong to the company {2},仓库{0}：父帐户{1}不属于该公司{2}
-Warehouse-Wise Stock Balance,Warehouse-Wise Stock Balance
-Warehouse-wise Item Reorder,Warehouse-wise Item Reorder
+Warehouse-Wise Stock Balance,仓库库存余量报表
+Warehouse-wise Item Reorder,仓库商品记录器
 Warehouses,仓库
 Warehouses.,仓库。
 Warn,警告
@@ -3388,3 +3388,78 @@ Select ,选择
 Search,搜索
 Bulk Email records.,群发邮件日志
 "<h4 class=""text-muted"">Emergency Contact Details</h4>","<h4 class=""text-muted"">紧急联系人信息</h4>"
+Update additional costs to calculate landed cost of items,更新额外的成本用来计算商品的到岸成本
+Purchase Receipts,收货单
+Applicable Charges,适用于商品费用
+Charges will be distributed proportionately based on item amount,费用会按比例平摊到每件商品中
+Remove item if charges is not applicable to that item,移除不适用于商品的费用
+Charges are updated in Purchase Receipt against each item,费用在收货单中更新到每个商品中
+Item valuation rate is recalculated considering landed cost voucher amount,商品的估值会基于到岸成本的金额进行重新计算
+Stock Ledger Entries and GL Entries are reposted for the selected Purchase Receipts,库存分类账以及总账会基于所选的收货单进行重新核算
+Get Items From Purchase Receipts,通过收货单获取商品
+Please enter Purchase Receipt first,请输入收货单
+Help,帮助
+Select type of transaction,选择交易类型
+Billing(Sale Invoice),账单(销售发票)
+Please setup your POS Preferences,请设置你的POS选项
+Make new POS Setting,创建新的POS设置
+Start POS,开始使用POS
+Form View,表单视图
+Sales Person Target Variance (Item Group-Wise),销售人员目标与实销
+Territory Target Variance (Item Group-Wise),区域产品销售目标与实销
+Invoiced Amount,开具发票金额
+Payment Received,已收到的付款
+Age,年龄
+Customer Id,客户Id
+Customer Account,客户账户
+Account Group,账户组
+Total Tax,总税金
+Delivery Note/Sales Invoice,发货单/销售发票
+Link,链接
+Selling Rate,销售比率
+Avg. Buying Rate,平均采购率
+Selling Amount,销售金额
+Buying Amount,采购金额
+Gross Profit %,毛利润%
+Please set filters,请设置过滤条件
+Loading Report,加载报表
+Against Invoice,发票
+Against Invoice Posting Date,发票日期
+Reference No,参考号
+Target,目标
+Actual,实际
+Variance,差异
+Sr No,序号
+Item-wise Last Purchase Rate,商品上次采购价格
+Group By,分组
+Consumed Amount,消耗的金额
+Delivered Amount,发货金额
+Total Qty,总数量
+Supplier(s),供应商
+UOM,计量单位(UOM)
+Allocated,已分配
+Taken,已使用
+Balance,余量
+From Datetime,开始时间
+To Datetime,结束时间
+Task Subject,任务标题
+Project Id,项目Id
+Cost of Purchased Items,已采购商品花销
+Cost of Issued Items,Cost of Issued Items
+Cost of Delivered Items,已交付商品花销
+Prorject Status,项目状态
+New Customers,新客户
+Repeat Customers,老客户
+New Customer Revenue,新客户收益
+Repeat Customer Revenue,老客户收益
+Total Revenue,总收益
+Contribution %,贡献率%
+Contribution Amount,贡献金额
+Achieved,完成
+Number of Order,订单数量
+Total Order Value,所有订单价值
+Total Order Considered,Total Order Considered
+Last Order Amount,上次订单金额
+Last Sales Order Date,上次销售订单日期
+Amt,金额
+Serial #,序列号
