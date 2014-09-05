@@ -3468,9 +3468,9 @@ Start date of current order's period,当前订单的开始时间
 End date of current order's period,当前订单的结束时间
 Recurring Order,经常性订单
 Is Recurring,是经常性
-Check if recurring order, uncheck to stop recurring or put proper End Date,如果是经常性订单的话请勾选，如果不是则取消勾选或输入一个合适的结束日期
+"Check if recurring order, uncheck to stop recurring or put proper End Date",如果是经常性订单的话请勾选，如果不是则取消勾选或输入一个合适的结束日期
 Select the period when the invoice will be generated automatically,请选择发票产生的周期
-Enter email id separated by commas, order will be mailed automatically on particular date,请通过逗号分隔开电子邮件，订单将在指定的日期自动的发出
+"Enter email id separated by commas, order will be mailed automatically on particular date",请通过逗号分隔开电子邮件，订单将在指定的日期自动的发出
 The day of the month on which auto order will be generated e.g. 05 28 etc,在指定的月份与日期将订单产生出来，例如5号 28号
 The date on which recurring order will be stop,经常性订单停止的日期
 Add / Edit Prices,添加/编辑价格
@@ -3481,12 +3481,12 @@ Default Cost Center,默认成本中心
 Earnings,收入
 Deductions,扣除
 KRA,目标
-If you are unable to match the exact amount, then amend your Journal Voucher and split rows such that payment amount match the invoice amount.,如果不能将金额完全匹配则请更改记账凭证并分割成多个行来匹配发票金额
+"If you are unable to match the exact amount, then amend your Journal Voucher and split rows such that payment amount match the invoice amount.",如果不能将金额完全匹配则请更改记账凭证并分割成多个行来匹配发票金额
 "<a href=""#!Accounts Browser/Account"">To manage Account Head, click here</a>","<a href=""#!Accounts Browser/Account"">点击编辑户头</a>"
 <em>Addresses will appear only when you save the customer</em>,<em>仅当客户被保存后地址才会出现</em>
 <em>Contact Details will appear only when you save the customer</em>,<em>仅当客户被保存后联系详情才会出现</em>
 Sales Person Tree,销售人员树形结构
-Enter static url parameters here (Eg. sender=ERPNext, username=ERPNext, password=1234 etc.),输入静态参数，例如用户名密码等等
+"Enter static url parameters here (Eg. sender=ERPNext, username=ERPNext, password=1234 etc.)",输入静态参数，例如用户名密码等等
 Parent Web Page,父页面
 Parent Website Route,父页面路由
 Template Path,模板路径
