@@ -1531,7 +1531,7 @@ Performing hardcore import process,导入进行中
 All Tables (Main + Child Tables),所有的主表与字表
 Ignore Encoding Errors,忽略编码错误
 "If you are inserting new records (overwrite not checked) \
-and if you have submit permission, the record will be submitted.","如果插入新数据(覆盖没有勾选)\
+			and if you have submit permission, the record will be submitted.","如果插入新数据(覆盖没有勾选)\
 在有权限的情况下数据将被提交进数据库"
 Overwrite,覆盖
 "If you are uploading a child table (for example Item Price), the all the entries of that table will be deleted (for that parent record) and new entries will be made.",如果上传字表的数据，则其主键父表对应的子记录将被删除并重新被创建
@@ -1539,7 +1539,7 @@ Import Successful!,导入成功
 Import Failed!,导入失败
 "File Name: &lt;your filename&gt;.csv<br />\
 						Save as type: Text Documents (*.txt)<br />\
-						Encoding: UTF-8",文件编码是UTF-8
+						Encoding: UTF-8",文件编码是UTF-8并存为.txt文件
 Make a new {0},创建一条{0}的记录
 Editing Row,编辑行
 Shortcuts,快捷方式
@@ -1636,3 +1636,12 @@ Posting Date,发布日期
 "Additional filters based on User Permissions, having:",过滤条件基于用户的权限:
 Note: fields having empty value for above criteria are not filtered out.,以上条件值为空的记录未被过滤掉
 "A user with ""Expense Approver"" role", 用户的角色是费用审批
+"If checked, all other workflows become inactive.",如果勾选则所有其它的流程为非激活状态
+Approved,已审批
+Rejected,已拒绝
+Comment Type,评论类型
+You can start by selecting backup frequency and granting access for sync,你可以设置同步权限以及同步频率
+Export to Fixtures,导出
+"Brand is what appears on the top-left of the toolbar. If it is an image, make sure it\nhas a transparent background and use the &lt;img /&gt; tag. Keep size as 200px x 30px",品牌形象会出现在顶部左边。如果是图像请确保是透明背景的图片。大小为200 * 300
+"Link for About Us Page is ""/about""","关于我们的链接为""/about"""
+"Link for Contact Page Page is ""/contact""","联系我们的链接为""/contact"""

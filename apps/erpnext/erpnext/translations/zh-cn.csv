@@ -2735,7 +2735,7 @@ Shop,店
 Shopping Cart,购物车
 Short biography for website and other publications.,个人简短说明
 "Show ""In Stock"" or ""Not in Stock"" based on stock available in this warehouse.",基于该仓库的有效库存显示“有货”或“无货”
-"Show / Hide features like Serial Nos, POS etc.","Show / Hide features like Serial Nos, POS etc."
+"Show / Hide features like Serial Nos, POS etc.",显示或隐藏一些特性
 Show In Website,显示在网站
 Show a slideshow at the top of the page,显示幻灯片在页面顶部
 Show in Website,显示在网站
@@ -3038,9 +3038,9 @@ To get Item Group in details table,获取商品组明细表
 "To not apply Pricing Rule in a particular transaction, all applicable Pricing Rules should be disabled.",如果不想应用定价规则，那么所有适用的定价规则应该被禁用。
 "To set this Fiscal Year as Default, click on 'Set as Default'",要设置该财年为默认值，请点击“设为默认”
 To track any installation or commissioning related work after sales,跟踪销售后的任何安装或调试相关工作
-"To track brand name in the following documents Delivery Note, Opportunity, Material Request, Item, Purchase Order, Purchase Voucher, Purchaser Receipt, Quotation, Sales Invoice, Sales BOM, Sales Order, Serial No","To track brand name in the following documents Delivery Note, Opportunity, Material Request, Item, Purchase Order, Purchase Voucher, Purchaser Receipt, Quotation, Sales Invoice, Sales BOM, Sales Order, Serial No"
+"To track brand name in the following documents Delivery Note, Opportunity, Material Request, Item, Purchase Order, Purchase Voucher, Purchaser Receipt, Quotation, Sales Invoice, Sales BOM, Sales Order, Serial No","在以下文档中跟踪品牌:发货单, 机会, 物料申请, 商品, 采购订单, 采购凭证, 收货单, 报价单, 销售发票, 销售物料清单, 销售订单, 序列号"
 To track item in sales and purchase documents based on their serial nos. This is can also used to track warranty details of the product.,基于产品序列号来跟踪产品的销售和采购情况，这也可以用来跟踪商品的保修细节。
-To track items in sales and purchase documents with batch nos<br><b>Preferred Industry: Chemicals etc</b>,To track items in sales and purchase documents with batch nos<br><b>Preferred Industry: Chemicals etc</b>
+To track items in sales and purchase documents with batch nos<br><b>Preferred Industry: Chemicals etc</b>,通过批号在跟踪销售与采购<br><b>例如: 化工行业</b>
 To track items using barcode. You will be able to enter items in Delivery Note and Sales Invoice by scanning barcode of item.,使用条形码跟踪产品，您将能够通过扫描条码将产品填入交货单和销售发票。
 Too many columns. Export the report and print it using a spreadsheet application.,有太多的列；请考虑导出报表，并使用excel进行打印
 Tools,工具
@@ -3175,7 +3175,7 @@ User {0} is disabled,用户{0}已被禁用
 Username,用户名
 Users with this role are allowed to create / modify accounting entry before frozen date,此角色的用户能够创建或编辑
 Users with this role are allowed to set frozen accounts and create / modify accounting entries against frozen accounts,此角色的用户能够冻结账户并且创建或编辑冻结账户的会计分录
-Utilities,Utilities
+Utilities,实用
 Utility Expenses,公用事业费用
 Valid For Territories,有效区域
 Valid From,有效期开始
@@ -3494,6 +3494,6 @@ User editable form on Website.,用户可以在网站上编辑的表单
 Parent Website Group,父网站组
 First set the name and save the record.,请先设置名称并保存
 Attach files / urls and add in table.,在表格中添加文件或者链接
-Export to Fixtures,导出
-"Brand is what appears on the top-left of the toolbar. If it is an image, make sure it has a transparent background and use the <img /> tag. Keep size as 200px x 30px",品牌形象会出现在顶部左边。如果是图像请确保是透明背景的图片。大小为200 * 300
-"Link for About Us Page is ""/about""","关于我们的链接为""/about"""
+<label>Deductions</label>,<label>扣除</label>
+<label>Earnings</label>,<label>收入</label>
+HR,人力资源
