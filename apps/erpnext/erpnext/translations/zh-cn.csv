@@ -375,7 +375,7 @@ Basic Rate (Company Currency),基础比率(公司货币)
 Batch,批次
 Batch (lot) of an Item.,一批某（大量）产品
 Batch Finished Date,批次结束日期
-Batch ID,批次ID
+Batch ID,批次
 Batch No,批号
 Batch Started Date,批次开始日期
 Batch Time Logs for billing.,批量时间记录（计费）
@@ -543,7 +543,7 @@ Close Balance Sheet and book Profit or Loss.,关闭资产负债表和账面利�
 Closed,已关闭
 Closing (Cr),关闭（Cr）
 Closing (Dr),关闭（Dr）
-Closing Account Head,Closing Account Head
+Closing Account Head,期末账户
 Closing Account {0} must be of type 'Liability',决算账户{0}类型必须是'债务'
 Closing Date,截止日期
 Closing Fiscal Year,截止会计年度
@@ -573,7 +573,7 @@ Company (not Customer or Supplier) master.,公司(不是客户或供应商)主�
 Company Abbreviation,公司缩写
 Company Details,公司详细信息
 Company Email,公司邮箱
-"Company Email ID not found, hence mail not sent",公司电子邮件ID没有找到;因此邮件无法发送
+"Company Email ID not found, hence mail not sent",公司电子邮件没有找到;因此邮件无法发送
 Company Info,公司信息
 Company Name,公司名称
 Company Settings,公司设置
@@ -916,7 +916,7 @@ Edu. Cess on TDS,Edu. Cess on TDS
 Education,教育
 Educational Qualification,学历
 Educational Qualification Details,学历详情
-Eg. smsgateway.com/api/send_sms.cgi,例如 smsgateway.com / API / send_sms.cgi
+Eg. smsgateway.com/api/send_sms.cgi,例如 smsgateway.com的短信发送网关
 Either debit or credit amount is required for {0},对{0}而言无论是借方或贷方金额是必需的
 Either target qty or target amount is mandatory,目标的数量或金额是必须的
 Either target qty or target amount is mandatory.,目标的数量或金额是必须的
@@ -928,12 +928,12 @@ Email,电子邮件
 Email Digest,电子邮件摘要
 Email Digest Settings,电子邮件摘要设置
 Email Digest: ,电子邮件摘要:
-Email Id,电子邮件Id
+Email Id,电子邮件
 "Email Id where a job applicant will email e.g. ""jobs@example.com""",应聘者将要发邮件进行应聘的邮箱例如jobs@example.com
 Email Notifications,电子邮件通知
 Email Sent?,邮件已发送?
-"Email id must be unique, already exists for {0}",已经存在{0};电子邮件ID必须是唯一的
-Email ids separated by commas.,电子邮件ID用逗号分隔
+"Email id must be unique, already exists for {0}",已经存在{0};电子邮件必须是唯一的
+Email ids separated by commas.,电子邮件用逗号分隔
 "Email settings to extract Leads from sales email id e.g. ""sales@example.com""",从销售邮箱提取潜在客户邮件的设置;例如sales@example.com
 Emergency Contact,紧急联系人
 Emergency Contact Details,紧急联系人资料
@@ -961,7 +961,7 @@ Employee relieved on {0} must be set as 'Left',Employee relieved on {0} must be 
 Employee {0} has already applied for {1} between {2} and {3},员工{0}已经申请了{1}的{2}和{3}之间
 Employee {0} is not active or does not exist,员工{0}未激活或不存在
 Employee {0} was on leave on {1}. Cannot mark attendance.,员工{0}在{1}期间休假;不能标记考勤
-Employees Email Id,员工的电子邮件ID
+Employees Email Id,员工的电子邮件
 Employment Details,雇佣详情
 Employment Type,雇佣类型
 Enable / disable currencies.,启用/禁用的货币
@@ -977,7 +977,7 @@ Enter Verification Code,输入验证码
 Enter campaign name if the source of lead is campaign.,如果销售机会的来源于活动请输入活动名称
 Enter department to which this Contact belongs,输入联系人所属的部门
 Enter designation of this Contact,输入此联系人的职位信息(e.g. CEO)
-"Enter email id separated by commas, invoice will be mailed automatically on particular date",电子邮件ID用逗号隔开并且发票会自动在特定的日期邮寄
+"Enter email id separated by commas, invoice will be mailed automatically on particular date",电子邮件用逗号隔开并且发票会自动在特定的日期邮寄
 Enter items and planned qty for which you want to raise production orders or download raw materials for analysis.,输入你想进行生产订单的商品及计划的数量或下载原材料进行分析
 Enter name of campaign if source of enquiry is campaign,如果咨询来源于活动则请输入活动名称
 "Enter static url parameters here (Eg. sender=ERPBoost, username=ERPNext, password=1234 etc.)",在这里输入静态URL参数(sender=ERPBoost;username=ERPBoost;password= 1234 等)
@@ -1533,9 +1533,9 @@ Leave Balance Before Application,申请前剩余休假天数
 Leave Block List,禁止休假列表
 Leave Block List Allow,允许的Leave Block列表
 Leave Block List Allowed,允许的Leave Block列表
-Leave Block List Date,Leave Block日期列表
-Leave Block List Dates,Leave Block日期列表
-Leave Block List Name,Leave Block名称
+Leave Block List Date,禁止休假日期列表
+Leave Block List Dates,禁止休假日期列表
+Leave Block List Name,禁止休假名称
 Leave Blocked,禁止休假
 Leave Control Panel,休假控制台
 Leave Encashed?,未休假期已兑现?
@@ -1828,7 +1828,7 @@ Non Profit,非营利
 Nos,件
 Not Active,未激活
 Not Applicable,不适用
-Not Available,无效
+Not Available,不可用
 Not Billed,未付款
 Not Delivered,未交付
 Not Set,没有设置
@@ -1861,7 +1861,7 @@ Office,办公室
 Office Equipments,办公设备
 Office Maintenance Expenses,办公室维护费用
 Office Rent,办公室租金
-Old Parent,Old Parent
+Old Parent,旧的父节点
 On Net Total,基于净值总额
 On Previous Row Amount,基于之前行的金额字段
 On Previous Row Total,基于之前行的总额字段
@@ -2086,7 +2086,7 @@ Please enter quantity for Item {0},请输入商品{0}的数量
 Please enter relieving date.,请输入解除日期
 Please enter sales order in the above table,请在上述表中输入销售订单
 Please enter valid Company Email,请输入有效的公司电邮地址
-Please enter valid Email Id,请输入有效的电子邮件Id
+Please enter valid Email Id,请输入有效的电子邮件
 Please enter valid Personal Email,请输入有效的个人电子邮件
 Please enter valid mobile nos,请输入有效的手机号
 Please find attached Sales Invoice #{0},随函附上销售发票#{0}
@@ -2231,7 +2231,7 @@ Projects,项目
 Projects & System,项目 & 系统
 Prompt for Email on Submission of,提交操作弹出邮件提醒
 Proposal Writing,提案
-Provide email id registered in company,提供在公司注册电子邮件ID
+Provide email id registered in company,提供在公司注册电子邮件
 Provisional Profit / Loss (Credit),临时收益/亏损(贷方)
 Public,公共的
 Published on website at: {0},于{0}发表于网站
@@ -2529,10 +2529,10 @@ Salary Slip Deduction,Salary Slip Deduction
 Salary Slip Earning,Salary Slip Earning
 Salary Slip of employee {0} already created for this month,员工{0}本月的工资单已创建
 Salary Structure,薪酬结构
-Salary Structure Deduction,Salary Structure Deduction
+Salary Structure Deduction,薪酬扣除的结构
 Salary Structure Earning,薪酬收入结构
 Salary Structure Earnings,薪酬收入结构
-Salary breakup based on Earning and Deduction.,Salary breakup based on Earning and Deduction.
+Salary breakup based on Earning and Deduction.,基于收入与扣除的薪资细节
 Salary components.,工资组成部分。
 Salary template master.,主要的薪资模板。
 Sales,销售
@@ -2952,7 +2952,7 @@ Territory Name,区域名称
 Territory Target Variance Item Group-Wise,区域产品销售目标与实销
 Territory Targets,区域目标
 Test,测试
-Test Email Id,测试电子邮件Id
+Test Email Id,测试电子邮件
 Test the Newsletter,测试新闻通讯
 The BOM which will be replaced,该物料清单将被替换
 The First User: You,您是第一个用户
@@ -3358,7 +3358,7 @@ website page link,网站页面链接
 {0} is not a stock Item,{0}不是一个库存产品
 {0} is not a valid Batch Number for Item {1},{0}不是一个有效的产品批号{1}
 {0} is not a valid Leave Approver. Removing row #{1}.,{0}不是一个有效的请假审批请移除第{1}行
-{0} is not a valid email id,{0}不是一个有效的电子邮件ID
+{0} is not a valid email id,{0}不是一个有效的电子邮件
 {0} is now the default Fiscal Year. Please refresh your browser for the change to take effect.,{0}现在是默认的财政年度。请刷新您的浏览器，以使更改生效。
 {0} is required,{0}是必需的
 {0} must be a Purchased or Sub-Contracted Item in row {1},{0}必须是已购买或分包产品在行{1}
@@ -3464,3 +3464,36 @@ Last Sales Order Date,上次销售订单日期
 Amt,金额
 Serial #,序列号
 Billing (Sales Invoice),付款(销售发票)
+Start date of current order's period,当前订单的开始时间
+End date of current order's period,当前订单的结束时间
+Recurring Order,经常性订单
+Is Recurring,是经常性
+Check if recurring order, uncheck to stop recurring or put proper End Date,如果是经常性订单的话请勾选，如果不是则取消勾选或输入一个合适的结束日期
+Select the period when the invoice will be generated automatically,请选择发票产生的周期
+Enter email id separated by commas, order will be mailed automatically on particular date,请通过逗号分隔开电子邮件，订单将在指定的日期自动的发出
+The day of the month on which auto order will be generated e.g. 05 28 etc,在指定的月份与日期将订单产生出来，例如5号 28号
+The date on which recurring order will be stop,经常性订单停止的日期
+Add / Edit Prices,添加/编辑价格
+"Example: ABCD.#####\nIf series is set and Serial No is not mentioned in transactions, then automatic serial number will be created based on this series. If you always want to explicitly mention Serial Nos for this item. leave this blank.","如果序列号已设置并且交易编号没有指定;则基于序列号的编号会自动创建出来(主动留空)"
+PIN,邮编
+Terms and Conditions1,条款及条件内容
+Default Cost Center,默认成本中心
+Earnings,收入
+Deductions,扣除
+KRA,目标
+If you are unable to match the exact amount, then amend your Journal Voucher and split rows such that payment amount match the invoice amount.,如果不能将金额完全匹配则请更改记账凭证并分割成多个行来匹配发票金额
+"<a href=""#!Accounts Browser/Account"">To manage Account Head, click here</a>","<a href=""#!Accounts Browser/Account"">点击编辑户头</a>"
+<em>Addresses will appear only when you save the customer</em>,<em>仅当客户被保存后地址才会出现</em>
+<em>Contact Details will appear only when you save the customer</em>,<em>仅当客户被保存后联系详情才会出现</em>
+Sales Person Tree,销售人员树形结构
+Enter static url parameters here (Eg. sender=ERPNext, username=ERPNext, password=1234 etc.),输入静态参数，例如用户名密码等等
+Parent Web Page,父页面
+Parent Website Route,父页面路由
+Template Path,模板路径
+User editable form on Website.,用户可以在网站上编辑的表单
+Parent Website Group,父网站组
+First set the name and save the record.,请先设置名称并保存
+Attach files / urls and add in table.,在表格中添加文件或者链接
+Export to Fixtures,导出
+"Brand is what appears on the top-left of the toolbar. If it is an image, make sure it has a transparent background and use the <img /> tag. Keep size as 200px x 30px",品牌形象会出现在顶部左边。如果是图像请确保是透明背景的图片。大小为200 * 300
+"Link for About Us Page is ""/about""","关于我们的链接为""/about"""

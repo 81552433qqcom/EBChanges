@@ -115,7 +115,7 @@ Attach as web link,附加为网站链接
 Attached To DocType,附加到DocType(文档类型)
 Attached To Name,附加到此名称
 Attachments,附件
-Auto Email Id,自动电子邮件Id
+Auto Email Id,自动电子邮件
 Auto Name,自动名称
 Auto generated,自动生成
 Avatar,头像
@@ -330,7 +330,7 @@ Email Alert Recipients,邮件警报收件人
 Email By Document Field,发送至(从文档类型中提取)
 Email Footer,电子邮件页脚
 Email Host,电子邮件主机
-Email Id,电子邮件Id
+Email Id,电子邮件
 Email Login,邮箱登录
 Email Password,电子邮件密码
 Email Sent,邮件已发送
@@ -731,8 +731,8 @@ Open Sans,Open Sans
 Open Source Web Applications for the Web,Web应用程序
 Open a module or tool,打开一个模块或工具
 Open {0},打开{0}
-Optional: Alert will only be sent if value is a valid email id.,可选：当一个有效的电子邮件ID会发送警报通知
-Optional: Always send to these ids. Each email id on a new row,可选：总是发送给这些ID的人。每一行一个电子邮件ID
+Optional: Alert will only be sent if value is a valid email id.,可选：当一个有效的电子邮件会发送警报通知
+Optional: Always send to these ids. Each email id on a new row,可选：总是发送给这些ID的人。每一行一个电子邮件
 Optional: The alert will be sent if this expression is true,可选：表达式为真的话警报会被发送
 Options,选项
 Options 'Dynamic Link' type of field must point to another Link Field with options as 'DocType','动态链接'类型的字段都必须指向另一个链接字段并且选项为'DocType'
@@ -821,7 +821,7 @@ Please select a file or url,请选择一个文件或URL
 Please select atleast 1 column from {0} to sort,请从{0}至少选择一列进行排序
 Please set {0} first,请先设置{0}
 Please specify,请填写
-Please specify 'Auto Email Id' in Setup > Outgoing Email Settings,在设置>传出电子邮件设置请填写'自动电子邮件Id'
+Please specify 'Auto Email Id' in Setup > Outgoing Email Settings,在设置>传出电子邮件设置请填写'自动电子邮件'
 Please specify Event date and time,请填写事件的日期和时间
 Please specify doctype,请指定文档类型
 Please specify user,请指定用户
@@ -1079,7 +1079,7 @@ System,系统
 System Settings,系统设置
 System User,系统用户
 System and Website Users,系统和网站用户
-System generated mails will be sent from this email id.,系统生成的邮件将被从这个电子邮件ID发送。
+System generated mails will be sent from this email id.,系统生成的邮件将被从这个电子邮件发送。
 Table,表
 Table {0} cannot be empty,表{0}不能为空
 Tag,标签
@@ -1443,7 +1443,7 @@ zoom-out,拉远
 {0} cannot be set for Single types,单类型不能设置{0}
 {0} does not exist in row {1},第{1}行中不存在{0}
 {0} in row {1} cannot have both URL and child items,第{1}行的{0}不能同时有URL和子项
-{0} is not a valid email id,{0}不是一个有效的电子邮件ID
+{0} is not a valid email id,{0}不是一个有效的电子邮件
 {0} is required,{0}是必需的
 {0} is saved,{0}保存成功
 {0} must be one of {1},{0}必须是{1}中的一个
@@ -1633,3 +1633,6 @@ Dec,12月
  To Do ,待办事项
 Sr No,序号
 Posting Date,发布日期
+"Additional filters based on User Permissions, having:",过滤条件基于用户的权限:
+Note: fields having empty value for above criteria are not filtered out.,以上条件值为空的记录未被过滤掉
+"A user with ""Expense Approver"" role", 用户的角色是费用审批
