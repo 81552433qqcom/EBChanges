@@ -52,8 +52,8 @@ def get_script(report_name):
 	# load translations
 	if frappe.lang != "en":
 		send_translations(frappe.get_lang_dict("report", report_name))
-		logger = frappe.get_logger()
-		logger.error(frappe.get_lang_dict("report", report_name))
+		from frappe.translate import get_lang_js
+			self.script += get_lang_js("report", report_name)
 
 
 	return {
