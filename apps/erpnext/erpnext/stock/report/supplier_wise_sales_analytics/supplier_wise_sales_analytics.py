@@ -40,7 +40,7 @@ def execute(filters=None):
 def get_columns(filters):
 	"""return columns based on filters"""
 	
-	columns = [_("Item") +":Link/Item:100"] + ["Item Name::100"] + \
+	columns = ["Item:Link/Item:100"] + ["Item Name::100"] + \
 	["Description::150"] + ["UOM:Link/UOM:90"] + \
 	[_("Consumed Qty") + ":Float:110"] + [_("Consumed Amount") + ":Currency:130"] + \
 	["Delivered Qty:Float:110"] + ["Delivered Amount:Currency:130"] + \
