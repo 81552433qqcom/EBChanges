@@ -4,7 +4,7 @@
 frappe.pages['sales-funnel'].onload = function(wrapper) { 
 	frappe.ui.make_app_page({
 		parent: wrapper,
-		title: 'Sales Funnel',
+		title: __('Sales Funnel'),
 		single_column: true
 	});
 	

@@ -1209,7 +1209,7 @@ HR Settings,人力资源设置
 HTML / Banner that will show on the top of product list.,HTML /横幅，将显示在产品列表的顶部。
 Half Day,半天
 Half Yearly,半年度
-Half-yearly,每半年一次
+Half-yearly,半年
 Happy Birthday!,祝你生日快乐！
 Hardware,硬件
 Has Batch No,有批号
@@ -2430,7 +2430,7 @@ Report Type,报表类型
 Report Type is mandatory,报表类型是强制性的
 Reports to,报告给（上级）
 Reqd By Date,需要的日期
-Reqd by Date,REQD日期
+Reqd by Date,需要的日期
 Request Type,请求类型
 Request for Information,需要信息
 Request for purchase.,所需物料采购。
@@ -2575,7 +2575,7 @@ Sales Partner Target,销售伙伴目标
 Sales Partners Commission,销售伙伴佣金
 Sales Person,销售人员
 Sales Person Name,销售人员的姓名
-Sales Person Target Variance Item Group-Wise,销人员目标与实销
+Sales Person Target Variance Item Group-Wise,销售人员目标与实销
 Sales Person Targets,销售人员目标
 Sales Person-wise Transaction Summary,销售人员业绩汇总
 Sales Register,销售登记
@@ -3497,3 +3497,6 @@ Attach files / urls and add in table.,在表格中添加文件或者链接
 <label>Deductions</label>,<label>扣除</label>
 <label>Earnings</label>,<label>收入</label>
 HR,人力资源
+New {0} Name,新建{0}
+Group Node,父节点
+New {0},新建{0}

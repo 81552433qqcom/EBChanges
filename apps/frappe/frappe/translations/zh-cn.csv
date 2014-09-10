@@ -908,7 +908,7 @@ Report an Issue,上报一个问题
 Report cannot be set for Single types,单一的类型不能设置报告
 Report this issue,报告此问题
 Report was not saved (there were errors),有错误发生因此报告没有被保存
-Reqd,REQD
+Reqd,需要的
 Reset Password Key,重设密码密钥
 Reset Permissions for {0}?,为{0}重置权限?
 Response,回复
@@ -1645,3 +1645,7 @@ Export to Fixtures,导出
 "Brand is what appears on the top-left of the toolbar. If it is an image, make sure it\nhas a transparent background and use the &lt;img /&gt; tag. Keep size as 200px x 30px",品牌形象会出现在顶部左边。如果是图像请确保是透明背景的图片。大小为200 * 300
 "Link for About Us Page is ""/about""","关于我们的链接为""/about"""
 "Link for Contact Page Page is ""/contact""","联系我们的链接为""/contact"""
+"For Links, enter the DocType as range\nFor Select, enter list of Options separated by comma",如果是链接则请输入文档类型为范围；如果是选择则输入以逗号分隔的选项
+"Print Width of the field, if the field is a column in a table",如果是字段是表中的列的话可以设置列的打印宽度
+"This field will appear only if the fieldname defined here has value OR the rules are true (examples): <br>\nmyfield\neval:doc.myfield=='My Value'<br>\neval:doc.age>18","此字段将显示仅当定义的字段名有值或规则是真的时候;例如: <br>\nmyfield\neval:doc.myfield=='My Value'
+Row {0}: Not allowed to enable Allow on Submit for standard fields,第{0}行: 不允许在标准字段设置"允许提交"
