@@ -125,7 +125,7 @@ erpnext.SalesChart = Class.extend({
 
 		// the dialog
 		var d = new frappe.ui.Dialog({
-			title: __('New {0}',[me.ctype],
+			title: __('New {0}',[me.ctype]),
 			fields: fields
 		})
 
