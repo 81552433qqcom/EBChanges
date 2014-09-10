@@ -44,7 +44,7 @@ pscript['onshow_Sales Browser'] = function(wrapper){
 	// set route
 	var ctype = frappe.get_route()[1] || 'Territory';
 
-	wrapper.appframe.set_title(__(ctype+' Tree'));
+	wrapper.appframe.set_title(__('{0} Tree',[__(ctype)]));
 
 	if(erpnext.sales_chart && erpnext.sales_chart.ctype != ctype) {
 		wrapper.make_tree();
