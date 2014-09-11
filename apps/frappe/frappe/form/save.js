@@ -74,7 +74,7 @@ frappe.ui.form.save = function(frm, action, callback, btn) {
 
 					if(df.reqd && !frappe.model.has_value(doc.doctype, doc.name, df.fieldname)) {
 						has_errors = true;
-						error_fields[error_fields.length] = df.label;
+						error_fields[error_fields.length] = __(df.label);
 
 						// scroll to field
 						if(!me.scroll_set) {
