@@ -3536,3 +3536,18 @@ Go to this url after completing the form.,完成填写后跳转到此链接
 Web Form Fields,网页表单字段
 Fieldtype,字段类型
 Export to Fixtures,Export to Fixtures
+Bin - Item Shortage Report,商品短缺报表
+Serial No - Serial No Service Contract Expiry,序列号服务合同到​​期
+Serial No - Serial No Status,序列号状态
+Serial No - Serial No Warranty Expiry,序列号保修到期
+Sales Price List,销售价格表
+Purchase Price List,采购价格表
+BOM Rate,物料金额
+Reorder Qty,再订购数量
+Shortage Qty,短缺数量
+Item Price - Item-wise Price List Rate,商品价格单率
+Delivery Note/Sales Invoice,发货单或销售发票
+Selling Rate,销售单价
+Avg. Buying Rate,平均采购单价
+Selling Amount,销售金额
+Employee - Employee Information,员工资料

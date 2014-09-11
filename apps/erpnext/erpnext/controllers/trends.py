@@ -142,8 +142,8 @@ def get_period_wise_columns(bet_dates, period, pwc):
 		pwc += [_(get_mon(bet_dates[0])) + " (" + _("Qty") + "):Float:120",
 			_(get_mon(bet_dates[0])) + " (" + _("Amt") + "):Currency:120"]
 	else:
-		pwc += [_(get_mon(bet_dates[0])) + "-" + _(get_mon(bet_dates[1])) + " (" + _(Qty) + "):Float:120",
-			_(get_mon(bet_dates[0])) + "-" + _(get_mon(bet_dates[1])) + " (" + _(Amt) + "):Currency:120"]
+		pwc += [_(get_mon(bet_dates[0])) + "-" + _(get_mon(bet_dates[1])) + " (" + _("Qty") + "):Float:120",
+			_(get_mon(bet_dates[0])) + "-" + _(get_mon(bet_dates[1])) + " (" + _("Amt") + "):Currency:120"]
 
 def get_period_wise_query(bet_dates, trans_date, query_details):
 	query_details += """SUM(IF(t1.%(trans_date)s BETWEEN '%(sd)s' AND '%(ed)s', t2.qty, NULL)),
