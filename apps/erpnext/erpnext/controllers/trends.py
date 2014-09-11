@@ -139,8 +139,8 @@ def period_wise_columns_query(filters, trans):
 
 def get_period_wise_columns(bet_dates, period, pwc):
 	if period == 'Monthly':
-		pwc += [_(get_mon(bet_dates[0])) + " (" + _(Qty) + "):Float:120",
-			_(get_mon(bet_dates[0])) + " (" + _(Amt) + "):Currency:120"]
+		pwc += [_(get_mon(bet_dates[0])) + " (" + _("Qty") + "):Float:120",
+			_(get_mon(bet_dates[0])) + " (" + _("Amt") + "):Currency:120"]
 	else:
 		pwc += [_(get_mon(bet_dates[0])) + "-" + _(get_mon(bet_dates[1])) + " (" + _(Qty) + "):Float:120",
 			_(get_mon(bet_dates[0])) + "-" + _(get_mon(bet_dates[1])) + " (" + _(Amt) + "):Currency:120"]
