@@ -342,7 +342,7 @@ BOM {0} is not submitted or inactive BOM for Item {1},物料清单{0}未提交�
 Backup Manager,备份管理器
 Backup Right Now,现在进行备份
 Backups will be uploaded to,备份将被上传到
-Balance Qty,余额数量
+Balance Qty,剩余数量
 Balance Sheet,资产负债表
 Balance Value,余额
 Balance for Account {0} must always be {1},帐户{0}的余额必须等于{1}
@@ -1108,7 +1108,7 @@ Freeze Stock Entries,冻结库存条目
 Freeze Stocks Older Than [Days],冻结早于[天]的库存
 Freight and Forwarding Charges,货运费
 Friday,星期五
-From,从
+From,来源/起始
 From Bill of Materials,材料清单
 From Company,从公司
 From Currency,从货币
@@ -1195,8 +1195,8 @@ Gross Margin %,毛利率%
 Gross Margin Value,毛利率价值
 Gross Pay,工资总额
 Gross Pay + Arrear Amount +Encashment Amount - Total Deduction,工资总额+拖欠金额+假期金额 - 总扣除金额
-Gross Profit,总利润
-Gross Profit (%),总利率%
+Gross Profit,毛利润
+Gross Profit (%),毛利%
 Gross Weight,毛重
 Gross Weight UOM,毛重计量单位
 Group,组
@@ -1286,7 +1286,7 @@ Import Successful!,导入成功！
 Imports,进口
 In Hours,以小时为单位
 In Process,进行中
-In Qty,数量上
+In Qty,接收数量
 In Value,价值
 In Words,大写金额
 In Words (Company Currency),总额文字描述(公司货币)
@@ -1514,7 +1514,7 @@ Last Purchase Rate,上次采购价格
 Latest,最新
 Lead,潜在客户
 Lead Details,潜在客户详情
-Lead Id,销售引子Id
+Lead Id,销售引子
 Lead Name,潜在客户名称
 Lead Owner,销售引子所有者
 Lead Source,潜在客户来源
@@ -1877,9 +1877,9 @@ Opening (Cr),开放(CR)
 Opening (Dr),开放(Dr)
 Opening Date,开放日期
 Opening Entry,Opening Entry
-Opening Qty,开放数量
+Opening Qty,初始数量
 Opening Time,开放时间
-Opening Value,Opening Value
+Opening Value,期初价值
 Opening for a Job.,招聘中的职位
 Operating Cost,营业成本
 Operation Description,操作说明
@@ -1913,7 +1913,7 @@ Other,其他
 Other Details,其他详细信息
 Others,其它
 Out Qty,输出数量
-Out Value,Out Value
+Out Value,输出价值
 Out of AMC,维护过期
 Out of Warranty,超出保修期
 Outgoing,发出
@@ -2493,8 +2493,8 @@ Account does not match with Purchase Invoice Credit To account"
 						Sales Invoice Debit To account","行{0}：\
 Account does not match with Sales Invoice Debit To account"
 Row {0}: Conversion Factor is mandatory,行{0}：转换系数是强制性的
-Row {0}: Credit entry can not be linked with a Purchase Invoice,Row {0}: Credit entry can not be linked with a Purchase Invoice
-Row {0}: Debit entry can not be linked with a Sales Invoice,Row {0}: Debit entry can not be linked with a Sales Invoice
+Row {0}: Credit entry can not be linked with a Purchase Invoice,行{0}: Credit entry can not be linked with a Purchase Invoice
+Row {0}: Debit entry can not be linked with a Sales Invoice,行{0}: Debit entry can not be linked with a Sales Invoice
 Row {0}: Payment amount must be less than or equals to invoice outstanding amount. Please refer Note below.,行{0}：付款金额必须小于或等于发票未付金额。请参考下面的说明。
 Row {0}: Qty is mandatory,行{0}：数量是强制性的
 "Row {0}: Qty not avalable in warehouse {1} on {2} {3}.
@@ -2507,7 +2507,7 @@ Row {0}:Start Date must be before End Date,行{0} ：开始日期必须在结束
 Rules for adding shipping costs.,增加运输成本的规则。
 Rules for applying pricing and discount.,定价和折扣的规则。
 Rules to calculate shipping amount for a sale,销售额计算设置
-S.O. No.,S.O. No.
+S.O. No.,订单编号
 SHE Cess on Excise,SHE Cess on Excise
 SHE Cess on Service Tax,SHE Cess on Service Tax
 SHE Cess on TDS,SHE Cess on TDS
@@ -3502,3 +3502,37 @@ Group Node,父节点
 New {0},新建{0}
 General Settings,设置
 {0} Tree,{0}树形结构
+Assigned To Me,已分配给我
+Make Time Log Batch,批量生成时间记录
+Total Target,总目标
+Total Achieved,总结果
+Total Variance,总差异
+Minimum Inventory Level,最小库存量
+Consumed,已消费数量
+Total Outgoing,总出货数
+Avg Daily Outgoing,每日平均出货
+Reorder Level,再定购级别
+Total(Qty),总数量
+Total(Amt),总金额
+Supplier Account,供应商账户
+Invoice,发票
+Period Closing Entry,期末录入记录
+Show zero values,显示为0的值
+90-Above,90及以上
+Supplier Id,供应商Id
+Project Status,项目状态
+Total Present,总出勤
+Total Absent,总出席
+Select Fiscal Year,选择会计年度
+Web Form,网页表单
+Login Required,需要登录
+Allow Edit,允许编辑
+Allow Multiple,允许多个
+Allow Comments,允许评论
+Success Message,成功时显示的消息
+Message to be displayed on successful completion,成功时显示的消息
+Success URL,成功后的链接URL
+Go to this url after completing the form.,完成填写后跳转到此链接
+Web Form Fields,网页表单字段
+Fieldtype,字段类型
+Export to Fixtures,Export to Fixtures

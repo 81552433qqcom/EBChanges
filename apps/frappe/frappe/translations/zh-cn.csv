@@ -1630,7 +1630,7 @@ Sep,9月
 Oct,10月
 Nov,11月
 Dec,12月
- To Do ,待办事项
+To Do,待办事项
 Sr No,序号
 Posting Date,发布日期
 "Additional filters based on User Permissions, having:",过滤条件基于用户的权限:
@@ -1649,3 +1649,4 @@ Export to Fixtures,导出
 "Print Width of the field, if the field is a column in a table",如果是字段是表中的列的话可以设置列的打印宽度
 "This field will appear only if the fieldname defined here has value OR the rules are true (examples): <br>\nmyfield\neval:doc.myfield=='My Value'<br>\neval:doc.age>18","此字段将显示仅当定义的字段名有值或规则是真的时候;例如: <br>\nmyfield\neval:doc.myfield=='My Value'
 Row {0}: Not allowed to enable Allow on Submit for standard fields,第{0}行: 不允许在标准字段设置"允许提交"
+to filter values between 5 & 10,过滤值在5到10之间的值
