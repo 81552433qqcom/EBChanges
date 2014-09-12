@@ -11,9 +11,6 @@ chown erpnext:erpnext /home/erpnext/frappe-bench/apps/erpnext/erpnext/translatio
 ls /home/erpnext/frappe-bench/apps/frappe/frappe/translations/zh-cn.csv
 ls /home/erpnext/frappe-bench/apps/erpnext/erpnext/translations/zh-cn.csv
 
-#copy background images
-cp -Rf /home/erpnext/ebchanges_staging/ebchanges/sites/* /home/erpnext/frappe-bench/sites/
-
 cd /home/erpnext/frappe-bench
 bench frappe --build
 bench frappe --clear_cache

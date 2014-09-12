@@ -1650,3 +1650,17 @@ Export to Fixtures,导出
 "This field will appear only if the fieldname defined here has value OR the rules are true (examples): <br>\nmyfield\neval:doc.myfield=='My Value'<br>\neval:doc.age>18","此字段将显示仅当定义的字段名有值或规则是真的时候;例如: <br>\nmyfield\neval:doc.myfield=='My Value'
 Row {0}: Not allowed to enable Allow on Submit for standard fields,第{0}行: 不允许在标准字段设置"允许提交"
 to filter values between 5 & 10,过滤值在5到10之间的值
+Please do not change the template headings.,请不要改变模板的顶部信息
+First data column must be blank.,第一个数据列要留空
+"If you are uploading new records, leave the ""name"" (ID) column blank.",如果要上传新的记录请将”name“(ID)列留空
+"If you are uploading new records, ""Naming Series"" becomes mandatory, if present.",如果是上传新的记录如果有命名序列的话则必填
+Only mandatory fields are necessary for new records. You can delete non-mandatory columns if you wish.,仅仅是标记为必填的字段是必须填写的;选填的字段如果不需要请删除
+"For updating, you can update only selective columns.",如果是更新的话则主要保留想要更新的字段即可
+You can only upload upto 5000 records in one go. (may be less in some cases),最多一次只能上传3000条记录
+"""Parent"" signifies the parent table in which this row must be added",父标识着数据需要添加到父表去
+"If you are updating, please select ""Overwrite"" else existing rows will not be deleted.",如果是更新则请选择重写不然的话现有的行不会被删除
+Leave blank for new records,新纪录的话请留空
+Start entering data below this line,从下行开始输入
+Column Labels:,列标签
+Column Name:,列名
+Mandatory:,必填

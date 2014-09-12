@@ -2766,7 +2766,7 @@ Specifications,产品规格
 "Specify a list of Territories, for which, this Price List is valid",指定的区域列表，其中，价目表是有效的
 "Specify a list of Territories, for which, this Shipping Rule is valid",指定的区域列表，其中，运送规则是有效的
 "Specify a list of Territories, for which, this Taxes Master is valid",请指明在哪些区域中此定义有效
-"Specify the operations, operating cost and give a unique Operation no to your operations.","Specify the operations, operating cost and give a unique Operation no to your operations."
+"Specify the operations, operating cost and give a unique Operation no to your operations.","请申明操作步骤说明及其花销."
 Split Delivery Note into packages.,提货单分割成包。
 Sports,运动
 Sr,Sr
@@ -3551,3 +3551,4 @@ Selling Rate,销售单价
 Avg. Buying Rate,平均采购单价
 Selling Amount,销售金额
 Employee - Employee Information,员工资料
+Total Actual,实际总值
