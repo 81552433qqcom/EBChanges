@@ -34,6 +34,7 @@ var get_filters = function(){
 			"label": __("Group By"),
 			"fieldtype": "Select",
 			"options": [
+				{ "value": "", "label": "" },
                 { "value": "Item", "label": __("Item") },
                 { "value": "Customer", "label": __("Customer") }
             ],
