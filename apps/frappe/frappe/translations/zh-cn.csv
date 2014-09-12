@@ -24,7 +24,7 @@
 <i>e.g. <strong>(55 + 434) / 4</strong> or <strong>=Math.sin(Math.PI/2)</strong>...</i>,<i>例如 <strong>(55 + 434) / 4</strong> 或者 <strong>=Math.sin(Math.PI/2)</strong>...</i>
 <i>module name...</i>,<i>模块名称...</i>
 <i>text</i> <b>in</b> <i>document type</i>, <i>文档类型</i><b>中的</b><i>文本</i>
-A user can be permitted to multiple records of the same DocType.,用户可以被允许访问同一的DocType的多个记录。
+A user can be permitted to multiple records of the same DocType.,用户可以被允许访问同一文档类型的多个记录。
 About,关于
 About Us Settings,关于我们设置
 About Us Team Member,关于我们团队成员
@@ -1530,12 +1530,12 @@ Click on Save,点击保存
 Performing hardcore import process,导入进行中
 All Tables (Main + Child Tables),所有的主表与字表
 Ignore Encoding Errors,忽略编码错误
-"If you are inserting new records (overwrite not checked) \	and if you have submit permission, the record will be submitted.","如果插入新数据(覆盖没有勾选)\在有权限的情况下数据将被提交进数据库"
+"If you are inserting new records (overwrite not checked) \			and if you have submit permission, the record will be submitted.","如果插入新数据(覆盖没有勾选)\在有权限的情况下数据将被提交进数据库"
 Overwrite,覆盖
 "If you are uploading a child table (for example Item Price), the all the entries of that table will be deleted (for that parent record) and new entries will be made.",如果上传字表的数据，则其主键父表对应的子记录将被删除并重新被创建
 Import Successful!,导入成功
 Import Failed!,导入失败
-"File Name: &lt;your filename&gt;.csv<br />\ Save as type: Text Documents (*.txt)<br />\ Encoding: UTF-8",文件编码是UTF-8并存为.txt文件
+"File Name: &lt;your filename&gt;.csv<br />\						Save as type: Text Documents (*.txt)<br />\						Encoding: UTF-8",文件编码是UTF-8并存为.txt文件
 Make a new {0},创建一条{0}的记录
 Editing Row,编辑行
 Shortcuts,快捷方式
@@ -1660,3 +1660,8 @@ Start entering data below this line,从下行开始输入
 Column Labels:,列标签
 Column Name:,列名
 Mandatory:,必填
+Main Table,主表
+Child Tables,子表
+Please set User ID field in an Employee record to set Employee Role,设置员工角色请在员工记录里面设置到此用户账号会自动关联
+Select Document Types to set which User Permissions are used to limit access.,选择要通过用户权限限制访问的文档类型
+Edit Role Permissions,编辑用户权限
