@@ -2681,7 +2681,7 @@ Serial No {0} not in stock,序列号{0}不在库存中
 Serial No {0} quantity {1} cannot be a fraction,序列号{0}数量{1}不能是小数
 Serial No {0} status must be 'Available' to Deliver,序列号{0}的状态必须为“可用的”
 Serial Nos Required for Serialized Item {0},已序列化物品{0}的序列号是必须的
-Serial Number Series,Serial Number Series
+Serial Number Series,序列号序列
 Serial number {0} entered more than once,序列号{0}已存在
 "Serialized Item {0} cannot be updated \
 					using Stock Reconciliation","序列化的项{0}不能更新\
@@ -3443,7 +3443,7 @@ Balance,余量
 From Datetime,开始时间
 To Datetime,结束时间
 Task Subject,任务标题
-Project Id,项目Id
+Project Id,项目
 Cost of Purchased Items,已采购商品花销
 Cost of Issued Items,Cost of Issued Items
 Cost of Delivered Items,已交付商品花销
@@ -3474,7 +3474,7 @@ Select the period when the invoice will be generated automatically,请选择发�
 The day of the month on which auto order will be generated e.g. 05 28 etc,在指定的月份与日期将订单产生出来，例如5号 28号
 The date on which recurring order will be stop,经常性订单停止的日期
 Add / Edit Prices,添加/编辑价格
-"Example: ABCD.#####\nIf series is set and Serial No is not mentioned in transactions, then automatic serial number will be created based on this series. If you always want to explicitly mention Serial Nos for this item. leave this blank.","如果序列号已设置并且交易编号没有指定;则基于序列号的编号会自动创建出来(主动留空)"
+"Example: ABCD.#####If series is set and Serial No is not mentioned in transactions, then automatic serial number will be created based on this series. If you always want to explicitly mention Serial Nos for this item. leave this blank.","如果序列号已设置并且交易编号没有指定;则基于序列号的编号会自动创建出来(主动留空)"
 PIN,邮编
 Terms and Conditions1,条款及条件内容
 Default Cost Center,默认成本中心
