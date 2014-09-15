@@ -17,3 +17,5 @@ bench frappe --clear_cache
 
 cd /home/erpnext/frappe-bench/apps/frappe/frappe
 git status
+
+sudo supervisorctl restart all
