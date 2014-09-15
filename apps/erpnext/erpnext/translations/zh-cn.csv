@@ -1726,7 +1726,7 @@ Monthly salary statement.,每月的工资报表
 More Details,更多详情
 More Info,更多信息
 Motion Picture & Video,电影和视频
-Moving Average,移动平均线
+Moving Average,移动平均加权法
 Moving Average Rate,Moving Average Rate
 Mr,先生
 Ms,女士
@@ -2806,7 +2806,7 @@ Stock Ledger entries balances updated,库存分类帐条目剩余更新
 Stock Level,库存水平
 Stock Liabilities,库存债务
 Stock Projected Qty,库存预计数量
-Stock Queue (FIFO),库存队列（FIFO）
+Stock Queue (FIFO),库存队列（先进先出）
 Stock Received But Not Billed,已入库但未付款
 Stock Reconciliation Data,库存对账数据
 Stock Reconciliation Template,库存对账模板
@@ -3553,3 +3553,4 @@ Selling Amount,销售金额
 Employee - Employee Information,员工资料
 Total Actual,实际总值
 Half-Yearly,半年
+FIFO,先进先出
