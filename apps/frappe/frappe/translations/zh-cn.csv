@@ -230,8 +230,8 @@ Create,创建
 Create a new {0},创建一个新{0}
 Created Custom Field {0} in {1},在{1}里面创建自定义字段{0}
 Created Customer Issue,已创建的客户反馈的问题
-Created Opportunity,已创造的机会
-Created Support Ticket,已创建的客户支持ID
+Created Opportunity,机会已创建
+Created Support Ticket,客户支持已创建
 Creation / Modified By,创建/修改者
 Currency,货币
 Current status,现状
@@ -982,8 +982,8 @@ Send download link of a recent backup to System Managers,发送最近的备份�
 Send enquiries to this email address,发送咨询信息到这个邮箱地址
 Sender,寄件人
 Sent,已发送
-Sent Mail,发送邮件
-Sent Quotation,发送报价
+Sent Mail,邮件已发送
+Sent Quotation,报价已发送
 Sent or Received,已发送或已接收
 Series,系列
 Series {0} already used in {1},系列{0}已经被应用在{1}
@@ -1674,3 +1674,25 @@ There were no updates in the items selected for this digest.,此摘要里无更�
 Permissions Updated,权限已更新
 Add New User Permission,添加新的用户权限
 Role Permissions,角色权限
+Help: Field Properties,帮组:字段属性
+Set the display label for the field,设置字段显示的标签
+Type,类型
+Options,选项
+Specify the value of the field,指定字段的值
+Perm Level,权限级别
+Assign a permission level to the field.,给字段赋予权限级别
+Permissions can be managed via Setup &gt; Role Permissions Manager,权限可以通过设置里面的角色权限管理进行设置
+Width of the input box,输入框的宽度
+Example,例子
+Mark the field as Mandatory,设置为必须选项
+Use the field to filter records,通过过滤器过滤记录
+Hide field in form,隐藏表单的字段
+Print Hide,打印隐藏
+Hide field in Standard Print Format,在标准打印格式中隐藏字段
+Hide field in Report Builder,报表声称其中隐藏此字段
+Allow field to remain editable even after submission,允许字段在提交后仍保持编辑状态
+Show a description below the field,在字段下显示其描述信息
+Specify a default value,指明一个默认值
+Press Esc to close,按ESC键关闭
+Assigned to {0},已分配给{0}
+Added {0},{0}已添加

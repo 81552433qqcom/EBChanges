@@ -1726,8 +1726,8 @@ Monthly salary statement.,每月的工资报表
 More Details,更多详情
 More Info,更多信息
 Motion Picture & Video,电影和视频
-Moving Average,移动平均加权法
-Moving Average Rate,Moving Average Rate
+Moving Average,移动平均法
+Moving Average Rate,移动平均价格
 Mr,先生
 Ms,女士
 Multiple Item prices.,多个商品的价格
@@ -3554,3 +3554,5 @@ Employee - Employee Information,员工资料
 Total Actual,实际总值
 Half-Yearly,半年
 FIFO,先进先出
+Select User...,选择用户
+Automatically updated via Stock Entry of type Manufacture or Repack,经由制造或重新打包的库存条目自动更新
