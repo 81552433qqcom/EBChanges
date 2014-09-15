@@ -8,8 +8,7 @@ from frappe import _
 import frappe.permissions
 from frappe.utils.csvutils import UnicodeWriter
 from frappe.utils import cstr, cint, flt
-
-from frappe.core.page.data_import_tool.data_import_tool
+import frappe.core.page.data_import_tool.data_import_tool
 
 @frappe.whitelist()
 def get_template(doctype=None, parent_doctype=None, all_doctypes="No", with_data="No"):
