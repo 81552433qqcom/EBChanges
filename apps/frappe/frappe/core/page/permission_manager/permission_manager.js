@@ -366,7 +366,7 @@ frappe.PermissionEngine = Class.extend({
 						{fieldtype:"Select", label:__("Permission Level"),
 							options:[0,1,2,3,4,5,6,7,8,9], reqd:1, fieldname: "permlevel",
 							description: __("Level 0 is for document level permissions, higher levels for field level permissions.")},
-						{fieldtype:"Button", label:__("Add")},
+						{fieldtype:"Button", label:__("Add"),fieldname:"add"},
 					]
 				});
 				if(me.get_doctype()) {
