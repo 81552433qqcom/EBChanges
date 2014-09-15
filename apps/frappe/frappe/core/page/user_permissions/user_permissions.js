@@ -68,14 +68,14 @@ frappe.UserPermissions = Class.extend({
 					fieldname: "user",
 					label: __("User"),
 					fieldtype: "Select",
-					options: (["Select User..."].concat(r.message.users)).join("\n")
+					options: ([__("Select User") + "..."].concat(r.message.users)).join("\n")
 				});
 
 				me.filters.doctype = me.wrapper.appframe.add_field({
 					fieldname: "doctype",
 					label: __("DocType"),
 					fieldtype: "Select",
-					options: (["Select DocType..."].concat(me.get_link_names())).join("\n")
+					options: ([__("Select DocType") + "..."].concat(me.get_link_names())).join("\n")
 				});
 
 				me.filters.user_permission = me.wrapper.appframe.add_field({
@@ -178,11 +178,11 @@ frappe.UserPermissions = Class.extend({
 	},
 	get_user: function() {
 		var user = this.filters.user.$input.val();
-		return user=="Select User..." ? null : user;
+		return user== __("Select User") + "..." ? null : user;
 	},
 	get_doctype: function() {
 		var doctype = this.filters.doctype.$input.val();
-		return doctype=="Select DocType..." ? null : doctype;
+		return doctype== __("Select DocType") + "..." ? null : doctype;
 	},
 	get_user_permission: function() {
 		// autosuggest hack!
