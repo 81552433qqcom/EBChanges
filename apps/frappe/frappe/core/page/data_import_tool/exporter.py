@@ -30,10 +30,10 @@ def get_template(doctype=None, parent_doctype=None, all_doctypes="No", with_data
 	
 	def add_main_header():
 		w.writerow([_('Data Import Template')])
-		w.writerow([get_data_keys().main_table, doctype])
+		w.writerow([get_data_keys_definition().main_table, doctype])
 
 		if parent_doctype != doctype:
-			w.writerow([get_data_keys().parent_table, parent_doctype])
+			w.writerow([get_data_keys_definition().parent_table, parent_doctype])
 		else:
 			w.writerow([''])
 
@@ -131,7 +131,7 @@ def get_template(doctype=None, parent_doctype=None, all_doctypes="No", with_data
 		w.writerow(mandatoryrow)
 		w.writerow(typerow)
 		w.writerow(inforow)
-		w.writerow([get_data_keys().data_separator])
+		w.writerow([get_data_keys_definition().data_separator])
 
 	def add_data():
 		def add_data_row(row_group, dt, doc, rowidx):
@@ -172,9 +172,9 @@ def get_template(doctype=None, parent_doctype=None, all_doctypes="No", with_data
 	add_main_header()
 
 	w.writerow([''])
-	tablerow = [get_data_keys().doctype, ""]
+	tablerow = [get_data_keys_definition().doctype, ""]
 	labelrow = [_("Column Labels:"), "ID"]
-	fieldrow = [get_data_keys().columns, key]
+	fieldrow = [get_data_keys_definition().columns, key]
 	mandatoryrow = [_("Mandatory:"), _("Yes")]
 	typerow = [_('Type:'), 'Data (text)']
 	inforow = [_('Info:'), '']
