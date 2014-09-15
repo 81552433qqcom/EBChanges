@@ -1009,9 +1009,9 @@ Set outgoing mail server.,设置邮件发送服务器
 Settings,设置
 Settings for About Us Page.,关于我们页面的设置。
 Settings for Contact Us Page.,联系我们页面的设置。
-Setup,架设
-Setup > User,架设>用户
-Setup > User Permissions Manager,架设>用户权限管理
+Setup,设置
+Setup > User,设置>用户
+Setup > User Permissions Manager,设置>用户权限管理
 Setup Email Alert based on various criteria.,设置电子邮件警报根据不同的标准
 Setup of fonts and background.,设置字体和背景
 "Setup of top navigation bar, footer and logo.",设置顶部导航栏，页脚和徽标。
@@ -1671,3 +1671,6 @@ Scheduler Failed Events,定时器事件失败报告
 There were no updates in the items selected for this digest.,此摘要里无更新记录
 "To change what you see here,create more digests, go to Setup > Email Digest",要更改请到设置 > 邮件摘要中进行设置
 "The task %s, that you assigned to %s, has been closed.","分配给%s的任务%s已经做完了"
+Permissions Updated,权限已更新
+Add New User Permission,添加新的用户权限
+Role Permissions,角色权限
