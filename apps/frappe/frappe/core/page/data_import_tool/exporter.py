@@ -24,9 +24,9 @@ def get_template(doctype=None, parent_doctype=None, all_doctypes="No", with_data
 			child_doctypes.append(df.options)
 			doctype_parentfield[df.options] = df.fieldname
 
-	def get_data_keys():
-		import frappe.core.page.data_import_tool.data_import_tool
-		return frappe.core.page.data_import_tool.data_import_tool.get_data_keys()
+	def get_data_keys_definition():
+		from  frappe.core.page.data_import_tool.data_import_tool import get_data_keys
+		return get_data_keys()
 	
 	def add_main_header():
 		w.writerow([_('Data Import Template')])
