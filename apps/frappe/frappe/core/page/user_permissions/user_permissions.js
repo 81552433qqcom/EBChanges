@@ -331,7 +331,7 @@ frappe.UserPermissions = Class.extend({
 						args: args,
 						callback: function(r) {
 							if(r.exc) {
-								msgprint(__("Did not add");
+								msgprint(__("Did not add"));
 							} else {
 								me.refresh();
 							}

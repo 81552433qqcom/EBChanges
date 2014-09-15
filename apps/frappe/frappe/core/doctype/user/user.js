@@ -95,7 +95,7 @@ frappe.RoleEditor = Class.extend({
 	init: function(wrapper) {
 		var me = this;
 		this.wrapper = wrapper;
-		$(wrapper).html('<div class="help">' + _("Loading") + '...</div>')
+		$(wrapper).html('<div class="help">' + __("Loading") + '...</div>')
 		return frappe.call({
 			method: 'frappe.core.doctype.user.user.get_all_roles',
 			callback: function(r) {
