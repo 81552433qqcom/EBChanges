@@ -1696,3 +1696,22 @@ Specify a default value,指明一个默认值
 Press Esc to close,按ESC键关闭
 Assigned to {0},已分配给{0}
 Added {0},{0}已添加
+Removed {0},{0}已移除
+Last Comment,最新评论
+Enable Report,启用报表
+Disable Report,禁用报表
+"A new task, %s, has been assigned to you by %s. %s",新的任务%s已经被分配你%s. %s
+"The task %s, that you assigned to %s, has been closed	by %s.",任务%s: 分配给%s的已经被%s关闭了
+"The task %s, that you assigned to %s, has been closed.",任务%s: 分配给%s的已经被关闭了
+Paragraph,段落
+Bold (Ctrl/Cmd+B),加粗 (Ctrl/Cmd+B)
+Bullet list,列表
+Number list,数字列表
+Reduce indent (Shift+Tab),减小缩进 (Shift+Tab)
+Indent (Tab),缩进 (Tab)
+Align Left (Ctrl/Cmd+L),左对齐(Ctrl/Cmd+L)
+Center (Ctrl/Cmd+E),右对齐(Ctrl/Cmd+E)
+Insert Link,插入链接
+Remove Link,移除链接
+Insert picture (or just drag & drop),插入图片(或拖拽)
+Horizontal Line Break,水平行分隔符

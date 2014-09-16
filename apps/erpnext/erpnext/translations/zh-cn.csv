@@ -3012,7 +3012,7 @@ Time at which items were delivered from warehouse,商品从仓库的发货时间
 Time at which materials were received,收到材料时间
 Title,标题
 Titles for print templates e.g. Proforma Invoice.,打印模板标题，例如：形式发票。
-To,到
+To,至
 To Currency,至货币
 To Date,结束日期
 To Date should be same as From Date for Half Day leave,如果申请半天假则结束时间与开始时间要一致
@@ -3556,3 +3556,6 @@ Half-Yearly,半年
 FIFO,先进先出
 Select User...,选择用户
 Automatically updated via Stock Entry of type Manufacture or Repack,经由制造或重新打包的库存条目自动更新
+Payment Tool,付款工具
+Advance Paid,预付款
+Item #{0}: Ordered qty can not less than item's minimum order qty (defined in item master).,商品#{0}: 订购的商品不能少于最小订购量(在商品主数据中进行了设置)
