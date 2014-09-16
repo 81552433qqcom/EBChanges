@@ -2599,7 +2599,7 @@ Scheduled,计划内的
 Scheduled Date,计划日期
 Scheduled to send to {0},将发送到{0}
 Scheduled to send to {0} recipients,将发送到收件人{0}
-Scheduler Failed Events,Scheduler Failed Events
+Scheduler Failed Events,定时器错误
 School/University,学校/大学
 Score (0-5),得分（0-5）
 Score Earned,评分
@@ -3559,3 +3559,9 @@ Automatically updated via Stock Entry of type Manufacture or Repack,经由制造
 Payment Tool,付款工具
 Advance Paid,预付款
 Item #{0}: Ordered qty can not less than item's minimum order qty (defined in item master).,商品#{0}: 订购的商品不能少于最小订购量(在商品主数据中进行了设置)
+Re-Open Ticket,重新打开
+{0} Recipients,{0}收件人
+<strong>Condition Examples:</strong></p>,<strong>例子:</strong></p>
+<p><strong>Hints:</strong></p>,<p><strong>提示:</strong></p>
+""<li>To check for an event every day, select "Date Change" in Event</li>"",<li>如果是每天进行检查性任务则请选择“日期变更”</li>
+""<li>To send an alert if a particular value changes, select "Value Change"</li>"",<li>如果要在某个值改变时发送警报则请选择“值改变”</li>
