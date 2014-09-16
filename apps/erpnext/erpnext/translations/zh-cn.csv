@@ -3563,5 +3563,5 @@ Re-Open Ticket,重新打开
 {0} Recipients,{0}收件人
 <strong>Condition Examples:</strong></p>,<strong>例子:</strong></p>
 <p><strong>Hints:</strong></p>,<p><strong>提示:</strong></p>
-""<li>To check for an event every day, select "Date Change" in Event</li>"",<li>如果是每天进行检查性任务则请选择“日期变更”</li>
-""<li>To send an alert if a particular value changes, select "Value Change"</li>"",<li>如果要在某个值改变时发送警报则请选择“值改变”</li>
+"<li>To check for an event every day, select ""Date Change"" in Event</li>",<li>如果是每天进行检查性任务则请选择“日期变更”</li>
+"<li>To send an alert if a particular value changes, select ""Value Change""</li>",<li>如果要在某个值改变时发送警报则请选择“值改变”</li>
