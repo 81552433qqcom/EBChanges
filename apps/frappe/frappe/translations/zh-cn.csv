@@ -260,7 +260,7 @@ Date and Number Format,日期和数字格式
 Date must be in format: {0},日期格式必须是:{0}
 Datetime,日期时间
 Days in Advance,提前天数
-Dear,亲爱的
+Dear,尊敬的
 Default,默认
 Default Print Format,默认打印格式
 Default Value,默认值
@@ -776,7 +776,7 @@ Parent Website Sitemap,父网站地图
 Participants,参与者
 Password,密码
 Password Updated,密码已更新
-Password reset instructions have been sent to your email,密码重置说明已发送到您的电子邮件
+Password reset instructions have been sent to your email,密码重置说明已给您发送电子邮件
 Patch,补丁
 Patch Log,补丁日志
 Percent,百分比
@@ -1722,3 +1722,13 @@ disabled user,已禁用的用户
 Show or Hide Modules,显示或隐藏模块
 Page missing or moved,找不到指定页面
 "We are very sorry for this, but the page you are looking for is missing (this could be because of a typo in the address) or moved.",很抱歉，我们未能找到您请求的页面
+Please click on the following link to set your new password,请点击以下链接设置你的新密码
+Thank you,谢谢您
+Password Update Notification,密码更新通知
+our password has been updated. Here is your new password,密码已经更新，新密码为:
+A new account has been created for you,系统为你创建了一个新的账户
+Your login id is,你的登录账号为
+Click on the link below to complete your registration and set a new password,点击以下链接来完成注册并设置一个新的密码
+Complete Registration,注册完成
+You can also copy-paste this link in your browser,你也可以拷贝以下链接到浏览器中直接访问
+Reset Password,重设密码

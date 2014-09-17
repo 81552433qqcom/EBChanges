@@ -846,7 +846,7 @@ Different UOM for items will lead to incorrect (Total) Net Weight value. Make su
 Direct Expenses,直接费用
 Direct Income,直接收入
 Disable,已禁用
-Disable Rounded Total,Disable Rounded Total
+Disable Rounded Total,禁用四舍五入后的总值
 Disabled,禁用
 Discount  %,折扣%
 Discount %,折扣%
@@ -1255,7 +1255,7 @@ If Yearly Budget Exceeded,如果年度预算超出
 "If checked, Total no. of Working Days will include holidays, and this will reduce the value of Salary Per Day",如果选中，则总工作日将包括节假日;那么这将缩短每天的工资的价值
 "If checked, the tax amount will be considered as already included in the Print Rate / Print Amount",如果选中，纳税额将被视为已包括在打印的比例/金额中
 If different than customer address,如果和客户的地址不同
-"If disable, 'Rounded Total' field will not be visible in any transaction",如果禁用，'Rounded Total'字段将在任何交易中不可见
+"If disable, 'Rounded Total' field will not be visible in any transaction",如果禁用，'四舍五入总值'字段将在任何交易中不可见
 "If enabled, the system will post accounting entries for inventory automatically.",如果启用，系统将自动为库存创建会计分录
 If more than one package of the same type (for print),如果同一类型不止一个相同的包(用于打印）
 "If multiple Pricing Rules continue to prevail, users are asked to set Priority manually to resolve conflict.",如果有多个定价规则冲突，用户则会被要求手动设置优先级来解决冲突。
@@ -3140,7 +3140,7 @@ Update Clearance Date,更新清算日期
 Update Cost,更新成本
 Update Finished Goods,更新成品
 Update Landed Cost,更新到岸成本
-Update Series,Update Series
+Update Series,更新序列号
 Update Series Number,更新序列号
 Update Stock,更新库存
 Update bank payment dates with journals.,银行付款与凭证核对
@@ -3565,3 +3565,5 @@ Re-Open Ticket,重新打开
 <p><strong>Hints:</strong></p>,<p><strong>提示:</strong></p>
 "<li>To check for an event every day, select ""Date Change"" in Event</li>",<li>如果是每天进行检查性任务则请选择“日期变更”</li>
 "<li>To send an alert if a particular value changes, select ""Value Change""</li>",<li>如果要在某个值改变时发送警报则请选择“值改变”</li>
+Search Item,搜索商品
+Barcode / Serial No,条码/编号
