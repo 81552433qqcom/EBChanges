@@ -42,9 +42,7 @@ frappe.pages['data-import-tool'].onload = function(wrapper) {
 					<li>' + __("In Excel, save the file in CSV (Comma Delimited) format") + '</li>\
 					<li>' + __("Open this saved file in Notepad") + '</li>\
 					<li>' + __("Click on File -&gt; Save As") + '</li>\
-					<li>' + __("File Name: &lt;your filename&gt;.csv<br />\
-						Save as type: Text Documents (*.txt)<br />\
-						Encoding: UTF-8") + '\
+					<li>' + __("File Name: &lt;your filename&gt;.csv<br />Save as type: Text Documents (*.txt)<br />Encoding: UTF-8") + '\
 					</li>\
 					<li>' + __("Click on Save") + '</li>\
 				</ol>\
@@ -223,8 +221,7 @@ frappe.pages['data-import-tool'].onload = function(wrapper) {
 
 	// add submit option
 	$('<label><input type="checkbox" name="_submit"> <span>' + __("Submit") + '</span></label>\
-		<p class="text-muted">' + __("If you are inserting new records (overwrite not checked) \
-			and if you have submit permission, the record will be submitted.") + '</p><br>')
+		<p class="text-muted">' + __("If you are inserting new records (overwrite not checked) and if you have submit permission, the record will be submitted.") + '</p><br>')
 		.insertBefore($submit_btn);
 
 	// add ignore option
