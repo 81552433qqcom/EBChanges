@@ -225,7 +225,7 @@ def delete_file_from_filesystem(doc):
 	else:
 		path = frappe.utils.get_site_path("public", "files", doc.file_name)
 	if os.path.exists(path.encode('utf-8')):
-		os.remove(path)
+		os.remove(path.encode('utf-8'))
 
 def get_file(fname):
 	f = frappe.db.sql("""select file_name from `tabFile Data`
